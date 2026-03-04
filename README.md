@@ -268,4 +268,4 @@ If you use this tool in your research, please cite:
 
 **Built with ❤️ for researchers, by researchers**
 
-For questions or support, open an issue or contact [your-email@example.com]
+For questions or support, open an issue or contact [vanRossum@umass.org]
