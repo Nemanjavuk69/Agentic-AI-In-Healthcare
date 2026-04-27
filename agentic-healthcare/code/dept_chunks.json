@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "dept_chunk_0",
+    "card_name": "Forside",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet001.htm",
+    "text": "DEPT generisk, version 2.0\nDanish Emergency\nProcess Triage\nVitalparametre\nog\nKontaktårsagskort\nD.E.P.T\nGenerisk\nVersion 2.0"
+  },
+  {
+    "id": "dept_chunk_1",
+    "card_name": "Indhold",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet002.htm",
+    "text": "DEPT generisk, version 2.0\nIndhold:\nVarslingskort:\nPræhospital\ntriage\nHjertestop og\nrespirationsstop\nTraumekaldskriterier\nOverordnede kort:\ni)\nBlåt kort\nii)\nVitalparametre\niii)\nRisikopatient\niv)\nSundhedsfaglig op- eller nedtriagering\nSpecifikke\nkontaktårsagskort:\n1\nAbstinenssymptomer\n26\nHud- og slimhindesymptomer\n2\nAllergiske\nsymptomer\n27\nIkterus og/eller ascites\n3\nAnorektale\nsymptomer\n28\nKatheter, stomi eller sondeproblemer\n4\nBesvimelse\n29\nKramper, generaliserede\n5\nBevidsthedspåvirkning\n30"
+  },
+  {
+    "id": "dept_chunk_2",
+    "card_name": "Indhold",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet002.htm",
+    "text": "Kramper, generaliserede\n5\nBevidsthedspåvirkning\n30\nKvalme, opkastning, diarré\n6\nBid\nog stik\n31\nLaboratorietal, afvigende\n7\nBlodsukker,\nafvigelser\n32\nMandlige kønsorganer, symptomer\n8\nBlodtryk,\nhøjt\n33\nMave- og flankesymptomer\n9\nBlødning\nfra øvre luftveje\n34\nNeurologiske udfaldssymptomer\n10\nBrystsmerter\n35\nNæsesymptomer\n11\nEkstremitetssymptomer\nuden skade\n36\nPsykiatri eller krisesymptomer\n12\nEkstremitets-\nog sårskade\n37\nRyg- og nakkesymptomer\n13\nEl-\nog lynskade\n38\nRøg- og inhalationsskade\n14"
+  },
+  {
+    "id": "dept_chunk_3",
+    "card_name": "Indhold",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet002.htm",
+    "text": "13\nEl-\nog lynskade\n38\nRøg- og inhalationsskade\n14\nFeber\nog/eller infektion\n39\nServicekontakt\n15\nForbrænding,\nætsning, skoldning, forfrysning\n40\nStikuheld og\nanden biologisk eksposition\n16\nForgiftning\n41\nSvimmelhed og\nfaldtendens\n17\nForvirring\nog/eller agitation\n42\nTandskade\n18\nFremmedlegeme\n43\nThoraxskade\n19\nGastrointestinal\nblødning\n44\nUnderlivssymptomer\n20\nGipsgener\n45\nUrinvejssymptomer\n21\nGraviditets- og\nbarselssymptomer\n46\nVejrtrækningssymptomer\n22\nHalssymptomer\n47\nØdem\n23\nHjertebanken"
+  },
+  {
+    "id": "dept_chunk_4",
+    "card_name": "Indhold",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet002.htm",
+    "text": "symptomer\n22\nHalssymptomer\n47\nØdem\n23\nHjertebanken\n(rytmeforstyrrelser)\n48\nØjensymptomer\n24\nHoved- og\nansigtssymptomer\n49\nØresymptomer\n25\nHovedpine\n100\nUtilpas eller pylret\nReferencekort:\nSmertevurdering\nGlasgow Coma\nScale (GCS)"
+  },
+  {
+    "id": "dept_chunk_5",
+    "card_name": "Præhospital triage",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet003.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nPræhospital triage\nVoksne og børn ≥ 12 år\n1\nRød\n2\nOrange\n3\nGul\nLivstruende\nHaster\nHaster mindre\nA\nPotentielt\ntruet luftvej\nHævelser af\nlæber og/ eller mundhule\nSkader i luftveje (brand, ætsning eller traume)\nFølelse af\nhævet hals\nB\nTrækker\nikke vejret\nRøginhalation\ni lukket rum\nKraftig åndenød\nModerat\nåndenød\nÅndenød ved\nanstrengelse\nC\nBlødning trods\nkompression\nFrisk blødning\n\"løbende\"\nFrisk blødning\n\"dryppende\"\nD\nStærke smerter"
+  },
+  {
+    "id": "dept_chunk_6",
+    "card_name": "Præhospital triage",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet003.htm",
+    "text": "bende\"\nFrisk blødning\n\"dryppende\"\nD\nStærke smerter\nLette til moderate smerter\nBrystsmerter\nPågående\nkramper\nKramper, nu ophørte\nOphørte kramper og kendt\nepilepsi\nBesvimelse ved anstrengelse\nGentagne besvimelses tilfælde\nPludselig indsættende voldsom\nhovedpine\nAnstrengelses udløst hovedpine\nSyns-, balance-,\ntaleforstyrrelser eller kraftnedsættelse med debut < 24 timer\nBevidsthedssløret og abnormt\nblodsukker\nBevidsthedssløret og normalt\nblodsukker\nE\nAkut nedsat\nfølesans på ekstremitet\nK"
+  },
+  {
+    "id": "dept_chunk_7",
+    "card_name": "Præhospital triage",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet003.htm",
+    "text": "blodsukker\nE\nAkut nedsat\nfølesans på ekstremitet\nK\nForgiftning\nEksposition\nfor farlige stoffer\nSelvdestruktiv\nadfærd\nMistanke om\nhypotermi\nTilbage til indhold\nBørn < 12 år\n1\nRød\n2\nOrange\n3\nGul\nLivstruende\nHaster\nHaster mindre\nA\nTruede\nluftveje (inkl. fremmedlegeme)\nHævelse af læber/mundhule/hals\nSkader i luftvejene (brand, ætsning, traume)\nAnafylaksi med stridor\nStridor med påvirket bevidsthed\nB\nParadox respiration\nRøginhalation\ni lukket rum\nC\nBlødning trods\nkompression\nFrisk\nblødning, løbende"
+  },
+  {
+    "id": "dept_chunk_8",
+    "card_name": "Præhospital triage",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet003.htm",
+    "text": "Blødning trods\nkompression\nFrisk\nblødning, løbende\nFrisk blødning,\ndryppende\nD\nPågående\nkramper\nKramper, nu\nophørt\nKramper,\nnu ophørt og kendt epilepsi\nVAS/FLACC 8-10\nVAS/FLACC 4-7\nNIPS 4-6\nNIPS 1-3\nBevidsthedstab,\nnu ophørt\nPludseligt\nindsættende voldsom hovedpine\nE\nEcchymoser/suggilationer\nPetekkier med feber\nPetekkier\nuden feber\nNakke/rygstivhed\nK\nForgiftning\neller mistanke herom\nEksposition\nfor farlige stoffer\nEl-stød med forbrændinger"
+  },
+  {
+    "id": "dept_chunk_9",
+    "card_name": "Hjertestop og Respirationsstop",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet004.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nHjertestop/Respirationstop\n1\nRød\nLivstruende\n1\nBevidstløs\nog\nunormal (agonal)\neller\nophørt vejrtrækning\nJa\nRelevante alternative kontaktårsagskort\n02\nTraumekaldskriterier\n07\nBevidsthedspåvirkning\nInitial behandling\nFor\nALLE:\nInitial diagnostik\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_10",
+    "card_name": "Traumekaldskriterier(RH)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet005.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 02\nTraumekaldskriterier: Region Hovedstaden\n1\nRød\nLivstruende\nSkademekanisme\n1\nHøjhastighedsulykker med betydende skader på\nkøretøj (>65 km/t, >0,5 m deformation)\nJa\n2\nHar patienten været fastklemt?\nJa\n3\nEr patienten blevet kastet ud af køretøjet ved\nulykken?\nJa\n4\nAnden person død i samme køretøj?\nJa\n5\nMotorcykel/knallert ulykker (kollision eller\nhastighed > 50 km/t)?\nJa\n6\nPersonpåkørsel (cyklist eller fodgænger) af"
+  },
+  {
+    "id": "dept_chunk_11",
+    "card_name": "Traumekaldskriterier(RH)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet005.htm",
+    "text": "?\nJa\n6\nPersonpåkørsel (cyklist eller fodgænger) af\nlastbil/bus/tog/andet køretøj?\nJa\n7\nFald fra højde >4 meter (sv.t. 2. etage)?\nJa\n8\nBørn fald >3 gange egen højde?\nJa\n9\nDrukningsulykker eller/og hypotermi (< 32\n0\nC)?\nJa\n10\nVoldshandlinger med alvorlig anatomisk skade\n(skud/stiksår/eksplosionskader)?\nJa\nFysiologiske kriterier\n11\nUstabilt barn efter akut traumatisk påvirkning?\nJa\n12\nGCS≤13 efter hovedtraume?\nJa\n13\nBT <90 (systolisk) efter akut traumatisk\npåvirkning?\nJa\nAnatomiske kriterier\n14"
+  },
+  {
+    "id": "dept_chunk_12",
+    "card_name": "Traumekaldskriterier(RH)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet005.htm",
+    "text": "traumatisk\npåvirkning?\nJa\nAnatomiske kriterier\n14\nAlle penetrerende læsioner\n(skud/stik/eksplosionsfragmenter) på hoved, hals, thorax, abdomen og\nekstremiteter proksimalt for albue/knæ?\nJa\n15\nUstabilt (løst) thorax?\nJa\n16\nForbrændinger (som hovedregel børn >10% og\nvoksne >15%) eller/og inhalationskade?\nJa\n17\nStørre brud på to eller flere lange rørknogler\neller mistanke om bækkenfraktur?\nJa\n18\nMistanke om brud på ryg eller/og lammelser i\narme/ben efter traume?\nJa\n19"
+  },
+  {
+    "id": "dept_chunk_13",
+    "card_name": "Traumekaldskriterier(RH)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet005.htm",
+    "text": "eller/og lammelser i\narme/ben efter traume?\nJa\n19\nAmputationer i eller proksimalt for håndled\neller fodled?\nJa\nKriterier\nAkut fysisk traume kan udløse traumekald på\nbaggrund af:\ni) Skademekanisme og/eller\nii) Fysiologiske kriterier\nog/eller\niii) Anatomiske kriterier\nEfter ovenstående\nretningslinier, såfremt blot ét kriterium er opfyldt.\nInitial diagnostik og behandling\nAltid primært triagekategori\nRØD\nProtokol for traumemodtagelse\nfølges.\nReferencer"
+  },
+  {
+    "id": "dept_chunk_14",
+    "card_name": "Traumekaldskriterier(RM+ RN)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet006.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nTraumekaldskriterier: Region Midt og region Nord\n1\nRød\nLivstruende\n1\n≥\n2 point talt sammen fra traumemeldeskema udløser traumekald\nJa\nTraumemeldeskema:\n0\n1\n2\nPoint\nBevidsthedsniveau\nVågen\n= GCS 15\nUklar\nGCS 13-14\nKortvarig bevidstløs\nBevidstløs\nGCS < 13\nÅndedrætsfunktion\nNormal\nBesværet\nSat\n< 90\nFrekvens < 10 eller >\n30\nKredsløb\nSystolisk\nBT > 90 mmHg\nKold,\nklamtsvedende Puls>100\nSystolisk\nBT < 90 mmHg\nThorax/ brystkasse\nUøm\n/let ømhed\nVedvarende"
+  },
+  {
+    "id": "dept_chunk_15",
+    "card_name": "Traumekaldskriterier(RM+ RN)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet006.htm",
+    "text": "mmHg\nThorax/ brystkasse\nUøm\n/let ømhed\nVedvarende\nsmertepåvirket,\n+/-\nberøring\nÅben\nlæsion\nAbdomen/ bughule\nUøm\n/let ømhed\nSvært\nsmertepåvirket\nÅben\nlæsion\nNakke/ rygsøjle\nUøm\nKonstant\neller vedvarende smertepåvirket elelr smerter ved berøring. Snurren i arme\neller ben.\nLammelser,\nbrud eller mistanke om brud på rygsøjlen\nBrud:\nArme/ben/bækken\nIngen\nmistanke\nEkstremitetsbrud\ni større rørknogler\nÅbent\nbrud, ≥ 2 brud i større rørknogler. Bækkenbrud. Amputation over hånd\neller fodled"
+  },
+  {
+    "id": "dept_chunk_16",
+    "card_name": "Traumekaldskriterier(RM+ RN)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet006.htm",
+    "text": "ler. Bækkenbrud. Amputation over hånd\neller fodled\nTraumemekanisme\nLavenergi\nBlød\ntrafikant eller højenergi.\nForbrændning(2.\nog 3. grads):Børn > 10 %, Voksne >15 % Penetrerende skade (stik/skud)\npå hoved- hals\nØget risiko: Alder og/ eller comorbiditet*\n<\n6 år\n> 75 år Comorbiditet\nPointsum i alt :\n≥\n2 point\nudløser traumekald\nEksempler på:\nBlød trafikant:\nKnallert/ MC uheld,\nCyklist- høj fart, Cyklist/ fodgænger påkørt af bil/ MC, Solo- MC uheld uden\nhjelm med lav hastighed."
+  },
+  {
+    "id": "dept_chunk_17",
+    "card_name": "Traumekaldskriterier(RM+ RN)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet006.htm",
+    "text": "/ MC, Solo- MC uheld uden\nhjelm med lav hastighed.\nTraumemekanisme - Højenergi:\nPerson kastet ud af køretøj. Hvis person dræbt i samme\nkøretøj. Svært fastklemt. Frontal sammenstød / kollision med fast genstand.\nHvis køretøjet er rullet rundt / kabine er svært deformeret. Fald fra > 6\nm, obs underlag (beton, mudder, etc.)\n* Comorbiditet:\nAlle\naldersgrupper med kendt betydende comorbiditet - f.eks. Alvorlig hjerte-\neller lungesygdom, behandling med blodfortyndende medicin, kendt\nrygmarvsskade."
+  },
+  {
+    "id": "dept_chunk_18",
+    "card_name": "Traumekaldskriterier(RM+ RN)",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet006.htm",
+    "text": "med blodfortyndende medicin, kendt\nrygmarvsskade.\nKriterier for Udvidet Traumekald (kun for Aarhus\nUniversitetshospital):\n• Systolisk BT < 90 mmHg og mistanke om\nbetydelig indre blødning (relevant stumpt eller penetrerende traume).\n• Akutlægens skøn\n• Mistanke om betydelig indre\nblødning (relevant stumpt eller penetrerende traume).\n• Lægeligt skøn\nInitial diagnostik og behandling\nTraumemanual følges\nReferencer"
+  },
+  {
+    "id": "dept_chunk_19",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "DEPT generisk, version 2.0\nVed\n\"\nJa\"\ntil alle\nnedenstående spørgsmål, kan patienten triageres BLÅ:\nBlåt kort\n1)\nEr patientens\nalmentilstand upåvirket (vejrtrækning, farve, vågen/klar/orienteret)?\n2)\nMindre skade med god sammenhæng mellem\nårsag og virkning ?\n3)\nSkade uden sammenhæng med\nevt.forudgående sygdom?\n4)\nTilhører\nskaden/symptombilledet nedenstående liste?\nHvis \"nej\" til blot ét af ovenstående\nspørgsmål, eller hvis comorbiditet kan komplicere skadesforløbet, bør der"
+  },
+  {
+    "id": "dept_chunk_20",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "omorbiditet kan komplicere skadesforløbet, bør der\nmåles vitalparametre og optriageres.\nBid og stik:\nKort\n6\nBlødning hvor der kan opnås hæmostase ved\nkomprimerende forbindning\nLokal\nsviende eller kløende hudreaktion efter bid eller stik\nBidsår uden læsion af sener, led, kar eller nerver\nInsektstik, bi/hvepsestik, flåtbid uden allergiske\nsymptomer eller infektionstegn\nEkstremitetssymptomer\nuden skade:\nOverfladisk sårinfektion\neller\nhævede led\nKort 11\nEkstremitets- og\nsårskade:\nKort\n12"
+  },
+  {
+    "id": "dept_chunk_21",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "ede led\nKort 11\nEkstremitets- og\nsårskade:\nKort\n12\nFor voksne og børn ≥ 12\når:\nMistanke om lukket ekstremitetsbrud (ikke\nhofte/femur) uden klinisk fejlstilling\nBlødning\nhvor der kan opnås hæmostase ved komprimerende forbindning\nMistanke\nom forstuvning, aflåst led eller isoleret ledbåndsskade\nOverfladisk\nsårinfektion\nSuturkrævende\neller overfladiske sår\neller\noverfladisk\nfremmedlegeme\neller\nmistanke\nom lukket senelæsion\nForbrændning,\nætsning, skoldning, forfrysning:\nKort\n15\nLokale"
+  },
+  {
+    "id": "dept_chunk_22",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "g,\nætsning, skoldning, forfrysning:\nKort\n15\nLokale\noverfladiske frostskader eller solskoldning\n1.\nog 2. grads forbrændinger.\nFremmedlegeme:\nØre, næse, svælg\nKort 18\nGipsgener:\nNormale neurovaskulære forhold og lette/ingen smerter\nKort 20\nHoved- og\nansigtssymptomer:\nKort\n24\nMinimalt\nhovedtraume uden commotiosymptomer\nSimple\nsår i ansigt/hoved\nHud- og slimhindesymptomer:\nEnkeltstående,\nikke lednær absces\nKort 26\nKatheter, stomi\neller sondeproblemer:\nKort\n28\nGenanlæggelse"
+  },
+  {
+    "id": "dept_chunk_23",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "stomi\neller sondeproblemer:\nKort\n28\nGenanlæggelse\naf KAD/topkatheter/ nasalsonde/PEG-sonde, ingen infektionsmistanke\nEngangskaterisation\nNæsesymptomer:\nKort\n35\nNæseblødning,\nder kan bringes til ophør ved kompression\nMistanke\nom næsebrud\nFremmedlegeme i\nnæse\nRyg- og nakkesymptomer:\nÆldre\nskade, ikke mistanke om fraktur\nKort 37\nServicekontakt:\nKort 39\nStikuheld og\nanden biologisk eksposition:\nKort 40\nTandskade: Knækket\ntand/krone, bøjleproblemer eller lignende (IKKE eksartikulerede eller"
+  },
+  {
+    "id": "dept_chunk_24",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "oblemer eller lignende (IKKE eksartikulerede eller\nlukserede tænder)\nKort 42\nØjensymptomer:\nKort\n48\nFremmedlegeme\neller\nabrasio af hornhinde/ conjunctiva\nUV-stråler (solarie, svejsning, sneblindhed)\nØjenbetændelse\nuden synspåvirkning\nØresymptomer:\nKort 49\nHæmatom\nover ørebrusk eller mindre sutur-krævende rifter ved øre\nFremmedlegeme\ni øre\nInitial\nbehandling\nNedenstående tiltag udføres i umiddelbar\ntilknytning til triagering:\ni) Mitella/armslynge eller lign.\n(immobilisering/elevation)\nii) Ispose"
+  },
+  {
+    "id": "dept_chunk_25",
+    "card_name": "Blåt kort",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet007.htm",
+    "text": "eller lign.\n(immobilisering/elevation)\nii) Ispose\niii) Midlertidig forbinding,\nplaster eller kompression af sår (stands blødning)\niv) Skylning af brandsår\nv) Relevant PO/IV/IM\nsmertestillende behandling jfr gældende lokal instruks\nReferencer"
+  },
+  {
+    "id": "dept_chunk_26",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "DEPT generisk, version 2.0\nDanske Regioners\nnationale grænser for\nTilbage til indhold\nVitalparametre\nVoksne og børn ≥ 12 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nIkke fri\nluftvej\nInspiratorisk stridor\nSpO\n2\n< 90% med O\n2\nSpO\n2\n< 95% med O\n2\nSpO\n2\n< 95% uden O\n2\nSpO\n2\n≥ 95% uden O\n2\nB\nSpO\n2\n< 80% uden O\n2\nSpO\n2\n< 90% uden O\n2\nRF > 35\neller < 8\nRF > 30\nRF > 25\nRF: 8 - 25\nC\nPuls > 140\nPuls\n> 120 eller < 40\nPuls\n> 110 eller < 50\nPuls:\n50 - 110\nBT\nsys\n< 80 mmHg"
+  },
+  {
+    "id": "dept_chunk_27",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "s\n> 110 eller < 50\nPuls:\n50 - 110\nBT\nsys\n< 80 mmHg\nBT\nsys\n< 90 mmHg\nBT\nsys\n≥ 90 mmHg\nD\nGCS ≤ 8\nGCS:\n9 - 13\nGCS\n= 14\nGCS\n= 15\nE\nTp < 32\n0\nC\nTp\n> 40\n0\nC\nTp\n> 38\n0\nC\nTp: 35 - 38\n0\nC\nTp: 32 - 34\n0\nC\nFor patienter med kendt KOL nedsættes saturationsgrænsen med 5%\nB\nSpO\n2\n< 85% med O\n2\nSpO\n2\n< 90% med O\n2\nSpO2 < 90% uden O2\nSpO\n2\n≥ 90% uden O\n2\nSpO\n2\n< 75% uden O\n2\nSpO\n2\n< 85% uden O\n2\nTilbage til indhold\nBørn: 8\n–\n11 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA"
+  },
+  {
+    "id": "dept_chunk_28",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "røn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 35\neller < 8\nRF 30 > eller < 10\nRF > 25 eller < 12\nRF 12\n–\n25\nC\nPuls\n> 140 eller < 40\nPuls >\n120\neller < 45\nPuls > 110 eller < 50\nPuls 50\n–\n110\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*"
+  },
+  {
+    "id": "dept_chunk_29",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "10\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 3 – 7 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede"
+  },
+  {
+    "id": "dept_chunk_30",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "Obstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 35\neller < 10\nRF 30 > eller < 13\nRF > 24 eller < 16\nRF 16\n–\n24\nC\nPuls\n> 165 eller < 40\nPuls > 125\neller < 55\nPuls > 110 eller < 70\nPuls 70\n–\n110\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar"
+  },
+  {
+    "id": "dept_chunk_31",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "pons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 1 – 2 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2"
+  },
+  {
+    "id": "dept_chunk_32",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "ktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF >\n50 eller < 10\nRF 40 > eller < 15\nRF > 30 eller < 20\nRF 20\n–\n30\nC\nPuls\n> 200 eller < 40\nPuls > 165\neller < 59\nPuls > 130 eller < 75\nPuls 75\n–\n130\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan"
+  },
+  {
+    "id": "dept_chunk_33",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "dsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\nHos\nbarn 3 mdr – 3 år:\nTp ≥ 38.5 samt pylret\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 3 – 11\nmåneder\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2"
+  },
+  {
+    "id": "dept_chunk_34",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "uftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF >\n80 eller < 10\nRF 70 > eller < 20\nRF > 60 eller < 30\nRF 30\n–\n60\nC\nPuls\n> 230 eller < 40\nPuls > 190\neller < 60\nPuls > 160 eller < 80\nPuls 80\n–\n160\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret"
+  },
+  {
+    "id": "dept_chunk_35",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "r\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\nHos\nbarn 3 mdr – 3 år:\nTp ≥ 38.5 samt pylret\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 0\n–\n2 måneder\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2"
+  },
+  {
+    "id": "dept_chunk_36",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 90\neller < 10\nRF 80 > eller < 20\nRF > 60 eller < 30\nRF 30\n–\n60\nC\nPuls\n> 230 eller < 50\nPuls > 205\neller < 70\nPuls > 180 eller < 90\nPuls 90\n–\n180\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant"
+  },
+  {
+    "id": "dept_chunk_37",
+    "card_name": "Vitalparametre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp.<\n36 eller\n≥\n38.5\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek"
+  },
+  {
+    "id": "dept_chunk_38",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "DEPT generisk, version 2.0\nDanske Regioners\nnationale grænser for\nTilbage til indhold\nVitalparametre\nVoksne og børn ≥ 12 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nIkke fri\nluftvej\nInspiratorisk stridor\nSpO\n2\n< 90% med O\n2\nSpO\n2\n< 95% med O\n2\nSpO\n2\n< 95% uden O\n2\nSpO\n2\n≥ 95% uden O\n2\nB\nSpO\n2\n< 80% uden O\n2\nSpO\n2\n< 90% uden O\n2\nRF > 35\neller < 8\nRF > 30\nRF > 25\nRF: 8 - 25\nC\nPuls > 140\nPuls\n> 120 eller < 40\nPuls\n> 110 eller < 50\nPuls:\n50 - 110\nBT\nsys\n< 80 mmHg"
+  },
+  {
+    "id": "dept_chunk_39",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "s\n> 110 eller < 50\nPuls:\n50 - 110\nBT\nsys\n< 80 mmHg\nBT\nsys\n< 90 mmHg\nBT\nsys\n≥ 90 mmHg\nD\nGCS ≤ 8\nGCS:\n9 - 13\nGCS\n= 14\nGCS\n= 15\nE\nTp < 32\n0\nC\nTp\n> 40\n0\nC\nTp\n> 38\n0\nC\nTp: 35 - 38\n0\nC\nTp: 32 - 34\n0\nC\nFor patienter med kendt KOL nedsættes saturationsgrænsen med 5%\nB\nSpO\n2\n< 85% med O\n2\nSpO\n2\n< 90% med O\n2\nSpO2 < 90% uden O2\nSpO\n2\n≥ 90% uden O\n2\nSpO\n2\n< 75% uden O\n2\nSpO\n2\n< 85% uden O\n2\nTilbage til indhold\nBørn: 8\n–\n11 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA"
+  },
+  {
+    "id": "dept_chunk_40",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "røn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 35\neller < 8\nRF 30 > eller < 10\nRF > 25 eller < 12\nRF 12\n–\n25\nC\nPuls\n> 140 eller < 40\nPuls >\n120\neller < 45\nPuls > 110 eller < 50\nPuls 50\n–\n110\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*"
+  },
+  {
+    "id": "dept_chunk_41",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "10\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 3 – 7 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede"
+  },
+  {
+    "id": "dept_chunk_42",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "Obstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 35\neller < 10\nRF 30 > eller < 13\nRF > 24 eller < 16\nRF 16\n–\n24\nC\nPuls\n> 165 eller < 40\nPuls > 125\neller < 55\nPuls > 110 eller < 70\nPuls 70\n–\n110\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar"
+  },
+  {
+    "id": "dept_chunk_43",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "pons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 1 – 2 år\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2"
+  },
+  {
+    "id": "dept_chunk_44",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "ktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF >\n50 eller < 10\nRF 40 > eller < 15\nRF > 30 eller < 20\nRF 20\n–\n30\nC\nPuls\n> 200 eller < 40\nPuls > 165\neller < 59\nPuls > 130 eller < 75\nPuls 75\n–\n130\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan"
+  },
+  {
+    "id": "dept_chunk_45",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "dsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\nHos\nbarn 3 mdr – 3 år:\nTp ≥ 38.5 samt pylret\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 3 – 11\nmåneder\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2"
+  },
+  {
+    "id": "dept_chunk_46",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "uftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF >\n80 eller < 10\nRF 70 > eller < 20\nRF > 60 eller < 30\nRF 30\n–\n60\nC\nPuls\n> 230 eller < 40\nPuls > 190\neller < 60\nPuls > 160 eller < 80\nPuls 80\n–\n160\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret"
+  },
+  {
+    "id": "dept_chunk_47",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "r\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp > 41\nHos\nbarn 3 mdr – 3 år:\nTp ≥ 38.5 samt pylret\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek\nTilbage til indhold\nBørn: 0\n–\n2 måneder\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nA\nObstruerede\nluftveje\nPåvirkede luftveje\nPåvirkede\nluftveje kun ved aktivitet\nFrie luftveje\nB\nSpO\n2\n< 85 uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2"
+  },
+  {
+    "id": "dept_chunk_48",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "uden 0\n2\nSpO\n2\n85-92 uden 0\n2\nSpO\n2\n93-94 uden 0\n2\nSpO\n2\n≥ 95 % uden 0\n2\nSpO\n2\n< 90 med 0\n2\nSpO\n2\n90-96 med 0\n2\nSpO\n2\n≥ 97 med 0\n2\nRF > 90\neller < 10\nRF 80 > eller < 20\nRF > 60 eller < 30\nRF 30\n–\n60\nC\nPuls\n> 230 eller < 50\nPuls > 205\neller < 70\nPuls > 180 eller < 90\nPuls 90\n–\n180\nKapillærrespons\n> 4 sek*\nKapillærrespons 4 sek*\nKapillærrespons 3 sek*\nKapillærrespons ≤ 2 sek*\nD\nUkontaktbar\nÆndret\nbevidsthedsniveau\neller\ncerebralt irritabelt\nVågen/kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant"
+  },
+  {
+    "id": "dept_chunk_49",
+    "card_name": "Risikopatient",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet008.htm",
+    "text": "kan\nvækkes men pylret\nVågen/kan\nvækkes og relevant\nGCS ≤\n8\nGCS 9-13\nGCS 14\nGCS 15\nE\nTp < 35\nTp.<\n36 eller\n≥\n38.5\n* centralt kapillærrespons, hvis perifert ikke\n≤ 2 sek"
+  },
+  {
+    "id": "dept_chunk_50",
+    "card_name": "Op- eller nedtriagering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet010.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nSundhedsfaglig op- eller nedtriagering\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5\nBlå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nOptriagering\n(læger og\nsygeplejersker)\n2\nNedtriagering\n(kun læger)\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_51",
+    "card_name": "Abstinenssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet011.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 01\nTil\nvitalparametre\nAbstinenssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nAbstinenskramper\nPågående\nNu ophørt\nVed tidligere\nkontakt\n2\nRastløs/urolig\nJa\nmed konfusion eller hallucinationer\nJa\nLet\neller ingen\nRelevante alternative kontaktårsagskort\n05\nBevidsthedspåvirkning\n07\nBlodsukker, afvigelser\n16 Forgiftning\n29\nKramper, generaliserede\nInitial behandling\nFor\nRØD"
+  },
+  {
+    "id": "dept_chunk_52",
+    "card_name": "Abstinenssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet011.htm",
+    "text": "Kramper, generaliserede\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_53",
+    "card_name": "Allergiske symptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet012.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 02\nTil\nvitalparametre\nAllergiske\nsymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nHævelse af\ntunge, læber, svælg eller/og hals\nJa, stridor\nJa, evt grødet\nstemme\n2\nÅndenød\nSvær\nhviledyspnø\nHviledyspnø\n3\nTidligere\nanafylaktisk shock\nJa\n4\nKløe\ni halsen\nJa\n5\nUrticaria\nUniverselt\nUdtalt\nLokalt\n9\nHvis\nintet af ovenstående\nJa\nRelevante alternative\nkontaktårsagskort"
+  },
+  {
+    "id": "dept_chunk_54",
+    "card_name": "Allergiske symptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet012.htm",
+    "text": "stående\nJa\nRelevante alternative\nkontaktårsagskort\n06 Bid og stik\n26 Hud og\nslimhindesymptomer\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_55",
+    "card_name": "Anorektale symptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet013.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 03\nTil\nvitalparametre\nAnorektale symptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTarmopereret\n< 14 dage\nMed blødning\nUden blødning\n2\nInfektionsmistanke/absces\nJa\n3\nFremmedlegeme\nJa\n9\nHvis\nintet af ovenstående\nJa\nRelevante alternative kontaktårsagskort\n19\nGastrointestinal blødning\n33\nMave- og flankesymptomer\n44 Underlivssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE"
+  },
+  {
+    "id": "dept_chunk_56",
+    "card_name": "Anorektale symptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet013.htm",
+    "text": "mptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_57",
+    "card_name": "Besvimelse",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet014.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 04\nTil\nvitalparametre\nBesvimelse\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nICD\nPågående ICD\nstød\nGentagne stød\nindenfor sidste døgn\n2\nAnstrengelses\nudløst\nJa\n3\nGentagne\nepisoder (seneste døgn)\nJa\nNej\n4\nEKG\npåvirkning\nNye\nST-T ændringer\neller\nbred\nkompleks arrytmi\nSmalt\nkompleks arrytmi\nRelevante alternative kontaktårsagskort\n05\nBevidsthedspåvirkning\n10\nBrystsmerter\n23"
+  },
+  {
+    "id": "dept_chunk_58",
+    "card_name": "Besvimelse",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet014.htm",
+    "text": "gskort\n05\nBevidsthedspåvirkning\n10\nBrystsmerter\n23\nHjertebanken (rytmeforstyrrelser)\n29\nKramper, generaliserede\n41\nSvimmelhed og faldtendens\n100\nUtilpas\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_59",
+    "card_name": "Bevidsthedspåvirkning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet015.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 05\nTil\nvitalparametre\nBevidsthedspåvirkning\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nHovedtraume\nTraumekalds-kriterier\nopfyldt\nAK behandling\neller pupildifferens\n2\nMistanke\nom meningitis\nJa\n3\nPludselig\nindsættende\nJa\n4\nMistanke\nom forgiftning\nJa\n5\nImmunsuprimeret\nJa\n6\nAbnormt\nblodsukker\nJa\n9\nHvis\nintet af ovenstående\nJa\nRelevante alternative kontaktårsagskort"
+  },
+  {
+    "id": "dept_chunk_60",
+    "card_name": "Bevidsthedspåvirkning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet015.htm",
+    "text": "stående\nJa\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n04\nBesvimelse\n07\nBlodsukker, afvigelser\n14 Feber og/eller\ninfektion\n16 Forgiftning\n25\nHovedpine\n29 Kramper,\ngeneraliserede\n34\nNeurologiske udfaldssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_61",
+    "card_name": "Bid og stik",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet016.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 06\nTil\nvitalparametre\nBid og stik\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTraumekaldskriterier\nopfyldt\nJa\n2\nHævelse\naf hals eller øvre luftveje\nJa, stridor\nJa,\nevt. grødet stemme\n3\nBlødning\nGennemsivning\ntrods komprimerende forbinding eller manuel\nkompression i 5 minutter\nHæmostase\nved komprimerende forbinding\n4\nHudforandringer\nUniversel\nurticaria eller bulløs reaktion\nMed"
+  },
+  {
+    "id": "dept_chunk_62",
+    "card_name": "Bid og stik",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet016.htm",
+    "text": "nger\nUniversel\nurticaria eller bulløs reaktion\nMed\ntegn på lokal infektion\nLokal\nreaktion.\nKløe eller svie\n5\nBidsår\nDybe\nbidsår med læsion af sene, led, kar eller nerver\nBidsår\nuden læsion af sener, led, kar eller nerver\n6\nBid\neller stik af giftige dyr (toxinmedieret reaktion)\nJa\n7\nInsektstik,\nbi/hvepsestik, flåtbid\nTidligere\nanafylaktisk shock\nBid\ni mund eller svælg\nUden\ntegn på infektion eller allergiske symptomer\nRelevante alternative kontaktårsagskort\n02 Allergiske\nsymptomer\n12"
+  },
+  {
+    "id": "dept_chunk_63",
+    "card_name": "Bid og stik",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet016.htm",
+    "text": "ative kontaktårsagskort\n02 Allergiske\nsymptomer\n12\nEkstremitets- og sårskade\n16 Forgiftning\n26\nHud- og slimhindesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer\nGiftlinjen (Bispebjerg\nhospital)"
+  },
+  {
+    "id": "dept_chunk_64",
+    "card_name": "Blodsukker, afvigelser",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet017.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 07\nTil\nvitalparametre\nBlodsukker, afvigelser\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nLavt\nblodsukker\n< 2 mmol/L\n2 - 4 mmol/L\n2\nHøjt\nblodsukker\n>\n30 mmol/L\n20\n- 30 mmol/L\n4\n- 20 mmol/L\n3\nBevidsthedspåvirket\nJa,\nindenfor sidste døgn\n4\nMistanke\nom ketoacidose\nJa\n5\nOpkastninger\nJa\nRelevante alternative kontaktårsagskort\n01\nAbstinenssymptomer\n05\nBevidsthedspåvirkning\n16"
+  },
+  {
+    "id": "dept_chunk_65",
+    "card_name": "Blodsukker, afvigelser",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet017.htm",
+    "text": "01\nAbstinenssymptomer\n05\nBevidsthedspåvirkning\n16\nForgiftning\n17\nForvirring og/eller agitation\n29\nKramper, generaliserede\n30\nKvalme, opkastning, diarré\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_66",
+    "card_name": "Blodtryk, højt",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet018.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 08\nTil\nvitalparametre\nBlodtryk, højt\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nCerebral\npåvirkning\n(kvalme, hovedpine, konfusion, eller/og\nsyns-forstyrrelser)\nJa, og med BT\nmin. som gul\n(angivet nedenfor).\n2\nSystolisk\nblodtryk (mmhg)\n> 240\n(voksne og børn > 8 år)\n220-240 (voksne\nog børn > 8 år)\n<\n220 (voksne og børn > 8 år)\n> 160 (gravide)\n> 140 (børn 5-8 år)"
+  },
+  {
+    "id": "dept_chunk_67",
+    "card_name": "Blodtryk, højt",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet018.htm",
+    "text": "g børn > 8 år)\n> 160 (gravide)\n> 140 (børn 5-8 år)\n> 115 (børn 1-5 år)\n> 110 (børn 1-12 mdr.)\n> 80 (nyfødt)\n3\nDiastolisk blodtryk (mmhg)\n> 130\n(voksne og børn > 8 år)\n120 - 130\n(voksne og børn > 8 år)\n< 120\n(voksne og børn > 8 år)\n> 110 (\ngravide)\n90-110\n(gravide)\n4\nDyspnø\nJa\nRelevante alternative kontaktårsagskort\n17 Forvirring\nog/eller agitation\n25\nHovedpine\n34 Neurologiske udfaldssymptomer\n48\nØjensymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD"
+  },
+  {
+    "id": "dept_chunk_68",
+    "card_name": "Blodtryk, højt",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet018.htm",
+    "text": "bil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_69",
+    "card_name": "Blødning fra øvre luftveje",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet019.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 09\nTil\nvitalparametre\nBlødning fra luftvejene\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTruet luftvej\nJa\n2\nHoster/spytter\nblod op\nPågående\nFlere\ngange det sidste døgn\nEnkelt\ngang\nsidste døgn\nMere\nend et døgn siden\n3\nKendt\nmed mund, svælg eller strube cancer\nJa\n4\nSvælg-\neller halskirurgi indenfor 14 dage\nJa\n5\nFeber,\nhoste og/eller dyspnø\nJa"
+  },
+  {
+    "id": "dept_chunk_70",
+    "card_name": "Blødning fra øvre luftveje",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet019.htm",
+    "text": "enfor 14 dage\nJa\n5\nFeber,\nhoste og/eller dyspnø\nJa\nRelevante alternative kontaktårsagskort\n19\nGastrointestinal blødning\n35\nNæsesymptomer\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_71",
+    "card_name": "Brystsmerter",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet020.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 10\nTil\nvitalparametre\nBrystsmerter\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTrykkende/pressende/\nklemmende smerter eller ubehag\nJa, seneste\ndøgn\n2\nVarighed\nMinutter\n- timer, vedvarende\nMinutter,\nforbigående\n3\nEKG\nabnormiteter\nNye\nST-T ændringer\neller\nbred\nkompleks arrytmi\nSmalt\nkompleks arrytmi\nIngen\nRelevante alternative kontaktårsagskort\n04 Besvimelse\n23"
+  },
+  {
+    "id": "dept_chunk_72",
+    "card_name": "Brystsmerter",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet020.htm",
+    "text": "nte alternative kontaktårsagskort\n04 Besvimelse\n23\nHjertebanken (rytmeforstyrrelser)\n33\nMave- og flankesymptomer\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_73",
+    "card_name": "Ekstremitetssympt. uden skade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet021.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 11\nEkstremitetssymptomer uden skade\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nInfektion/\nInflammation\nHastigt\nprogredierende misfarvning, varme og hævelse\neller\npåvirket almen tilstand\nMistanke om dyb\nsårinfektion\neller\nLymphangitis\nOverfladisk\nsårinfektion\neller\nhævede\nled\n2\nMistanke\nom Compartment Syndrom\nJa\n3\nPåvirkede\nneurovaskulære forhold\nJa\neller"
+  },
+  {
+    "id": "dept_chunk_74",
+    "card_name": "Ekstremitetssympt. uden skade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet021.htm",
+    "text": "rom\nJa\n3\nPåvirkede\nneurovaskulære forhold\nJa\neller\nakut kold\nekstremitetsdel\n4\nMistanke\nom DVT\nMed\ndyspnø\nUden\ndyspnø\n5\nVurdering af\nsmerter\nVoksne og børn ≥ 5 år:\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne\nVP\n● Smertepåvirket\nbevægemønster\n● Frit og\nnaturligt\nbevægemønster\n● Frit og\nnaturligt bevægemønster\n●\nPåvirket almentilstand\n●\nUpåvirket almentilstand\n●\nUpåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0-3"
+  },
+  {
+    "id": "dept_chunk_75",
+    "card_name": "Ekstremitetssympt. uden skade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet021.htm",
+    "text": "rn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0-3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\n6\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\nRelevante alternative kontaktårsagskort\n06 Bid og stik\n12\nEkstremitets- og sårskade\n20 Gipsgener\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_76",
+    "card_name": "Ekstremitetsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet022.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 12\nTil\nvitalparametre\nEkstremitets- og sårskade\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAmputation\nProksimalt for\neller sv.t. ankel- eller håndled\nDistalt for\nankel- eller håndled\n2\nMistanke\nom brud (inkl.bækken og skulderbælte)\nBrud på to eller\nflere større rørknogler\neller\nmistanke om bækkenbrud\nÅbent\nbrud\neller\nklinisk fejlstilling\neller\nhoftenært brud\nLukket"
+  },
+  {
+    "id": "dept_chunk_77",
+    "card_name": "Ekstremitetsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet022.htm",
+    "text": "r\nklinisk fejlstilling\neller\nhoftenært brud\nLukket\nfemur brud (uden klinisk fejlstilling)\nFor børn < 12 år:\nLukket brud\n(ej femur el. hofte) uden klinisk fejlstilling\nVoksne og børn\n≥\n12 år:\nLukket brud (ej femur el.\nhofte) uden klinisk fejlstilling\n3\nBlødning\nGennemsivning\ntrods komprimerende forbinding eller manuel\nkompression i 5 minutter\nHæmostase\nved komprimerende forbinding\n4\nMistanke\nom ledskade\nLuxation\nForstuvning,\naflåst led\neller\nisoleret\nledbåndsskade\n5\nInfektion\nefter skade\nHastigt"
+  },
+  {
+    "id": "dept_chunk_78",
+    "card_name": "Ekstremitetsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet022.htm",
+    "text": "eret\nledbåndsskade\n5\nInfektion\nefter skade\nHastigt\nprogredierende misfarvning, varme og hævelse\neller\npåvirket AT\nMistanke\nom dyb sårinfektion eller lymphangit\nOverfladisk\nsårinfektion\n6\nBløddelsskade\nMistanke\nom Compartment Syndrom\nDyb\nsårskade\neller\nrevisions-krævende sår\neller\nåben sene/muskel læsion\nSuturkrævende\neller\noverfladiske sår\neller\noverfladisk fremmedelegeme\neller\nmistanke om lukket senelæsion\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n06\nBid og stik\n11"
+  },
+  {
+    "id": "dept_chunk_79",
+    "card_name": "Ekstremitetsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet022.htm",
+    "text": "tårsagskort\nTraumekaldskriterier\n06\nBid og stik\n11\nEkstremitetssymptomer uden skade\n15\nForbrænding, ætsning, skoldning, forfrysning\n20\nGipsgener\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_80",
+    "card_name": "El- og lynskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet023.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 13\nTil\nvitalparametre\nEl- og lynskade\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nBevidstløs\nJa\nKortvarigt\n2\nVurdering\naf smerter\nVoksne og børn ≥ 5 år:\nNRS/ VAS 4-10\nNRS/ VAS 4-10\nNRS/ VAS 0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster"
+  },
+  {
+    "id": "dept_chunk_81",
+    "card_name": "El- og lynskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet023.htm",
+    "text": "gt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n3\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n4\nSpænding\nHøjspænding\n> 1000 V\neller\nlynnedslag\n220\n-1000 V\n<\n220 V\n5\nEKG\nNye\nST-T ændringer\neller\nbred\nkompleks arrytmi\nSmalt\nkompleks arrytmi"
+  },
+  {
+    "id": "dept_chunk_82",
+    "card_name": "El- og lynskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet023.htm",
+    "text": "eller\nbred\nkompleks arrytmi\nSmalt\nkompleks arrytmi\nRelevante alternative kontaktårsagskort\n15 Forbrænding, ætsning, skoldning, forfrysning\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_83",
+    "card_name": "Feber eller infektion",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet024.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 14\nTil\nvitalparametre\nFeber og/eller infektion\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nmeningitis\nJa\n2\nIndopereret\nfremmed- legeme\n(f.eks CVK, P-dialyse kateter,\nalloplastik mv)\nJa\nog samtidig klinisk oplagt infektion\n3\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP"
+  },
+  {
+    "id": "dept_chunk_84",
+    "card_name": "Feber eller infektion",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet024.htm",
+    "text": "n eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n4\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n5\nSepsis\nSvært\npåvirket almentilstand\neller\n2"
+  },
+  {
+    "id": "dept_chunk_85",
+    "card_name": "Feber eller infektion",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet024.htm",
+    "text": "ring\n5\nSepsis\nSvært\npåvirket almentilstand\neller\n2\nud af 3 følgende (kun voksne og børn > 12 år):\nsløret bevidsthed\neller\nRF > 20\noliguri\neller\nPuls > 90\nlaktat > 4 mmol/l\nTemp > 38\n°\nC eller < 36\n°\nC\n6\nLokal\ninfektion\nUdbredt\neller\ni operationssår\nvelafgrænset\nRelevante alternative kontaktårsagskort\n05\nBevidsthedspåvirkning\n25 Hovedpine\n26 Hud- og\nslimhindesymptomer\n33\nMave- og flankesymptomer\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik"
+  },
+  {
+    "id": "dept_chunk_86",
+    "card_name": "Feber eller infektion",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet024.htm",
+    "text": "ØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_87",
+    "card_name": "Forbrændinger",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet025.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 15\nForbrænding, ætsning, skoldning, forfrysning\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nLokalisation\nog art\nAlle termiske\neller ætsende skader lokaliseret til øvre luftveje, mund, svælg, ansigt, hals\n(truet luftvej)\nÆtseskader\nSolskoldning\neller\nlokale overfladisk\nfrostskade\n2\nUdbredelse\n>15%\nfor voksne\neller\n>10% for\nbørn\n>\n5% for ældre (>65 år)\n>3%"
+  },
+  {
+    "id": "dept_chunk_88",
+    "card_name": "Forbrændinger",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet025.htm",
+    "text": "ne\neller\n>10% for\nbørn\n>\n5% for ældre (>65 år)\n>3%\neller\nalle mindre 2. og 3. grads forbrændninger lokaliseret til\nhoved/ansigt, hals, hænder\n<3%\nAlle\n1. grads og\n2.grads forbrændinger\nRelevante alternative kontaktårsagskort\n13 El- og lynskade\n38\nRøg- og inhalationsskade\nInitial diagnostik:\nArealberegning (kun 2\n0\nog 3\n0\nforbrændinger):\nVoksen:\n1 årigt barn:\n5 Ã¥rigt barn:\nFor\nRÃ˜D\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial behandling for\nRÃ˜D\n/ustabil\nORANGE\n:\nFor\nRÃ˜D\n/ustabil\nORANGE\n:\nFor\nALLE\n:"
+  },
+  {
+    "id": "dept_chunk_89",
+    "card_name": "Forbrændinger",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet025.htm",
+    "text": "bil\nORANGE\n:\nFor\nRÃ˜D\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mÃ¥l\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_90",
+    "card_name": "Forgiftning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet026.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 16\nTil\nvitalparametre\nForgiftning\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster\nmindre\nHaster ikke\n1\nStoffets\nfarlighed\nMeget høj\nHøj\neller\nukendt, med påvirket almen\ntilstand\nLav\n2\nKramper\nPågående\nEnkeltstående\ntilfælde efter forgiftning\n3\nIntention\nog adfærd\nSuicidal\nøjemed\neller\nfortsat risiko\nfor selv-beskadigelse\nAccidentiel\nindtagelse i lille dosis\n4\nMistanke\nom skjult skade\nJa"
+  },
+  {
+    "id": "dept_chunk_91",
+    "card_name": "Forgiftning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet026.htm",
+    "text": "agelse i lille dosis\n4\nMistanke\nom skjult skade\nJa\nRelevante alternative kontaktårsagskort\n01\nAbstinenssymptomer\n02\nAllergiske symptomer\n05\nBevidsthedspåvirkning\n17\nForvirring og/eller agitation\n29\nKramper, generaliserede\n36\nPsykiatri eller krisesymptomer\n38 Røg- og\ninhalationsskade\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer\nGiftlinjen (Bispebjeg\nHospital)"
+  },
+  {
+    "id": "dept_chunk_92",
+    "card_name": "Forvirring",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet027.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 17\nTil\nvitalparametre\nForvirring og/eller agitation\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nmeningitis\nJa\n2\nVarighed\nAkut\nopstået\n(< 48 timer)\nIkke\nakut\n(> 48 timer)\n3\nMistanke\nom forgiftning\nJa\n4\nAdfærd\nSelvskadende\neller\nvoldelig\n5\nHovedtraume\nIndenfor\n48 timer\nMere\nend 48 timer siden\n6\nBlodsukker\nBS\n< 4\neller\nBS > 30\nRelevante alternative kontaktårsagskort"
+  },
+  {
+    "id": "dept_chunk_93",
+    "card_name": "Forvirring",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet027.htm",
+    "text": "er\nBS > 30\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n01\nAbstinenssymptomer\n05\nBevidsthedspåvirkning\n14\nFeber og/eller infektion\n16 Forgiftning\n25\nHovedpine\n34\nNeurologiske udfaldssymptomer\n36\nPsykiatri eller krisesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_94",
+    "card_name": "Fremmedlegeme",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet028.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 18\nTil\nvitalparametre\nFremmedlegeme\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistænkt\nfastsiddende i luftveje\nStridor\nPåvirket\nalmentilstand\nUpåvirket\n2\nSynkebesvær\n( mistænkt fastsiddende i esophagus)\nPåvirket\nalmen tilstand\nUpåvirket\n3\nType\naf fremmedlegeme (hvis indtaget)\nBatteri\nSpidse/skarpe\ngenstande\nAfrundede\ngenstande\n4\nØre/næse/svælg\nJa"
+  },
+  {
+    "id": "dept_chunk_95",
+    "card_name": "Fremmedlegeme",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet028.htm",
+    "text": "genstande\nAfrundede\ngenstande\n4\nØre/næse/svælg\nJa\nRelevante alternative kontaktårsagskort\n22 Halssymptomer\n35\nNæsesymptomer\n49 Øresymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_96",
+    "card_name": "GI-blødning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet029.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 19\nTil\nvitalparametre\nGastrointestinal blødning\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nOpkastning\nfrisk blod\nPågående\nHyppige\nEnkelte\nIngen\n2\nVitalparametre\n( kun voksne og børn\n≥\n12 år)\nBTsys< 100\nog\nPuls > 100\nBTsys<\n100\neller\nPuls >100\n3\nBlødning per\nrectum\nPågående\nHyppige\nEnkelte\n4\nMælena/\n\"Kaffegrums\" opkastning\nPågående\nHyppige\nEnkelte\n5\nRisikopatient"
+  },
+  {
+    "id": "dept_chunk_97",
+    "card_name": "GI-blødning",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet029.htm",
+    "text": "pkastning\nPågående\nHyppige\nEnkelte\n5\nRisikopatient\nAntikoagulation\neller\ntidligere\nøsophagusvaricer\nJa\nRelevante alternative kontaktårsagskort\n03 Anorektale\nsymptomer\n09\nBlødning fra øvre luftveje\n22 Halssymptomer\n30\nKvalme, opkastning, diarré\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_98",
+    "card_name": "Graviditets- og barselssympt.",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet031.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 21\nTil\nvitalparametre\nGraviditet- og barselssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nBlødning\nI slutningen\naf\ngraviditeten, ledsaget af smerter\nBlødning i 1.\ntrimester, ledsaget af smerter\nSidste halvdel\naf graviditeten, ingen smerter\nBlødning i 1. trimester, uden smerter\n2\nI\nfødsel eller ve-lignende sammentrækninger\n<\n28 uger\n>\n28 uger\n3\nSvangerskabs forgiftning"
+  },
+  {
+    "id": "dept_chunk_99",
+    "card_name": "Graviditets- og barselssympt.",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet031.htm",
+    "text": "ger\n<\n28 uger\n>\n28 uger\n3\nSvangerskabs forgiftning\nKramper\nSynsforstyrrelser\nog/ eller\nkraftig\nhovedpine\nog/ eller\nåndenød\nog/eller\nsmerter i epigastriet\n4\nSystolisk\nblodtryk\n>\n160\n5\nDiastolisk\nblodtryk\n>\n110\n90\n- 110\n6\nOpkastninger\nVedvarende\n> 12 timer\n7\nFeber\nJa\n9\nHvis intet af\novenstående\nJa\nRelevante alternative kontaktårsagskort\n08 Blodtryk, højt\n14\nFeber og/eller infektion\n29 Kramper, generaliserede\n33\nMave- og flankesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:"
+  },
+  {
+    "id": "dept_chunk_100",
+    "card_name": "Graviditets- og barselssympt.",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet031.htm",
+    "text": "al behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_101",
+    "card_name": "Halssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 22\nTil\nvitalparametre\nHalssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nøvre luftvejsobstruktion\nStridor\nHævelse i\nhals/svælg\neller\ngrødet\nstemme\n2\nSynkebesvær\nKan ikke synke\nspyt\nog\npåvirket almen\ntilstand\nKan\nikke synke mad\n3\nTraume\nmod hals\nPenetrerende\ntraume mod hals/ thorax\nJa\nog\npåvirket almen tilstand\nja\nog\nupåvirket almen tilstand\n4\nVurdering"
+  },
+  {
+    "id": "dept_chunk_102",
+    "card_name": "Halssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "ilstand\nja\nog\nupåvirket almen tilstand\n4\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m."
+  },
+  {
+    "id": "dept_chunk_103",
+    "card_name": "Halssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n02\nAllergiske symptomer\n14 Feber og/eller\ninfektion\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_104",
+    "card_name": "Hjertebanken",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 22\nTil\nvitalparametre\nHalssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nøvre luftvejsobstruktion\nStridor\nHævelse i\nhals/svælg\neller\ngrødet\nstemme\n2\nSynkebesvær\nKan ikke synke\nspyt\nog\npåvirket almen\ntilstand\nKan\nikke synke mad\n3\nTraume\nmod hals\nPenetrerende\ntraume mod hals/ thorax\nJa\nog\npåvirket almen tilstand\nja\nog\nupåvirket almen tilstand\n4\nVurdering"
+  },
+  {
+    "id": "dept_chunk_105",
+    "card_name": "Hjertebanken",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "ilstand\nja\nog\nupåvirket almen tilstand\n4\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m."
+  },
+  {
+    "id": "dept_chunk_106",
+    "card_name": "Hjertebanken",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet032.htm",
+    "text": "0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n02\nAllergiske symptomer\n14 Feber og/eller\ninfektion\n46\nVejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_107",
+    "card_name": "Hoved- og ansigtssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet034.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 24\nTil\nvitalparametre\nHoved- og ansigtssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nhovedtraume\nBevidstløs\nog/ eller\nTraumekalds-kriterier opfyldt.\nBevidsthedstab\ni forbindelse med skade\nog\ncommotio-symptomer\neller\ntilstand med øget blødnings-tendens.\nIngen\nbevidsthedstab\nog\ncommotio-symptomer.\nMinimalt\ntraume, ingen commotio-symptomer\n2\nNytilkommet"
+  },
+  {
+    "id": "dept_chunk_108",
+    "card_name": "Hoved- og ansigtssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet034.htm",
+    "text": "alt\ntraume, ingen commotio-symptomer\n2\nNytilkommet\npupilforskel (størrelse og/eller lysreaktion)\nJa\n3\nMistanke\nom brud eller luxation af kæbe eller ansigtskelettet\nMultiple\nbrud\neller\nkæbeluxation\nIsoleret\nbrud\n4\nBløddelslæsioner\nBetydelig\nbløddelslæsion\nMindre\nhæmatom\nSimple\nsår\n5\nEbrieret\nJa\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n05\nBevidsthedspåvirkning\n25 Hovedpine\n42\nTandskade\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil"
+  },
+  {
+    "id": "dept_chunk_109",
+    "card_name": "Hoved- og ansigtssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet034.htm",
+    "text": "E\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_110",
+    "card_name": "Hovedpine",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet035.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 25\nTil\nvitalparametre\nHovedpine\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nmeningitis\nJa\n2\nPludseligt\nindsættende svær hovedpine (ukendt for patienten)\nIndenfor\nsidste døgn\nMere\nend et døgn siden\n3\nBevidstløshed\nved debut\nJa\n4\nSynsforstyrrelser\nAkut\nsynstab/ nedsættelse\neller\ndobbeltsyn\neller\nsynsfelt udfald indenfor sidste døgn\n5\nVurdering\naf smerter:"
+  },
+  {
+    "id": "dept_chunk_111",
+    "card_name": "Hovedpine",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet035.htm",
+    "text": "dfald indenfor sidste døgn\n5\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n6\ni.v./i.m."
+  },
+  {
+    "id": "dept_chunk_112",
+    "card_name": "Hovedpine",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet035.htm",
+    "text": "0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n6\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n7\nSystolisk blodtryk (mmhg)\n> 240 (voksne og børn > 8\når\n> 140 (børn 5-8 år)\n> 115 (børn 1-5 år)\n> 110 (børn 1-12 mdr.)\n> 80 (nyfødt)\n8\nHovedtraume\n< 48 timer\nJa\n9\nHvis intet af\novenstående\nJa\nRelevante alternative kontaktårsagskort\n08 Blodtryk, højt\n14\nFeber og/eller infektion\n34\nNeurologiske udfaldssymptomer\n48\nØjensymptomer\nInitial behandling\nFor\nRØD"
+  },
+  {
+    "id": "dept_chunk_113",
+    "card_name": "Hovedpine",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet035.htm",
+    "text": "ptomer\n48\nØjensymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_114",
+    "card_name": "Hud- og slimhindesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet036.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 26\nTil\nvitalparametre\nHud- og slimhindesymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nHud- eller\nslimhindeblødninger (petekkier eller ekkymoser)\nMistanke om\nmeningitis\n2\nInfektion/\nInflammation\nHastigt\nprogredierende misfarvning, varme og hævelse\neller\npåvirket almen tilstand\nMistanke\nom dyb sårinfektion\neller\nLymphangitis\nOverfladisk\nsårinfektion\neller\nhævede\nled\n3"
+  },
+  {
+    "id": "dept_chunk_115",
+    "card_name": "Hud- og slimhindesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet036.htm",
+    "text": "ngitis\nOverfladisk\nsårinfektion\neller\nhævede\nled\n3\nEpidermisløsning\nHuden\nkan afløses ved let gnidning og efterlader åbne, væskende sår\n4\nUdslæt\ndebut\nOver\ntimer\nOver\ndage\n5\nUrticaria\nUniverselt\nUdtalt\nLokalt\n6\nAbsces\nAntal\nog lokalisation\nMultiple\neller lednær\nEnkeltstående\nRelevante alternative kontaktårsagskort\n02 Allergiske\nsymptomer\n06\nBid og stik\n14 Feber og/eller infektion\n15\nForbrændning, ætsning, skoldning, forfrysning\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:"
+  },
+  {
+    "id": "dept_chunk_116",
+    "card_name": "Hud- og slimhindesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet036.htm",
+    "text": "al behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_117",
+    "card_name": "Ikterus og Ascites",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet037.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 27\nTil\nvitalparametre\nIkterus og/eller ascites\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nVurdering af\nsmerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS 4-10\nNRS/ VAS 4-10\nNRS/ VAS 0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand"
+  },
+  {
+    "id": "dept_chunk_118",
+    "card_name": "Ikterus og Ascites",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet037.htm",
+    "text": "g naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n2\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n3\nNytilkommen\nkonfusion\nja\n4\nInfektionsmistanke\nJa\n5\nRisikopatient\nJa\n(se generel definition)\neller\ng\nraviditet 2. og 3. trimester\nRelevante alternative kontaktårsagskort\n05"
+  },
+  {
+    "id": "dept_chunk_119",
+    "card_name": "Ikterus og Ascites",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet037.htm",
+    "text": "imester\nRelevante alternative kontaktårsagskort\n05\nBevidsthedspåvirkning\n14 Feber og/eller\ninfektion\n17 Forvirring\nog/eller agitation\n30\nKvalme, opkastning, diarré\n33 Mave- og\nflankesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_120",
+    "card_name": "Katheter, stomi, sonde",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet038.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 28\nKatheter, stomi eller sondeproblemer\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nGenanlæggelse\naf KAD/top-katheter/ nasalsonde/PEG-sonde\nPEG sonde eller\nTop-katheter\nFebrilia,\ninfektion eller tillukning\nIngen feber,\ninfektion eller tillukning\n2\nStomi\nkomplikationer\nNekrose\neller infektion\nProlaps\neller stenose eller retraktion\n3\nEngangskatheter"
+  },
+  {
+    "id": "dept_chunk_121",
+    "card_name": "Katheter, stomi, sonde",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet038.htm",
+    "text": "s\neller stenose eller retraktion\n3\nEngangskatheter\nfor vanlig katheterbruger med urinretention\nJa\nRelevante alternative kontaktårsagskort\n33 Mave- og\nflankesymptomer\n45\nUrinvejssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_122",
+    "card_name": "Kramper",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet039.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 29\nTil\nvitalparametre\nKramper, generaliserede\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAnfald\nPågående\nkramper\nOphobede anfald\ndet sidste døgn\nKendt epilepsi med typisk anfald\n2\nFørstegangs\nanfald\nJa\n3\nMistanke\nom abstinens\nJa\n4\nHovedtraume\n< 48 timer\nJa\n5\nAkutte\nneurologiske udfald\nPersisterende\nkraft, sprog eller synsforstyrrelse indenfor sidste døgn.\nOphørte"
+  },
+  {
+    "id": "dept_chunk_123",
+    "card_name": "Kramper",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet039.htm",
+    "text": "ler synsforstyrrelse indenfor sidste døgn.\nOphørte\nkraft, sprog eller synsforstyrrelse indenfor sidste døgn.\nRelevante alternative\nkontaktårsagskort\n04 Besvimelse\n05\nBevidsthedspåvirkning\n07\nBlodsukker, afvigelser\n08\nBlodtryk, højt\n34\nNeurologiske udfaldssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_124",
+    "card_name": "Kvalme, opkastning, diarre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet040.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 30\nTil\nvitalparametre\nKvalme, opkastning, diarré\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nBevidsthedspåvirket\nJa\n2\nMistanke\nom ketoacidose\nJa\n3\nVarighed\nVedvarende\n> 24 timer uden bedring\nEnkelte\nepisoder eller varighed < 24 timer\nRelevante alternative kontaktårsagskort\n10 Brystsmerter\n14\nFeber og/eller infektion\n19\nGastrointestinal blødning\n25\nHovedpine\n33"
+  },
+  {
+    "id": "dept_chunk_125",
+    "card_name": "Kvalme, opkastning, diarre",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet040.htm",
+    "text": "ktion\n19\nGastrointestinal blødning\n25\nHovedpine\n33\nMave- og flankesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi\nog definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_126",
+    "card_name": "Laboratorietal, afvigende",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet041.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 31\nTil\nvitalparametre\nLaboratorietal, afvigende\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nHæmoglobin\n< 4,5 mmol/l\nog samtidig blødning\n< 4,5\nmmol/l\nuden blødning\neller\n< 6,0 mmol/l og iskæmisk\nhjertesygdom\n> 4,5 mmol/l\n2\nKalium\n>7,0\n>\n6,5 mmol/l\n>\n6,0 mmol/l\n< 2,5 mmol/l\n< 3.0 mmol/l\n3\nLaktat\n>\n4 mmol/l\n2-4 mmol/l\n4\nINR\n>\n6,0\n<\n6,0\n5\nNatrium\n>\n155 mmol/l\n>\n150 mmol/l"
+  },
+  {
+    "id": "dept_chunk_127",
+    "card_name": "Laboratorietal, afvigende",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet041.htm",
+    "text": "NR\n>\n6,0\n<\n6,0\n5\nNatrium\n>\n155 mmol/l\n>\n150 mmol/l\n< 120 mmol/l\n< 130 mmol/l\n6\nCalcium\n(ioniseret)\n> 1,6 mmol/l\n> 1,5 mmol/l\n< 0,8 mmol/l\n< 1,0 mmol/l\nRelevante alternative kontaktårsagskort\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_128",
+    "card_name": "Mandlige kønsorganer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet042.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 32\nTil\nvitalparametre\nMandlige kønsorganer,\nsymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\ntorsio testis\nJa\n2\nVedholdende\nrejsning (priapismus)\nJa\n3\nSkrotalhæmatom\nefter traume\nJa\n(obs bækkenfraktur)\n4\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP"
+  },
+  {
+    "id": "dept_chunk_129",
+    "card_name": "Mandlige kønsorganer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet042.htm",
+    "text": "e af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\nRelevante alternative kontaktårsagskort\n33 Mave- og\nflankesymptomer"
+  },
+  {
+    "id": "dept_chunk_130",
+    "card_name": "Mandlige kønsorganer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet042.htm",
+    "text": "tive kontaktårsagskort\n33 Mave- og\nflankesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_131",
+    "card_name": "Mave- og flankesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet043.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 33\nTil\nvitalparametre\nMave- og flankesymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nabdominal traume\nTraumekalds-kriterier\nopfyldt\nJa\n2\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster"
+  },
+  {
+    "id": "dept_chunk_132",
+    "card_name": "Mave- og flankesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet043.htm",
+    "text": "et\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n3\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n4\nMistænkt\nhernie\nIrreponibelt\nReponibelt\n5\nRisikopatient\nKendt\naortaaneurisme\nJa\n(se generel definition)\neller\n> 70 år\n6"
+  },
+  {
+    "id": "dept_chunk_133",
+    "card_name": "Mave- og flankesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet043.htm",
+    "text": "eurisme\nJa\n(se generel definition)\neller\n> 70 år\n6\nPeritonealdialyse\neller nefrostomikateter\nJa\n7\nOpkastninger\nindenfor de sidste 4 timer\nFlere\nEnkelte\n8\nEKG\nNye\nST-T ændringer\neller\nbred\nkompleks arrytmi\nRelevante alternative kontaktårsagskort\n10 Brystsmerter\n19\nGastrointestinal blødning\n30 Kvalme, opkastning, diarré\n45\nUrinvejssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål"
+  },
+  {
+    "id": "dept_chunk_134",
+    "card_name": "Mave- og flankesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet043.htm",
+    "text": ":\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_135",
+    "card_name": "Neurologiske udfaldssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet044.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 34\nTil\nvitalparametre\nNeurologiske udfaldssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTrombolyse\nkriterier opfyldt\nJa\n2\nkraft-nedsættelse\neller sensibilitetsudfald sidste døgn\nFortsatte\nsymptomer\nOphørte\nsymptomer\n3\nSprogforstyrrelser\ni sidste døgn\nFortsatte\nsymptomer\nOphørte\nsymptomer\n4\nHalvsidig\nsynsfeltudfald i sidste døgn\nFortsatte\nsymptomer\nOphørte\nsymptomer\n9"
+  },
+  {
+    "id": "dept_chunk_136",
+    "card_name": "Neurologiske udfaldssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet044.htm",
+    "text": "idste døgn\nFortsatte\nsymptomer\nOphørte\nsymptomer\n9\nHvis\nintet af ovenstående\nJa\nRelevante alternative kontaktårsagskort\n05\nBevidsthedspåvirkning\n14\nFeber og/eller infektion\n17 Forvirring og/eller agitation\n24\nHoved- og ansigtssymptomer\n25 Hovedpine\n29\nKramper, generaliserede\nInitial\nbehandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede\nmål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_137",
+    "card_name": "Næsesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet045.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 35\nTil\nvitalparametre\nNæsesymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nNæseblødning\nPågående\nblødning trods kompression, cirkulatorisk påvirket\nPågående\nblødning trods kompression, cirkulatorisk upåvirket\nBlødning, der\nkan bringes til ophør ved\nkompression\n2\nMistanke\nom næsebrud\nJa\n3\nFremmedlegeme\nJa\nRelevante alternative kontaktårsagskort\n24 Hoved- og"
+  },
+  {
+    "id": "dept_chunk_138",
+    "card_name": "Næsesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet045.htm",
+    "text": "levante alternative kontaktårsagskort\n24 Hoved- og\nansigtssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_139",
+    "card_name": "Psykiatri eller krisesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet046.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 36\nTil\nvitalparametre\nPsykiatri eller krisesymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nVoldelig/truende\nadfærd\nDårlig kontakt,\nfjendtlighed eller manglende impulskontrol\nKan tales til\nro, Samarbejds-villighed\nIngen\n2\nSuicidal\ntruet\nAktuelt\nsuicidalforsøg eller planer\nSuicidaltanker\nSuicidaltanker,\nønsker\nhjælp\n3\nAngst\nog agitation\nMotorisk\nuro eller anspændthed\nKan"
+  },
+  {
+    "id": "dept_chunk_140",
+    "card_name": "Psykiatri eller krisesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet046.htm",
+    "text": "st\nog agitation\nMotorisk\nuro eller anspændthed\nKan\ntales til ro, Samarbejds-villighed\nIngen\n4\nDelir\nSyns-hallucinationer\nog bevidstheds-påvirkning\nSyns-hallucineret\nmen orienteret i egne data\n5\nBehov\nfor akut krisehjælp ( ex. akut sorgreaktion)\nJa\n6\nKendt\nsindslidelse (skizofreni, bipolær sindslidelse)\nJa\nRelevante alternative kontaktårsagskort\n01\nAbstinenssymptomer\n05\nBevidsthedspåvirkning\n07 Blodsukker, afvigelser\n14\nFeber og/eller infektion\n16 Forgiftning\n17\nForvirring og/eller agitation"
+  },
+  {
+    "id": "dept_chunk_141",
+    "card_name": "Psykiatri eller krisesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet046.htm",
+    "text": "on\n16 Forgiftning\n17\nForvirring og/eller agitation\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_142",
+    "card_name": "Ryg- og nakkesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet047.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 37\nTil\nvitalparametre\nRyg- og nakkesymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTraume\nMistanke om\nbrud på rygsøjle\nmed\nlammelser/parastæsier\nAnkommer på spineboard\nMistanke om brud på rygsøjle\nuden neurologiske symptomer.\nAkut skade,\nikke mistanke om fraktur.\nÆldre skade,\nikke mistanke om fraktur\n2\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS"
+  },
+  {
+    "id": "dept_chunk_143",
+    "card_name": "Ryg- og nakkesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet047.htm",
+    "text": "rter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nNRS/\nVAS 0-3\nog en eller flere af flg.:\nog\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og\nnaturligt bevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\n●\nUpåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nFLACC 0-3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n3"
+  },
+  {
+    "id": "dept_chunk_144",
+    "card_name": "Ryg- og nakkesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet047.htm",
+    "text": "0-3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n3\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n4\nNervepåvirkning\nAkut\n< 24 timer: nedsat motorik\neller\nsensibilitet i ekstremiteter\neller\nnedsat sensibilitet i underliv\neller\nurinretention\neller\nincontinens\nIkke\nakut\nkronisk\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n11\nEkstremitetssymptomer uden skade\n34 Neurologiske udfaldssymptomer\n45\nUrinvejssymptomer"
+  },
+  {
+    "id": "dept_chunk_145",
+    "card_name": "Ryg- og nakkesymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet047.htm",
+    "text": "Neurologiske udfaldssymptomer\n45\nUrinvejssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_146",
+    "card_name": "Røg- og inhalationsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet048.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 38\nTil\nvitalparametre\nRøg- og inhalationsskade\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nRøggas\nforgiftning\nSod i mund,\nsvælg og næsebor med påvirket almen tilstand\nSod i mund,\nsvælg og næsebor med upåvirket almen tilstand\nIngen sod i\nluftvejene, evt irritativ hoste\n2\nKulilte (CO) forgiftning\nNeurologisk\npåvirkning\nog/\neller\nsvær hovedpine\nog/ eller\nCO-Hb < 25%"
+  },
+  {
+    "id": "dept_chunk_147",
+    "card_name": "Røg- og inhalationsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet048.htm",
+    "text": "ing\nog/\neller\nsvær hovedpine\nog/ eller\nCO-Hb < 25%\nPt. har været bevidstløs\nog/ eller\nGravide\nog/ eller\nCO-Hb > 25%\n3\nAnden\nkemisk inhalation (klor, tåregas, mv)\nPåvirket\nalmen tilstand\nUpåvirket\nalmen tilstand\nRelevante alternative kontaktårsagskort\nTraumekaldskriterier\n15\nForbrænding, ætsning, skoldning, forfrysning\n46 Vejrtrækningssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål"
+  },
+  {
+    "id": "dept_chunk_148",
+    "card_name": "Røg- og inhalationsskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet048.htm",
+    "text": ":\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_149",
+    "card_name": "Servicekontakt",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet049.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 39\nTil\nvitalparametre\nServicekontakt\nTil risikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nSociale\nproblemer\nJa\n2\nMyndighedserklæring\nJa\n3\nVaccination\nJa\n4\nLægeerklæring\nJa\nRelevante alternative kontaktårsagskort\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_150",
+    "card_name": "Stikuheld og biologisk eksp.",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 40\nStikuheld og anden biologisk eksposition\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAccidentiel\nstik- /skæreskade\nJa\n2\nAccidentel\nexposition af slimhinder med blod eller vævsvæsker\nJa\n3\nSeksuel\nsmitteeksposition\n(usikker sex/risiko sex)\nJa\nRelevante alternative kontaktårsagskort\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik"
+  },
+  {
+    "id": "dept_chunk_151",
+    "card_name": "Stikuheld og biologisk eksp.",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "ØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_152",
+    "card_name": "Svimmelhed og faldtendens",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 40\nStikuheld og anden biologisk eksposition\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAccidentiel\nstik- /skæreskade\nJa\n2\nAccidentel\nexposition af slimhinder med blod eller vævsvæsker\nJa\n3\nSeksuel\nsmitteeksposition\n(usikker sex/risiko sex)\nJa\nRelevante alternative kontaktårsagskort\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik"
+  },
+  {
+    "id": "dept_chunk_153",
+    "card_name": "Svimmelhed og faldtendens",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "ØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_154",
+    "card_name": "Tandskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 40\nStikuheld og anden biologisk eksposition\nTil\nvitalparametre\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAccidentiel\nstik- /skæreskade\nJa\n2\nAccidentel\nexposition af slimhinder med blod eller vævsvæsker\nJa\n3\nSeksuel\nsmitteeksposition\n(usikker sex/risiko sex)\nJa\nRelevante alternative kontaktårsagskort\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik"
+  },
+  {
+    "id": "dept_chunk_155",
+    "card_name": "Tandskade",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet050.htm",
+    "text": "ØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_156",
+    "card_name": "Urinvejssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet055.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 45\nTil\nvitalparametre\nUrinvejssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nVurdering af\nsmerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS 4-10\nNRS/ VAS 4-10\nNRS/\nVAS 0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand"
+  },
+  {
+    "id": "dept_chunk_157",
+    "card_name": "Urinvejssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet055.htm",
+    "text": "g naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n2\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n3\nAkut\nurinretention\nJa\nog\nakut opståede\nføleforstyrrelser\ni ridebukse-området\nJa\n(isoleret symptom)\n4\nFeber/kulderystelser\neller påvirket almen tilstand\nJa\n5\nHæmaturi\nRent\nblod\nIntermitterende"
+  },
+  {
+    "id": "dept_chunk_158",
+    "card_name": "Urinvejssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet055.htm",
+    "text": "n tilstand\nJa\n5\nHæmaturi\nRent\nblod\nIntermitterende\neller blodtingeret\nRelevante alternative kontaktårsagskort\n14 Feber og/eller\ninfektion\n33\nMave- og flankesymptomer\n44 Underlivssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_159",
+    "card_name": "Vejrtrækningssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet056.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 46\nTil\nvitalparametre\nVejrtrækningssymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nMistanke om\nøvre luftvejsobstruktion\nStridor\neller\nkan ikke synke spyt\nHævelse i\nhals/svælg\neller\ngrødet\nstemme\n2\nGrad\naf åndenød og udtrætning\nSvær\nhviledyspnø\nog/eller\nrespiratorisk udtrætning\nNytilkommen\neller forværring af habituel hviledyspnø\nNytilkommet\nfunktionsdyspnø\nLet"
+  },
+  {
+    "id": "dept_chunk_160",
+    "card_name": "Vejrtrækningssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet056.htm",
+    "text": "bituel hviledyspnø\nNytilkommet\nfunktionsdyspnø\nLet\nfunktionsdyspnø\n3\nMistanke\nom luftvejsskade\nBrand-\neller\nætsningsskader\neller\npenetrerende traume mod\nhals/ thorax\nTraume\nmod hals eller thorax\n4\nApnø\nepisoder hos spædbørn\nJa\n5\nHoste\nHæmoptyse\nflere gange seneste døgn\nPurulent\nekspektoration eller enkelt hæmoptyse\nHoste\nuden ekspektoration\n6\nSmerter\nved vejrtrækning. Vurdering af smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP"
+  },
+  {
+    "id": "dept_chunk_161",
+    "card_name": "Vejrtrækningssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet056.htm",
+    "text": "VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n7\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n8\nEKG\nNye\nST-T ændringer\neller\nbred"
+  },
+  {
+    "id": "dept_chunk_162",
+    "card_name": "Vejrtrækningssymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet056.htm",
+    "text": "mertevurdering\n8\nEKG\nNye\nST-T ændringer\neller\nbred\nkompleks arrytmi\nSmalt\nkompleks arrytmi\nRelevante alternative kontaktårsagskort\n02 Allergiske\nsymptomer\n05\nBevidsthedspåvirkning\n09\nBlødning fra øvre luftveje\n10\nBrystsmerter\n14\nFeber og/eller infektion\n22\nHalssymptomer\n38\nRøg- og inhalationsskade\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_163",
+    "card_name": "Ødem",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet057.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 47\nTil\nvitalparametre\nØdem\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster\nikke\n1\nLokalisation\nØvre luftveje\nAnsigt\neller\nhals\nØvrig\n2\nInfektionsmistanke\nMed\nhastigt progredierende rødme og hævelse\nJa,\nog indopereret protese\n3\nSpecifikke\nrisikofaktorer\nMistanke\nom compartment syndrom\neller\nophævet kapillærrespons\n4\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10"
+  },
+  {
+    "id": "dept_chunk_164",
+    "card_name": "Ødem",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet057.htm",
+    "text": "Voksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/ VAS\n0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n5\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn"
+  },
+  {
+    "id": "dept_chunk_165",
+    "card_name": "Ødem",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet057.htm",
+    "text": "ør ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\nRelevante alternative kontaktårsagskort\n02 Allergiske\nsymptomer\n10\nBrystsmerter\n11 Ekstremitetssymptomer uden skade\n14\nFeber og/eller infektion\n22 Halssymptomer\n26\nHud- og slimhindesymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_166",
+    "card_name": "Øjensymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet058.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 48\nTil\nvitalparametre\nØjensymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nTraume\nMistanke om\npenetrerende skade\neller\nstumpt traume med syns-påvirkning\nLæsion af\nøjenlåg eller tårekanal\nFremmed-legeme\neller\nabrasio af hornhinde/\nconjunctiva\n2\nVurdering\naf smerter:\nVoksne og børn ≥ 5 år\nNRS/ VAS\n4-10\nNRS/ VAS\n4-10\nNRS/\nVAS 0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP"
+  },
+  {
+    "id": "dept_chunk_167",
+    "card_name": "Øjensymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet058.htm",
+    "text": "VAS 0-3\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og\nnaturligt bevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand\n●\nUpåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0-3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\n3\ni.v./i.m.\nmorfika indenfor 120 min før ankomst.\nJa, og gul\nsmertevurdering\nJa, og grøn\nsmertevurdering\n4\nStråling\nog kemiske øjenskader\nÆtsning\neller"
+  },
+  {
+    "id": "dept_chunk_168",
+    "card_name": "Øjensymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet058.htm",
+    "text": "ing\n4\nStråling\nog kemiske øjenskader\nÆtsning\neller\nforbrænding af øje\neller\nøjenomgivelser\nUV-stråler\n(solarie, svejsning, sneblindhed)\n5\nAkut\nopstået synsforstyrrelse eller -sløring\nAkut\nsynstab\neller\ndobbeltsyn\neller\nsynsfelt udfald indenfor\nsidste døgn\nØjenbetændelse\nmed syns-nedsættelse og pussekretion\nIsoleret\nskelen\nØjenbetændelse\nmed pussekretion uden synspåvirkning\n6\nAkut\nrødt øje\nPericiliært\nDiffust\nRelevante\nalternative kontaktårsagskort\nTraumekaldskriterier\n24"
+  },
+  {
+    "id": "dept_chunk_169",
+    "card_name": "Øjensymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet058.htm",
+    "text": "ernative kontaktårsagskort\nTraumekaldskriterier\n24\nHoved- og ansigtssymptomer\n34 Neurologiske udfaldssymptomer\nInitial\nbehandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial\ndiagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede\nmål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_170",
+    "card_name": "Øresymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet059.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 49\nTil\nvitalparametre\nØresymptomer\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nBlod eller\nliqour i øregang efter relevant traume\nOBS\nkraniefraktur\n2\nMistanke\nom infektion\nRødme\nog hævelse bag\nøret.\n3\nSkader\nydre øre\nBrusklæsion\nHæmatom\nover ørebrusk\neller\nmindre\nsutur-krævende rifter\n4\nFremmedlegeme\nJa\nRelevante alternative kontaktårsagskort\n24\nHoved- og ansigtssymptomer"
+  },
+  {
+    "id": "dept_chunk_171",
+    "card_name": "Øresymptomer",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet059.htm",
+    "text": "ve kontaktårsagskort\n24\nHoved- og ansigtssymptomer\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi\nog definerede mål\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_172",
+    "card_name": "Utilpas",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet060.htm",
+    "text": "DEPT generisk, version 2.0\nTilbage til indhold\nKontaktårsagskort 100\nTil\nvitalparametre\nUtilpas eller pylret\nTil\nrisikopatient\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\n1\nAlmen tilstand\nSvært påvirket\nModerat\npåvirket\nLet påvirkning\n2\nUtrøsteligt\neller slapt barn\nJa\n3\nAkut\nopstået\n(< 24 timer)\nJa\nNej\nRelevante alternative kontaktårsagskort\n14 Feber og/eller\ninfektion\n16\nForgiftning\n17 Forvirring og/eller agitation\n41\nSvimmelhed og faldtendens"
+  },
+  {
+    "id": "dept_chunk_173",
+    "card_name": "Utilpas",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet060.htm",
+    "text": "ng og/eller agitation\n41\nSvimmelhed og faldtendens\nInitial behandling\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nInitial diagnostik\nFor\nRØD\n/ustabil\nORANGE\n:\nFor\nALLE\n:\nBehandlingsstrategi og definerede mål\nDette kort bør kun anvendes\nundtagelsesvis.\nDefinitioner\nReferencer"
+  },
+  {
+    "id": "dept_chunk_174",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "DEPT generisk, version 2.0\nReferencekort:\nSmertevurdering\nTilbage til indhold\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5 Blå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nSmerter fra\nhoved/ hals, torso eller ved usikker lokalisation:\nNRS/ VAS 4-10\nNRS/ VAS 4-10\nNRS/ VAS 0-3\nVoksne og børn ≥ 5 år\nog en eller flere af flg.:\nog\nog\n● Gule VP\n● Grønne VP\n● Grønne VP\n● Smertepåvirket\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Frit og naturligt\nbevægemønster\n● Påvirket almentilstand\n● Upåvirket almentilstand"
+  },
+  {
+    "id": "dept_chunk_175",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "● Påvirket almentilstand\n● Upåvirket almentilstand\n● Upåvirket almentilstand\nBørn 2 måneder - 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0- 3\nBørn 0- 2 måneder\nNIPS 4- 6\nNIPS 1-3\nNIPS 0\nSmerter\nfra ekstremiteter:\nVoksne og\nbørn ≥ 5 år\nNRS/\nVAS 4-10\nNRS/\nVAS 4-10\nNRS/\nVAS 0-3\nog en eller\nflere af flg.:\nog\nog\n● Gule VP\n● Grønne\nVP\n●\nSmertepåvirket bevægemønster\n● Frit og\nnaturligt\nbevægemønster\n● Frit og\nnaturligt bevægemønster\n●\nPåvirket almentilstand\n●\nUpåvirket almentilstand\n●\nUpåvirket almentilstand"
+  },
+  {
+    "id": "dept_chunk_176",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "Upåvirket almentilstand\n●\nUpåvirket almentilstand\nBørn 2 måneder\n- 5 år\nFLACC 8-10\nFLACC 4-7\nFLACC 0-3\nBørn 0- 2\nmåneder\nNIPS 4- 6\nNIPS 1-3\n3\ni.v./i.m.\nmorfika indenfor 120 min før ankomst til behandling af centralt udløste\nsmerter ( linje 1)\nJa, og gul\nsmertevurdering (linje 1)\nJa, og grøn\nsmertevurdering (linje 1)\nInitial\nbehandling\nFor\nALLE:\nInitial diagnostik\nFor\nALLE\n:\nSmerteanamnese, med vurdering af\nintensitet og karakter (patientens egen vurdering). Sammenholdes med de"
+  },
+  {
+    "id": "dept_chunk_177",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "r (patientens egen vurdering). Sammenholdes med de\nkliniske fund(objektiv smertevurdering).\nBehandlingsstrategi og definerede mål\nDefinitioner\nMorfin administreret inden ankomst til\nakutafdelingen skal indgå i den samlede bedømmelse af patientens\nsmerteniveau. Morfin gives som udgangspunkt på indikation af stærke smerter.\nFor børn mellem 5 og 12 år\nbenyttes Visual Analog Skala (VAS) fremfor Numerisk Rang Scala (NRS).\nReferencer\nNumerisk Rang Skala (NRS):"
+  },
+  {
+    "id": "dept_chunk_178",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "Scala (NRS).\nReferencer\nNumerisk Rang Skala (NRS):\nSmertescoringssystem bestående af en 11 punkts talskala fra 0 -\n10, hvor 0 er ingen smerte og 10 er værst tænkelig smerte.\nVisuel Analog Skala med ansigter:\nVAS score E eller F = 8-10\nVAS score C eller D = 4 -7\nTegnforklaring:\nA:\nMan kan gøre fuldstændig, som man plejer uden at tænke på det gør ondt\nB:\nMan kan gøre, som man plejer, men af og til må man standse op, fordi det gør\nondt\nC:"
+  },
+  {
+    "id": "dept_chunk_179",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "af og til må man standse op, fordi det gør\nondt\nC:\nMan har mest lyst til at sidde stille og få læst en historie eller se\nfjernsyn, fordi det gør ondt\nD: Man tænker på,\nat det gør ondt hele tiden\nE:\nMan har så ondt, at man har lyst til at græde, fordi det gør ondt\nF:\nMan har så ondt, at man slet ikke kan holde det ud\nBørn: 2 måneder -\n5 år\nFLACC\n2\n1\n0\nAnsigtsudtryk\nHyppigt\ntil konstant dirren omkring munden eller sammenbidt\nBekymret,\ninadvendt\nUpåvirket,\nafslappet\nBen\nTrækker"
+  },
+  {
+    "id": "dept_chunk_180",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "kymret,\ninadvendt\nUpåvirket,\nafslappet\nBen\nTrækker\nbenene op under sig, sparker\nUrolig,\nspændt\nNormal\nposition eller afslappet\nAktivitet\n\"Går\ni bro\", stiv eller kaster sig rundt\nVrider\nsig, kan ikke finde ro\nNormal\nstilling eller ligger stille, bevæger sig frit\nGråd\nGræder\nuafbrudt, skriger eller klager sig hyppigt\nKlynker,\nklager sig af og til\nGræder\nikke (vågen eller sovende)\n\"trøstbarhed\"\nVanskelig\nat trøste eller utrøstelig\nKan"
+  },
+  {
+    "id": "dept_chunk_181",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "stbarhed\"\nVanskelig\nat trøste eller utrøstelig\nKan\nberoliges ved berøring, ved at blive talt til og kan afledes fra smerten\nTilfreds,\nafslappet\nFLACC skalaen - smerten vurderes efter barnets adfærd Face, Leg,\nActivity, Cry, Consolability. Hvert parameter får 0-2 point hvilket\nresulterer i en samlet score på 0-10.\nNeonatale < 2\nmåneder\nNIPS\n0\n1\n2\nAnsigtsudtryk\nMuskler afslappede\nGrimasseren, spændte muskler, rynkede bryn,\nkæber, kinder.\nFredfyldt ansigt, neutralt udtryk\n(Negativt ansigtsudtryk -"
+  },
+  {
+    "id": "dept_chunk_182",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "ansigt, neutralt udtryk\n(Negativt ansigtsudtryk -\nnæse, mund og øjenbryn)\nGråd\nUden lyd, ingen gråd\nStille jamren, klynken, intermitterende\nKraftig gråd, høje skrig, skingrende,\nvedvarende.\nRespirationsmønster\nNormalt mønster for barnet, afslappet\nGisp, snapper efter vejret, uregelmæssig\nvejrtrækning, hurtigere end normalt, forkvalmet, holder vejret.\nArme\nNormal muskelspænding (-tonus), afslappet,\nperiodevis tilfældige bevægelse af armene.\nAnspændte, bøjede eller strakte arme, stive"
+  },
+  {
+    "id": "dept_chunk_183",
+    "card_name": "Smertevurdering",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet061.htm",
+    "text": "rmene.\nAnspændte, bøjede eller strakte arme, stive\nog/eller hurtige bevægelser.\nBen\nNormal\nmuskelspænding (-tonus), afslappet, periodevis tilfældige bevægelse af\nbenene.\nAnspændte,\nbøjede eller strakte benene, stive og/eller hurtige bevægelser.\nBevidsthedsniveau\nStille,\nfredfyldt, sovende eller vågen og opmærksom, veltilpas\nAnspændt,\nhvileløs, opgivende"
+  },
+  {
+    "id": "dept_chunk_184",
+    "card_name": "GCS",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet062.htm",
+    "text": "DEPT generisk, version 2.0\nReferencekort:\nGlasgow Coma Skala\nTilbage til indhold\n1\nRød\n2\nOrange\n3\nGul\n4\nGrøn\n5\nBlå\nLivstruende\nHaster\nHaster mindre\nHaster ikke\nHaster ikke\nGCS ≤ 8\nGCS 9-13\nGCS 14\nGCS 15\nGCS\n15\nVoksne og børn > 5 år\nBørn < 5 år\nØjenåbning\nSpontant åbne\n4\nØjenåbning\nSpontant åbne\n4\nPå tiltale\n3\nPå tiltale\n3\nPå smertestimulation\n2\nPå\nsmertestimulation\n2\nIngen\n1\nIngen\n1\nVerbal respons\nOrienteret (egne data, tid og sted)\n5\nVerbal respons\nSmiler,"
+  },
+  {
+    "id": "dept_chunk_185",
+    "card_name": "GCS",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet062.htm",
+    "text": "(egne data, tid og sted)\n5\nVerbal respons\nSmiler,\nvender sig mod lyde, følger genstande, samarbejder\n5\nKonfus, desorienteret\n4\nKan\ntrøstes, samarbejder\n4\nUsammenhængende men forståelige ord\n3\nJamrer,\ngrynter, klager sig\n3\nUforståelige ord, grynt, jamren\n2\nIrritabel,\nsitren\n2\nIntet\n1\nIntet\n1\nMotorisk respons\nEfterkommer opfordringer\n6\nMotorisk respons\nBevæger\nsig spontant, efterkommer opfordringer\n6\nLokaliserer\n5\nLokaliserer\n5\nAfværger (flekterer)\n4\nAfværger\n(flekterer)\n4"
+  },
+  {
+    "id": "dept_chunk_186",
+    "card_name": "GCS",
+    "source_url": "https://f003.backblazeb2.com/file/deptriageweb/DEPT_Generisk_version%202.0_files/sheet062.htm",
+    "text": "er\n5\nAfværger (flekterer)\n4\nAfværger\n(flekterer)\n4\nAbnorm flektion med supination\n(udad-drejning\naf hånd)\n3\nAbnorm\nflektion med supination\n(udad-drejning\naf hånd)\n3\nEkstension med pronation\n(indad-drejning af hånd)\n2\nEkstension\nmed pronation\n(indad-drejning af hånd)\n2\nIntet\n1\nIntet\n1\nTotal\nTotal"
+  }
+]
