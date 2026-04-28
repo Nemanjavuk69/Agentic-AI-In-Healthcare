@@ -7,19 +7,10 @@ Role: Receives triage output, asks follow-up questions, decides between
 Multi-agent comms: stubs are marked with  # FUTURE: MQ/REST/gRPC
 """
 
-# modified:
-#- modified booking tool -> access to external API i created
-#- separate function for RAG before "run_followup_loop", including it in decision making
-#- add more specialties
-#- add map_specialty function (as own function, and improved)
-#- more symptom-patterns
-
 import json
 import logging
 import os
-import uuid
 from datetime import datetime
-from typing import Literal
 import requests
 import re
 
@@ -34,7 +25,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("agent3.log"),
-        logging.StreamHandler(),
+        #logging.StreamHandler(),
     ],
 )
 log = logging.getLogger("agent3")
@@ -119,8 +110,6 @@ def load_patient(patient_id: str) -> dict:
 
 # ─── Fake calendar ────────────────────────────────────────────────────────────
 
-# modify -> more beautiful
-
 FAKE_CALENDAR = [
     "2025-06-10 09:30",
     "2025-06-10 11:00",
@@ -198,15 +187,6 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
     
     log.info("Data sent to API: %s", payload)
 
-    #result = {
-    #    "status":      "confirmed",
-    #    "hospital":    hospital,
-    #    "specialty":   specialty,
-    #    "time_slot":   time_slot,
-    #    "booking_ref": booking_ref,
-    #    "patient":     patient.get("name", "Unknown"),
-    #}
-    
     try: 
         response = requests.post("http://localhost:8000/book", json = payload)
         log.info("Appointment booked: %s", response.json())
@@ -217,7 +197,7 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
 
 # ─── Tool 2: Self-care advice (RAG stub) ─────────────────────────────────────
 
-def tool_self_care_advice(triage_summary: str, patient: dict) -> dict:
+def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: list) -> dict:
     """
     Generates self-care advice.
     Currently: direct LLM call.
@@ -226,8 +206,9 @@ def tool_self_care_advice(triage_summary: str, patient: dict) -> dict:
     """
     log.info("TOOL CALL: self_care_advice | summary=%s", triage_summary[:80])
 
-    # FUTURE (RAG): retrieved_context = medrag.retrieve(triage_summary)
-    # Then inject retrieved_context into the system prompt below.
+    # integrate follow-up answers into RAG context retrieval
+    rag_query = f"{triage_summary} {' '.join(follow_up_answer)}"    
+    rag_context = retrieve_dept_context(rag_query)
 
     chronic = ", ".join(patient.get("chronic_diseases", [])) or "none"
     meds    = ", ".join(patient.get("medications", []))      or "none"
@@ -245,6 +226,8 @@ def tool_self_care_advice(triage_summary: str, patient: dict) -> dict:
         f"Triage summary: {triage_summary}\n"
         f"Patient chronic diseases: {chronic}\n"
         f"Current medications: {meds}\n\n"
+        f"Medical guideline context: {rag_context}\n\n"
+        f"Follow-up answers: {' '.join(follow_up_answer)}\n\n"
         "Please provide self-care advice."
     )
 
@@ -258,19 +241,29 @@ def tool_self_care_advice(triage_summary: str, patient: dict) -> dict:
 
 # ─── Prompts ──────────────────────────────────────────────────────────────────
 
-QUESTION_SYSTEM = """Ask the patient
-follow-up questions one at a time to gather information in this exact order:
-  1. Chronic diseases – ask if the patient has any known chronic conditions regarding symptoms
-  2. Duration         – ask how long they have had the current symptoms
-  3. Severity         – ask them to rate the severity on a scale of 1 to 10
-  4. Progression      – ask whether the symptoms are getting better, worse, or staying the same
+QUESTION_SYSTEM = """
+You are a medical triage agent.
+
+At each step, decide whether:
+1. You need MORE information → ask ONE follow-up question
+2. You have ENOUGH information → make a decision
+
+You must respond with JSON:
+
+If asking:
+{"action": "ask_question", "question": "<text>", "reasoning": "<why>"}
+
+If deciding:
+{"action": "make_decision", "symptom_category": "<short phrase>", "reasoning": "<why>"}
 
 Rules:
-- Ask EXACTLY ONE question per turn. Do not ask multiple questions at once.
-- Keep questions short, clear, and empathetic.
-- Do NOT repeat a question that has already been answered.
-- Do NOT make any diagnosis or decisions yet.
-- Do NOT output JSON in this phase."""
+- Ask only ONE question at a time
+- Do NOT repeat questions
+- Stop asking when confident
+- Be safe: if unsure → ask more
+- You MUST base every reasoning and decision **only** on symptoms and information that have been explicitly stated in the initial triage summary or the patient's answers. 
+- Never assume, invent, or mention any information (duration, severity, progression, associated symptoms, etc.) that the patient has not explicitly stated.
+"""
 
 DECISION_SYSTEM = """You are a clinical triage assistant making a medical decision.
 Based on the triage summary, patient answers and medical guidelines, decide whether the patient needs
@@ -284,16 +277,32 @@ Consider:
 Respond with ONLY a valid JSON object and nothing else:
 {"decision": "appointment" | "self_care", "symptom_category": "<short phrase>", "reasoning": "<one sentence>"}"""
 
+
+REFLECTION_SYSTEM = """
+You are a senior medical reviewer.
+
+Review the previous decision for safety and correctness.
+
+Check:
+- Did we miss any red flags?
+- Is the decision too risky?
+- Is more caution needed?
+
+Respond ONLY in JSON:
+
+If the decision is OK:
+{"status": "approve"}
+
+If NOT:
+{"status": "revise", "reason": "<why>", "suggested_decision": "appointment" | "self_care"}
+"""
+
 # ─── Phase 1: Follow-up questioning loop ─────────────────────────────────────
-
-QUESTION_CATEGORIES = ["chronic diseases", "duration", "severity", "progression"]
-
 
 def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
     """
-    Asks 4 follow-up questions (one per category), collects answers,
-    then makes a decision in a separate call.
-    Returns: {"decision": {...}, "answers": [...], "patient": {...}}
+    Runs a dynamic follow-up loop inspired by the MediQ approach. After every response,
+    the agent evaluates whether more questions are needed or not.
     """
     log.info("=== Agent 3 START | patient=%s ===", patient_id)
     log.info("Triage input: %s", triage_input)
@@ -303,8 +312,10 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
     history: list[dict] = []
     answers: list[str]  = []
 
-    # ── Questioning phase (4 turns) ──────────────────────────────────────────
-    for turn, category in enumerate(QUESTION_CATEGORIES):
+    turn = 0
+
+    # ── Questioning phase (maximal 4 turns) ──────────────────────────────────────────
+    while turn < 5:
         # Build history text for the prompt
         history_text = ""
         for msg in history:
@@ -314,30 +325,54 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
         prompt = (
             f"Patient triage summary: {triage_summary}\n\n"
             f"Conversation so far:\n{history_text}\n"
-            f"Now ask the follow-up question for category: '{category}'."
+            f"Do you need more information?."
         )
 
-        question = call_llm(QUESTION_SYSTEM, prompt)
+        response = call_llm(QUESTION_SYSTEM, prompt)
+
+        try:
+            data = json.loads(response)
+        except:
+            log.warning("Bad JSON — forcing stop")
+            break
+
+        if data["action"] == "make_decision":
+            log.info("Model decided to stop questioning")
+            break
+        
+        question = data["question"]
         history.append({"role": "assistant", "content": question})
-        log.info("Q[%d] (%s): %s", turn + 1, category, question)
+        log.info(f"Q{turn + 1}:{question}")
 
         print(f"\nAgent: {question}")
         answer = input("Patient: ").strip()
 
-        log.info("A[%d]: %s", turn + 1, answer)
+        log.info(f"A{turn + 1}: {answer}")
         answers.append(answer)
         history.append({"role": "user", "content": answer})
 
-    # ── Decision phase (single call with full context) ───────────────────────
-    answers_text = "\n".join(
-        f"  {cat}: {ans}"
-        for cat, ans in zip(QUESTION_CATEGORIES, answers)
-    )
+        turn += 1
+
+
+    return {
+        "patient": patient,
+        "answers": answers,
+        "history": history,
+        "triage_summary": triage_summary,
+    }
+        
+def make_decision(context: dict) -> dict:
+
+    triage_summary = context["triage_summary"]
+    answers = context["answers"]
+
+    answers_text = "\n".join(answers)
     
     # RAG uses summary from first agent and patient context
     rag_query = f"{triage_summary} {answers_text}"
     rag_context = retrieve_dept_context(rag_query)
 
+    # include triage summary, patient answers, and DEPT guidlines in promt (query for llm)
     decision_prompt = (
         f"Triage summary: {triage_summary}\n"
         f"Medical guideline context: {rag_context}\n\n"
@@ -349,17 +384,46 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
     decision_raw = call_llm(DECISION_SYSTEM, decision_prompt)
     log.info("Decision raw response: %s", decision_raw)
 
-    # Parse JSON — handle model wrapping it in text
     try:
-        start = decision_raw.index("{")
-        end   = decision_raw.rindex("}") + 1
-        decision = json.loads(decision_raw[start:end])
-    except (ValueError, json.JSONDecodeError):
-        log.warning("Could not parse decision JSON — defaulting to appointment")
-        decision = {"decision": "appointment", "symptom_category": "general", "reasoning": "fallback"}
+        decision = json.loads(decision_raw)
+    except:
+        decision = {"decision": "appointment", "reasoning": "fallback"}
+
+    # reflection loop
+
+    reflection_prompt = f"""
+Decision:
+{json.dumps(decision, indent=2)}
+
+Context:
+Triage: {triage_summary}
+Answers: {answers_text}
+"""
+    reflection_raw = call_llm(REFLECTION_SYSTEM, reflection_prompt)
+
+    try:
+        reflection = json.loads(reflection_raw)
+    except:
+        log.warning("Reflection failed — keeping original decision")
+        return decision
+    
+    if reflection.get("status") == "approve":
+        log.info("Reflection approved the decision")
+        return decision
+    
+    elif reflection["status"] == "revise":
+        log.info("Decision revised due to reflection: %s", reflection["reason"])
+
+        return {
+            "decision": reflection["suggested_decision"],
+            "symptom_category": decision.get("symptom_category", "general"),
+            "reasoning": f"Revised: {reflection['reason']}"
+        }
+
 
     log.info("Decision: %s", decision)
-    return {"decision": decision, "answers": answers, "patient": patient}
+    return decision
+
 
 # ─── Phase 2: Confirmation + action ──────────────────────────────────────────
 
@@ -383,25 +447,37 @@ def get_confirmation():
     return False
 
 def run_agent(triage_input: dict, patient_id: str) -> dict:
-    # modify sympotm_category: right now, calling general every time
-    
-    
     """
     Full agent pipeline:
-      1. Follow-up questioning loop
-      2. Decision
+      1. dynamic Follow-up questioning loop
+      2. Decision with reflections
       3. If appointment → confirm with patient → book or fall back to advice
       4. If self_care   → generate advice directly
     FUTURE: expose as FastAPI endpoint or subscribe to a queue topic.
     """
     # Step 1: ask follow up questions
-    result         = run_followup_loop(triage_input, patient_id)
+    context         = run_followup_loop(triage_input, patient_id)
+    follow_up_answers = context["answers"]
+    patient        = context["patient"]
+    history     = context["history"]
+
+    qa_pairs = []
+
+    for i in range(0, len(history), 2):
+        if i + 1 < len(history):
+            qa_pairs.append({
+                "question": history[i]["content"],
+                "answer": history[i + 1]["content"]
+            })
+
     
     # Step 2: decide appointment or self-care advice
-    decision   = result["decision"]["decision"]
-    category = result["decision"]["symptom_category"]
-    patient        = result["patient"]
-    reasoning        = result["decision"]["reasoning"]
+    decision_ojb = make_decision(context)
+    
+    decision = decision_ojb.get("decision", "appointment")
+    category = decision_ojb.get("symptom_category", "general")
+    reasoning = decision_ojb.get("reasoning", "No reasoning provided.")
+
 
     log.info("Final decision: %s | category: %s | reasoning: %s", decision, category, reasoning)
     
@@ -413,25 +489,19 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
             f"\nAgent: Based on your answers, I recommend booking a medical appointment "
             f"({reasoning}). Would you like me to book an appointment for you? (yes/no)"
         )
-        #confirmation = input("Patient: ").strip().lower()
-        #log.info("Booking confirmation: %s", confirmation)
-        
+
         confirmed = get_confirmation()
         
         #if confirmation in ("yes", "y", "yeah", "yep", "sure", "ok", "okay", "ja", "j"):
         if confirmed:
             tool_result = tool_book_appointment(category, patient_id)
-            #print(
-            #    f"\nAgent: Your appointment has been booked at {tool_result['hospital']}, "
-            #    f"{tool_result['specialty']} department, on {tool_result['time_slot']}. "
-            #    f"Booking reference: {tool_result['booking_ref']}."
-            #)
+            
             print ("Your appointment has been booked: ", tool_result)
             output = {
                 "action":     "appointment",
                 "booking":    tool_result,
                 "patient_id": patient_id,
-                "answers":    result["answers"],
+                "answers":    qa_pairs,
                 "reasoning":  reasoning,
             }
         else:
@@ -444,7 +514,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
                 "action":     "self_care_after_declined_appointment",
                 "advice":     tool_result,
                 "patient_id": patient_id,
-                "answers":    result["answers"],
+                "answers":    qa_pairs,
                 "reasoning":  reasoning,
             }
             
@@ -457,7 +527,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
             "action":     "self_care",
             "advice":     tool_result,
             "patient_id": patient_id,
-            "answers":    result["answers"],
+            "answers":    qa_pairs,
             "reasoning":  reasoning,
         }
 
@@ -475,6 +545,7 @@ if __name__ == "__main__":
         "summary": "Patient is a 45-year-old male reporting recurring chest tightness and shortness of breath.",
         "urgency": "medium",
     }
+    print("=== Starting Agent 3: Medical Follow-Up & Decision Agent ===")
 
     final = run_agent(triage_input=sample_triage, patient_id="P001")
     print("\n=== Agent 3 Final Output ===")

@@ -1,0 +1,10 @@
+{
+  "patient_id": "P002",
+  "name": "Maria Nielsen",
+  "age": 32,
+  "gender": "female",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": ["penicillin"],
+  "hospital": "Aalborg University Hospital"
+}

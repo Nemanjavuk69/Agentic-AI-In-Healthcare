@@ -1,0 +1,688 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "call_llm",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_dept_context",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "call_llm",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "call_llm",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_dept_context",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "chromadb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "chromadb",
+        "description": "chromadb",
+        "detail": "chromadb",
+        "documentation": {}
+    },
+    {
+        "label": "SentenceTransformer",
+        "importPath": "sentence_transformers",
+        "description": "sentence_transformers",
+        "isExtraImport": true,
+        "detail": "sentence_transformers",
+        "documentation": {}
+    },
+    {
+        "label": "SentenceTransformer",
+        "importPath": "sentence_transformers",
+        "description": "sentence_transformers",
+        "isExtraImport": true,
+        "detail": "sentence_transformers",
+        "documentation": {}
+    },
+    {
+        "label": "SentenceTransformer",
+        "importPath": "sentence_transformers",
+        "description": "sentence_transformers",
+        "isExtraImport": true,
+        "detail": "sentence_transformers",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "TaxonomyGenerator",
+        "kind": 6,
+        "importPath": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "description": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "peekOfCode": "class TaxonomyGenerator:\n    def __init__(self):\n        \"\"\"Initialize the taxonomy generator with embedding model.\"\"\"\n        print(\"Loading embedding model...\", file=sys.stderr)\n        # Use a smaller, faster model for efficiency\n        self.model = SentenceTransformer('all-MiniLM-L6-v2')\n        print(\"Model loaded successfully!\", file=sys.stderr)\n    def fetch_paper_metadata(self, doi: str) -> Dict[str, Any]:\n        \"\"\"Fetch paper metadata from Crossref API.\"\"\"\n        try:",
+        "detail": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "description": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "peekOfCode": "def main():\n    \"\"\"Main entry point for the taxonomy generator.\"\"\"\n    if len(sys.argv) < 3:\n        print(\"Usage: python taxonomy_backend.py <csv_json_data> <k_clusters>\", file=sys.stderr)\n        sys.exit(1)\n    try:\n        # Parse arguments\n        csv_json = sys.argv[1]\n        k = int(sys.argv[2])\n        # Parse CSV data",
+        "detail": "Taxonomy Graph.taxonomy-engine.taxonomy_backend",
+        "documentation": {}
+    },
+    {
+        "label": "is_symptom_input",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def is_symptom_input(user_input: str) -> bool:\n    system_prompt = \"\"\"\nYou are a medical intake classifier.\nYour only job is to decide if the user's message contains medical symptoms,\nhealth complaints, or a description of how a patient is feeling physically or mentally.\nExamples of symptom input:\n- \"My chest is burning\"\n- \"I have had a headache for 3 days\"\n- \"The patient is vomiting and has a fever\"\nExamples of NON-symptom input:",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "triage_agent",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def triage_agent(user_input: str) -> dict:\n    dept_context = retrieve_dept_context(user_input)\n    system_prompt = \"\"\"\nYou are a medical triage assistant trained on Danish DEPT (Danish Emergency Process Triage) guidelines.\nYou will receive:\n1. A patient's symptom description\n2. Relevant excerpts from the official DEPT triage guidelines\nYour job is to:\n1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines.\n2. Assign a triage color on this exact scale:",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "route",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def route(triage_result: dict):\n    score = triage_result[\"score\"]\n    symptoms = triage_result[\"symptoms\"]\n    response = triage_result[\"response\"]\n    print(f\"\\nAssistant: {response}\\n\")\n    if score is None:\n        print(\"Could not determine triage score. Please try again.\\n\")\n        return\n    if score <= TRIAGE_THRESHOLD:\n        print(f\"--- Triage score {score} is critical. Routing to Agent 2 (Emergency). ---\\n\")",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def main():\n    print(\"=== DEPT Triage Assistant ===\")\n    print(\"Describe the patient's symptoms below, or type 'quit' to exit.\\n\")\n    while True:\n        user_input = input(\"You: \").strip()\n        if not user_input:\n            print(\"Please enter a message.\\n\")\n            continue\n        if user_input.lower() in (\"quit\", \"exit\"):\n            print(\"Goodbye!\")",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "TRIAGE_THRESHOLD",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "TRIAGE_THRESHOLD = 2\n# =========================\n# Step 1: Symptom Classifier\n# =========================\ndef is_symptom_input(user_input: str) -> bool:\n    system_prompt = \"\"\"\nYou are a medical intake classifier.\nYour only job is to decide if the user's message contains medical symptoms,\nhealth complaints, or a description of how a patient is feeling physically or mentally.\nExamples of symptom input:",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "get_location_coords",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def get_location_coords(location): \n    mapping = {\n        \"2800\": (55.770, 12.500),  # Lyngby\n        \"2100\": (55.700, 12.580),  # Copenhagen Ø\n        \"2200\": (55.690, 12.550),  # Copenhagen N\n        \"2300\": (55.670, 12.600),  # Copenhagen S\n        \"2400\": (55.680, 12.620),  # Copenhagen NV\n    }\n    return mapping.get(location[:4], (55.680, 12.620))  # default to NV coords\n# euclidean distance in km (approx, assuming 1 degree ~ 111 km)",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_distance",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def calculate_distance(coord1, coord2):\n    return ((coord1[0] - coord2[0])**2 + (coord1[1] - coord2[1])**2) ** 0.5 * 111\n# Dummy hospital lookup tool (return fixed entry for demonstration)\ndef hospital_lookup(department, location):\n    user_coords = get_location_coords(location)\n    database = [\n        {\n            \"hospital\": \"Rigshospitalet\",\n            \"department\": \"Cardiology\",\n            #\"distance_km\": 5.2,",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "hospital_lookup",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def hospital_lookup(department, location):\n    user_coords = get_location_coords(location)\n    database = [\n        {\n            \"hospital\": \"Rigshospitalet\",\n            \"department\": \"Cardiology\",\n            #\"distance_km\": 5.2,\n            \"coords\": (55.695, 12.566),\n            \"address\": \"Blegdamsvej 9, Copenhagen\"\n        },",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "ambulance_dispatch",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def ambulance_dispatch(patient_id, location, distance_km):\n    # assume avg speed of 40 km/h in city traffic\n    speed_kmh = 40\n    eta_minutes = int((distance_km / speed_kmh) * 60)\n    log.info(f\"Dispatching ambulance for patient {patient_id} to location {location}\")\n    # Simulate dispatch logic here\n    return {\"status\": \"dispatched\", \"eta_minutes\": eta_minutes, \"message\": \"Ambulance is on the way. Please wait at your location.\"}\n# ─── Tool Registry ─────────────────────────────────────────────────────────────\nTOOLS = {\n    \"hospital_lookup\": hospital_lookup,",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "run_agent",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def run_agent(input_data, max_steps=4):\n    context = {\n        \"input_data\": input_data,\n        \"history\": []\n    }\n    used_tools = set()\n    for step in range(max_steps):\n        log.info(\"Step %d: Agent thinking...\", step + 1)\n        user_promt = json.dumps(context)\n        response = call_llm(SYSTEM_PROMPT, user_promt)",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "run_routing_agent",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "def run_routing_agent(input_data):\n    result = run_agent(input_data)\n    if isinstance(result, dict):\n        return f\"\"\"\n{result.get(\"message\", \"\")}\nHospital: {result.get(\"hospital\", \"\")}\nDepartment: {result.get(\"department\", \"\")}\nAddress: {result.get(\"address\", \"\")}\nTransport: {result.get(\"transport\", \"\")}\n\"\"\"",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "log = logging.getLogger(\"agent2\")\n# ─── Tools ────────────────────────────────────────────────────────────────────\ndef get_location_coords(location): \n    mapping = {\n        \"2800\": (55.770, 12.500),  # Lyngby\n        \"2100\": (55.700, 12.580),  # Copenhagen Ø\n        \"2200\": (55.690, 12.550),  # Copenhagen N\n        \"2300\": (55.670, 12.600),  # Copenhagen S\n        \"2400\": (55.680, 12.620),  # Copenhagen NV\n    }",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "TOOLS",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "TOOLS = {\n    \"hospital_lookup\": hospital_lookup,\n    \"ambulance_dispatch\": ambulance_dispatch\n}\n# ─── Main Execution ─────────────────────────────────────────────────────────\nSYSTEM_PROMPT = \"\"\"\nYou are an autonomous healthcare routing agent.\nYou receive triage output and must make operational decisions.\nYou must decide step-by-step what to do using tools.\nAvailable tools:",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent2",
+        "description": "agentic-healthcare.code.agent2",
+        "peekOfCode": "SYSTEM_PROMPT = \"\"\"\nYou are an autonomous healthcare routing agent.\nYou receive triage output and must make operational decisions.\nYou must decide step-by-step what to do using tools.\nAvailable tools:\n1. hospital_lookup(department, location)\n2. ambulance_dispatch(patient_id, location, distance_km)\nRules:\n- Think step-by-step\n- Use tools when needed",
+        "detail": "agentic-healthcare.code.agent2",
+        "documentation": {}
+    },
+    {
+        "label": "load_patient",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def load_patient(patient_id: str) -> dict:\n    \"\"\"Load patient record from its JSON file.\"\"\"\n    path = os.path.join(PATIENT_DB_DIR, f\"{patient_id}.json\")\n    if not os.path.exists(path):\n        log.warning(\"Patient file not found: %s — using empty record\", path)\n        return {\"patient_id\": patient_id, \"name\": \"Unknown\", \"chronic_diseases\": [],\n                \"medications\": [], \"allergies\": [], \"hospital\": HOSPITAL_NAME}\n    with open(path, \"r\") as f:\n        data = json.load(f)\n    log.info(\"Loaded patient: %s\", data)",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "check_calendar",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def check_calendar(specialty: str) -> str:\n    \"\"\"Step 5 – fake calendar lookup. Returns next available slot.\"\"\"\n    log.info(\"CALENDAR CHECK: looking for slot | specialty=%s\", specialty)\n    # change this\n    slot = FAKE_CALENDAR[0]\n    log.info(\"CALENDAR: next available slot = %s\", slot)\n    return slot\n# ─── Tool 1: Appointment booking ─────────────────────────────────────────────\ndef is_negated(text, match_start):\n    \"\"\"Check if a match is negated by looking at previous 3 words\"\"\"",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "is_negated",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def is_negated(text, match_start):\n    \"\"\"Check if a match is negated by looking at previous 3 words\"\"\"\n    window = text[max(0, match_start - 40):match_start]\n    return any(neg in window for neg in (\"no\", \"not\", \"don't\", \"doesn't\", \"without\"))\ndef map_symptom_to_specialty(symptom: str) -> str:\n    symptom = symptom.lower()\n    scores = {}\n    for specialty, patterns in SYMPTOM_PATTERNS.items():\n        for pattern in patterns:\n            for match in re.finditer(pattern, symptom):",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "map_symptom_to_specialty",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def map_symptom_to_specialty(symptom: str) -> str:\n    symptom = symptom.lower()\n    scores = {}\n    for specialty, patterns in SYMPTOM_PATTERNS.items():\n        for pattern in patterns:\n            for match in re.finditer(pattern, symptom):\n                # skip negated mentions\n                if is_negated(symptom, match.start()):\n                    continue\n                scores[specialty] = scores.get(specialty, 0) + 2  # strong signal",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "tool_book_appointment",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:\n    \"\"\"\n    Books an appointment for the patient.\n    Steps: load history → determine specialty → book at fixed hospital\n           → fake API call → check calendar\n    \"\"\"\n    log.info(\"TOOL CALL: book_appointment | patient=%s symptom=%s\", patient_id, symptom_category)\n    # Step 1 – load patient history\n    patient = load_patient(patient_id)\n    # Step 2 – determine specialty from symptom category",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "tool_self_care_advice",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: list) -> dict:\n    \"\"\"\n    Generates self-care advice.\n    Currently: direct LLM call.\n    FUTURE: replace with MedRAG toolkit — retrieve relevant medical guidelines\n            from vector DB, then pass retrieved context + summary to LLM.\n    \"\"\"\n    log.info(\"TOOL CALL: self_care_advice | summary=%s\", triage_summary[:80])\n    # integrate follow-up answers into RAG context retrieval\n    rag_query = f\"{triage_summary} {' '.join(follow_up_answer)}\"    ",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "run_followup_loop",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def run_followup_loop(triage_input: dict, patient_id: str) -> dict:\n    \"\"\"\n    Runs a dynamic follow-up loop inspired by the MediQ approach. After every response,\n    the agent evaluates whether more questions are needed or not.\n    \"\"\"\n    log.info(\"=== Agent 3 START | patient=%s ===\", patient_id)\n    log.info(\"Triage input: %s\", triage_input)\n    patient        = load_patient(patient_id)\n    triage_summary = triage_input.get(\"summary\", \"\")\n    history: list[dict] = []",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "make_decision",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def make_decision(context: dict) -> dict:\n    triage_summary = context[\"triage_summary\"]\n    answers = context[\"answers\"]\n    answers_text = \"\\n\".join(answers)\n    # RAG uses summary from first agent and patient context\n    rag_query = f\"{triage_summary} {answers_text}\"\n    rag_context = retrieve_dept_context(rag_query)\n    # include triage summary, patient answers, and DEPT guidlines in promt (query for llm)\n    decision_prompt = (\n        f\"Triage summary: {triage_summary}\\n\"",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "get_confirmation",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def get_confirmation():\n    MAX_RETRIES = 3\n    for attempt in range(MAX_RETRIES):\n        confirmation = input(\"Patient: \").strip().lower()\n        if confirmation in (\"yes\", \"y\", \"yeah\", \"yep\", \"sure\", \"ok\", \"okay\", \"ja\", \"j\"):\n            return True\n        elif confirmation in (\"no\", \"n\", \"nope\", \"nah\", \"nej\"):\n            return False\n        else:\n            print(\"\\nAgent: I didn’t quite understand. Please answer with 'yes' or 'no'.\")",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "run_agent",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "def run_agent(triage_input: dict, patient_id: str) -> dict:\n    \"\"\"\n    Full agent pipeline:\n      1. dynamic Follow-up questioning loop\n      2. Decision with reflections\n      3. If appointment → confirm with patient → book or fall back to advice\n      4. If self_care   → generate advice directly\n    FUTURE: expose as FastAPI endpoint or subscribe to a queue topic.\n    \"\"\"\n    # Step 1: ask follow up questions",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "log = logging.getLogger(\"agent3\")\n# ─── Config ───────────────────────────────────────────────────────────────────\nPATIENT_DB_DIR = os.path.join(os.path.dirname(__file__), \"patient_db\")\nHOSPITAL_NAME  = \"Aalborg University Hospital\"\n# Expanded specialty map\nSPECIALTY_MAP = {\n    \"chest\": \"cardiology\",\n    \"heart\": \"cardiology\",\n    \"breath\": \"pulmonology\",\n    \"cough\": \"pulmonology\",",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "PATIENT_DB_DIR",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "PATIENT_DB_DIR = os.path.join(os.path.dirname(__file__), \"patient_db\")\nHOSPITAL_NAME  = \"Aalborg University Hospital\"\n# Expanded specialty map\nSPECIALTY_MAP = {\n    \"chest\": \"cardiology\",\n    \"heart\": \"cardiology\",\n    \"breath\": \"pulmonology\",\n    \"cough\": \"pulmonology\",\n    \"head\": \"neurology\",\n    \"migraine\": \"neurology\",",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "SPECIALTY_MAP",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "SPECIALTY_MAP = {\n    \"chest\": \"cardiology\",\n    \"heart\": \"cardiology\",\n    \"breath\": \"pulmonology\",\n    \"cough\": \"pulmonology\",\n    \"head\": \"neurology\",\n    \"migraine\": \"neurology\",\n    \"fracture\": \"orthopedics\",\n    \"bone\": \"orthopedics\",\n    \"skin\": \"dermatology\",",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "SYMPTOM_PATTERNS",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "SYMPTOM_PATTERNS = {\n    \"cardiology\": [\n        r\"chest pain\",\n        r\"chest tightness\",\n        r\"pressure in chest\",\n        r\"heart pain\",\n        r\"chest\"\n    ],\n    \"pulmonology\": [\n        r\"shortness of breath\",",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "FAKE_CALENDAR",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "FAKE_CALENDAR = [\n    \"2025-06-10 09:30\",\n    \"2025-06-10 11:00\",\n    \"2025-06-11 14:00\",\n    \"2025-06-12 08:30\",\n]\ndef check_calendar(specialty: str) -> str:\n    \"\"\"Step 5 – fake calendar lookup. Returns next available slot.\"\"\"\n    log.info(\"CALENDAR CHECK: looking for slot | specialty=%s\", specialty)\n    # change this",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "QUESTION_SYSTEM",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "QUESTION_SYSTEM = \"\"\"\nYou are a medical triage agent.\nAt each step, decide whether:\n1. You need MORE information → ask ONE follow-up question\n2. You have ENOUGH information → make a decision\nYou must respond with JSON:\nIf asking:\n{\"action\": \"ask_question\", \"question\": \"<text>\", \"reasoning\": \"<why>\"}\nIf deciding:\n{\"action\": \"make_decision\", \"symptom_category\": \"<short phrase>\", \"reasoning\": \"<why>\"}",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "DECISION_SYSTEM",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "DECISION_SYSTEM = \"\"\"You are a clinical triage assistant making a medical decision.\nBased on the triage summary, patient answers and medical guidelines, decide whether the patient needs\na medical appointment or can manage with self-care at home.\nConsider:\n- Red flags (chest pain, severe symptoms, rapid progression) → appointment\n- Mild, stable, short-duration symptoms in otherwise healthy patients → self_care\n- Chronic disease patients with relevant flare-ups → appointment\nRespond with ONLY a valid JSON object and nothing else:\n{\"decision\": \"appointment\" | \"self_care\", \"symptom_category\": \"<short phrase>\", \"reasoning\": \"<one sentence>\"}\"\"\"\nREFLECTION_SYSTEM = \"\"\"",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "REFLECTION_SYSTEM",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent3",
+        "description": "agentic-healthcare.code.agent3",
+        "peekOfCode": "REFLECTION_SYSTEM = \"\"\"\nYou are a senior medical reviewer.\nReview the previous decision for safety and correctness.\nCheck:\n- Did we miss any red flags?\n- Is the decision too risky?\n- Is more caution needed?\nRespond ONLY in JSON:\nIf the decision is OK:\n{\"status\": \"approve\"}",
+        "detail": "agentic-healthcare.code.agent3",
+        "documentation": {}
+    },
+    {
+        "label": "Handler",
+        "kind": 6,
+        "importPath": "agentic-healthcare.code.booking_api",
+        "description": "agentic-healthcare.code.booking_api",
+        "peekOfCode": "class Handler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == \"/book\":\n            length = int(self.headers[\"Content-Length\"])\n            data = json.loads(self.rfile.read(length))\n            response = {\n                \"status\": \"confirmed\",\n                \"booking_ref\": str(uuid.uuid4())[:8],\n                \"hospital\": data[\"hospital\"],\n                \"specialty\": data[\"specialty\"],",
+        "detail": "agentic-healthcare.code.booking_api",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.booking_api",
+        "description": "agentic-healthcare.code.booking_api",
+        "peekOfCode": "server = HTTPServer((\"localhost\", 8000), Handler)\nprint(\"Fake API running on port 8000\")\nserver.serve_forever()",
+        "detail": "agentic-healthcare.code.booking_api",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_text",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.chunk_dept",
+        "description": "agentic-healthcare.code.chunk_dept",
+        "peekOfCode": "def chunk_text(text, chunk_size=500, overlap=50):\n    chunks = []\n    start = 0\n    while start < len(text):\n        end = start + chunk_size\n        if end < len(text):\n            cut = text.rfind(\"\\n\", start, end)\n            if cut != -1:\n                end = cut\n        chunk = text[start:end].strip()",
+        "detail": "agentic-healthcare.code.chunk_dept",
+        "documentation": {}
+    },
+    {
+        "label": "process_raw_file",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.chunk_dept",
+        "description": "agentic-healthcare.code.chunk_dept",
+        "peekOfCode": "def process_raw_file():\n    with open(\"dept_raw.json\", \"r\", encoding=\"utf-8\") as f:\n        raw_data = json.load(f)\n    all_chunks = []\n    chunk_id = 0\n    for card in raw_data:\n        chunks = chunk_text(card[\"text\"])\n        for chunk in chunks:\n            all_chunks.append({\n                \"id\": f\"dept_chunk_{chunk_id}\",",
+        "detail": "agentic-healthcare.code.chunk_dept",
+        "documentation": {}
+    },
+    {
+        "label": "embed_chunks",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.embed_dept",
+        "description": "agentic-healthcare.code.embed_dept",
+        "peekOfCode": "def embed_chunks():\n    # Load your chunks\n    with open(\"dept_chunks.json\", \"r\", encoding=\"utf-8\") as f:\n        chunks = json.load(f)\n    print(f\"Loaded {len(chunks)} chunks from dept_chunks.json\")\n    # Load the embedding model\n    # This model handles Danish text well and is completely free\n    print(\"Loading embedding model (first run downloads ~1GB, be patient)...\")\n    model = SentenceTransformer(\"intfloat/multilingual-e5-large\")\n    print(\"Model loaded.\")",
+        "detail": "agentic-healthcare.code.embed_dept",
+        "documentation": {}
+    },
+    {
+        "label": "call_llm",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "def call_llm(system_prompt: str, user_prompt: str) -> str:\n    payload = json.dumps({\n        \"model\": \"qwen2.5:7b\",\n        \"messages\": [\n            {\"role\": \"system\", \"content\": system_prompt},\n            {\"role\": \"user\",   \"content\": user_prompt}\n        ],\n        \"stream\": False\n    }).encode(\"utf-8\")\n    req = urllib.request.Request(",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_dept_context",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "def retrieve_dept_context(user_input: str, n_results: int = 3) -> str:\n    query_vector = embedding_model.encode([user_input]).tolist()[0]\n    results = collection.query(\n        query_embeddings=[query_vector],\n        n_results=n_results,\n        include=[\"documents\", \"metadatas\"]\n    )\n    context_parts = []\n    for doc, meta in zip(results[\"documents\"][0], results[\"metadatas\"][0]):\n        card = meta.get(\"card_name\", \"Unknown\")",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "OLLAMA_URL",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "OLLAMA_URL = \"http://localhost:11434/api/chat\"\n# =========================\n# Shared model and DB — loaded once, used by all agents\n# =========================\nprint(\"Loading embedding model...\")\nembedding_model = SentenceTransformer(\"intfloat/multilingual-e5-large\")\nprint(\"Model loaded.\")\nchroma_client = chromadb.PersistentClient(path=\"./dept_db\")\ncollection = chroma_client.get_collection(\"dept_guidelines\")\nprint(\"Connected to DEPT vector database.\\n\")",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "embedding_model",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "embedding_model = SentenceTransformer(\"intfloat/multilingual-e5-large\")\nprint(\"Model loaded.\")\nchroma_client = chromadb.PersistentClient(path=\"./dept_db\")\ncollection = chroma_client.get_collection(\"dept_guidelines\")\nprint(\"Connected to DEPT vector database.\\n\")\n# =========================\n# Core LLM call\n# =========================\ndef call_llm(system_prompt: str, user_prompt: str) -> str:\n    payload = json.dumps({",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "chroma_client",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "chroma_client = chromadb.PersistentClient(path=\"./dept_db\")\ncollection = chroma_client.get_collection(\"dept_guidelines\")\nprint(\"Connected to DEPT vector database.\\n\")\n# =========================\n# Core LLM call\n# =========================\ndef call_llm(system_prompt: str, user_prompt: str) -> str:\n    payload = json.dumps({\n        \"model\": \"qwen2.5:7b\",\n        \"messages\": [",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.utils",
+        "description": "agentic-healthcare.code.utils",
+        "peekOfCode": "collection = chroma_client.get_collection(\"dept_guidelines\")\nprint(\"Connected to DEPT vector database.\\n\")\n# =========================\n# Core LLM call\n# =========================\ndef call_llm(system_prompt: str, user_prompt: str) -> str:\n    payload = json.dumps({\n        \"model\": \"qwen2.5:7b\",\n        \"messages\": [\n            {\"role\": \"system\", \"content\": system_prompt},",
+        "detail": "agentic-healthcare.code.utils",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_text",
+        "kind": 2,
+        "importPath": "deptriage.dk Web Scrape.chunk_dept",
+        "description": "deptriage.dk Web Scrape.chunk_dept",
+        "peekOfCode": "def chunk_text(text, chunk_size=500, overlap=50):\n    chunks = []\n    start = 0\n    while start < len(text):\n        end = start + chunk_size\n        if end < len(text):\n            cut = text.rfind(\"\\n\", start, end)\n            if cut != -1:\n                end = cut\n        chunk = text[start:end].strip()",
+        "detail": "deptriage.dk Web Scrape.chunk_dept",
+        "documentation": {}
+    },
+    {
+        "label": "process_raw_file",
+        "kind": 2,
+        "importPath": "deptriage.dk Web Scrape.chunk_dept",
+        "description": "deptriage.dk Web Scrape.chunk_dept",
+        "peekOfCode": "def process_raw_file():\n    with open(\"dept_raw.json\", \"r\", encoding=\"utf-8\") as f:\n        raw_data = json.load(f)\n    all_chunks = []\n    chunk_id = 0\n    for card in raw_data:\n        chunks = chunk_text(card[\"text\"])\n        for chunk in chunks:\n            all_chunks.append({\n                \"id\": f\"dept_chunk_{chunk_id}\",",
+        "detail": "deptriage.dk Web Scrape.chunk_dept",
+        "documentation": {}
+    },
+    {
+        "label": "embed_chunks",
+        "kind": 2,
+        "importPath": "deptriage.dk Web Scrape.embed_dept",
+        "description": "deptriage.dk Web Scrape.embed_dept",
+        "peekOfCode": "def embed_chunks():\n    # Load your chunks\n    with open(\"dept_chunks.json\", \"r\", encoding=\"utf-8\") as f:\n        chunks = json.load(f)\n    print(f\"Loaded {len(chunks)} chunks from dept_chunks.json\")\n    # Load the embedding model\n    # This model handles Danish text well and is completely free\n    print(\"Loading embedding model (first run downloads ~1GB, be patient)...\")\n    model = SentenceTransformer(\"intfloat/multilingual-e5-large\")\n    print(\"Model loaded.\")",
+        "detail": "deptriage.dk Web Scrape.embed_dept",
+        "documentation": {}
+    },
+    {
+        "label": "clean_text",
+        "kind": 2,
+        "importPath": "deptriage.dk Web Scrape.scrape_dept",
+        "description": "deptriage.dk Web Scrape.scrape_dept",
+        "peekOfCode": "def clean_text(html):\n    soup = BeautifulSoup(html, \"lxml\")\n    for tag in soup([\"script\", \"style\", \"meta\", \"link\"]):\n        tag.decompose()\n    lines = [line.strip() for line in soup.get_text(separator=\"\\n\").splitlines()]\n    return \"\\n\".join(line for line in lines if line)\ndef scrape_deptriage():\n    results = []\n    with sync_playwright() as p:\n        browser = p.chromium.launch(headless=False)",
+        "detail": "deptriage.dk Web Scrape.scrape_dept",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_deptriage",
+        "kind": 2,
+        "importPath": "deptriage.dk Web Scrape.scrape_dept",
+        "description": "deptriage.dk Web Scrape.scrape_dept",
+        "peekOfCode": "def scrape_deptriage():\n    results = []\n    with sync_playwright() as p:\n        browser = p.chromium.launch(headless=False)\n        page = browser.new_page()\n        print(\"Opening deptriage.dk...\")\n        page.goto(\"https://www.deptriage.dk\", wait_until=\"networkidle\")\n        time.sleep(4)\n        # Find the navigation frame (the sidebar with all symptom links)\n        nav_frame = None",
+        "detail": "deptriage.dk Web Scrape.scrape_dept",
+        "documentation": {}
+    }
+]

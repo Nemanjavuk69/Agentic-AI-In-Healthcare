@@ -1,0 +1,10 @@
+{
+  "patient_id": "P001",
+  "name": "Lars Jensen",
+  "age": 45,
+  "gender": "male",
+  "chronic_diseases": ["hypertension"],
+  "medications": ["lisinopril"],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

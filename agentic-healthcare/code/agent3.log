@@ -98,3 +98,6 @@
   ],
   "reasoning": "Small cut on the finger does not indicate any red flags or need for medical attention."
 }
+2026-04-28 20:16:32,265 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-28 20:16:32,265 [INFO] Triage input: {'summary': 'Patient is a 45-year-old male reporting recurring chest tightness and shortness of breath.', 'urgency': 'medium'}
+2026-04-28 20:16:32,265 [WARNING] Patient file not found: /home/jasli/Studium/Master/Semester2/Github/Agentic-AI-In-Healthcare/agentic-healthcare/code/patient_db/P001.json — using empty record
