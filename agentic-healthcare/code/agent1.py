@@ -177,7 +177,7 @@ Relevant DEPT guidelines:
 # Step 3: Routing
 # =========================
 
-def route(triage_result: dict, subject_id: str):
+def route(triage_result: dict, subject_id: str, postal_code: str):
     score    = triage_result["score"]
     symptoms = triage_result["symptoms"]
     response = triage_result["response"]
@@ -198,7 +198,8 @@ def route(triage_result: dict, subject_id: str):
         emergency_data = {
         "patient_id": subject_id,
         "symptoms": symptoms,
-        "score": score
+        "score": score,
+        "location": postal_code
     }
         run_agent2(emergency_data)
         # In agent1.py, within the route function:
@@ -207,7 +208,7 @@ def route(triage_result: dict, subject_id: str):
         from agent3 import run_agent as run_agent3
         triage_input = {
             "summary": symptoms,
-            "urgency": response,
+            "urgency": response
         }
         run_agent3(triage_input=triage_input, patient_id="P001")
 
@@ -225,6 +226,15 @@ def main():
         subject_id = input("\nPlease enter the patient's subject ID: ").strip()
         if not subject_id:
             print("Subject ID cannot be empty. Please try again.")
+
+
+    postal_code = ""
+    while not postal_code:
+        postal_code = input("\nPlease enter the patient's postal code: ").strip()
+        if not postal_code:
+            print("Postal code cannot be empty. Please try again.")
+
+
 
     past_visits = load_past_visits(subject_id)
     if past_visits:
@@ -256,8 +266,10 @@ def main():
             continue
 
         triage_result = triage_agent(user_input, visit_history)
-        route(triage_result, subject_id)
+        route(triage_result, subject_id,postal_code)
         print("Case handled. Closing system...")
+
+        #Break after one case for demo purposes
         break
 
 

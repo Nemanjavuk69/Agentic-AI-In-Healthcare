@@ -259,5 +259,5 @@ if __name__ == "__main__":
     }
 
     final = run_routing_agent(sample_triage)
-    print("\n=== Agent 3 Final Output ===")
+    print("\n=== Agent 2 Final Output ===")
     print(final)

@@ -211,3 +211,11 @@
   ],
   "reasoning": "Mild, stable cough in an otherwise healthy patient."
 }
+2026-04-29 17:10:15,291 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 17:10:15,291 [INFO] Triage input: {'summary': 'I am bleeding', 'urgency': 'Bilendebeskrivelse tilsvarende "Jeg am bleeding" styrker forudgangen, at denne patient har haft flere dybe blodetrækninger i tidligere besøg. Tilknytning af en midlertidig forbinding og potentielt smertestillende behandling vil være nødvendig.\n\nTriage level: 3 GUL'}
+2026-04-29 17:10:15,291 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 17:10:18,605 [INFO] Q1:Is the bleeding from your nose, ear, or mouth?
+2026-04-29 17:10:22,706 [INFO] A1: Ear
+2026-04-29 17:10:24,700 [INFO] Q2:Is the bleeding stopping on its own?
+2026-04-29 17:10:27,189 [INFO] A2: No
+2026-04-29 17:10:29,592 [INFO] Q3:Is the bleeding coming from both ears?
