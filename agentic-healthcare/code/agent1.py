@@ -13,6 +13,7 @@ from utils import call_llm, retrieve_dept_context
 TRIAGE_THRESHOLD = 2
 TRIAGE_JSON = "triage.json"
 
+
 # =========================
 # EHR helpers
 # Load past visits from triage.json and format them for the LLM
@@ -43,6 +44,7 @@ def format_visits_for_prompt(visits: list[dict]) -> str:
             f"pain={v.get('pain', 'N/A')}"
         )
     return "\n".join(lines)
+
 
 def append_visit(subject_id: str, symptoms: str, score: int | None):
     """
@@ -79,7 +81,6 @@ def append_visit(subject_id: str, symptoms: str, score: int | None):
           f"(subject_id={subject_id}, stay_id={record['stay_id']})\n")
 
 
-
 # =========================
 # Step 1: Symptom Classifier
 # =========================
@@ -110,13 +111,13 @@ Respond with ONLY one word: YES or NO.
 
 # =========================
 # Step 2: Triage Agent
-# Uses retrieved DEPT context to assign a triage color and score
+# Uses retrieved DEPT context and past visit history to assign a triage score
 # =========================
 
 def triage_agent(user_input: str, visit_history: str) -> dict:
     dept_context = retrieve_dept_context(user_input)
 
-    system_prompt = """
+    system_prompt = f"""
 You are a medical triage assistant trained on Danish DEPT (Danish Emergency Process Triage) guidelines.
 
 You will receive:
@@ -124,16 +125,16 @@ You will receive:
 2. Relevant excerpts from the official DEPT triage guidelines
 3. The patient's past ED visit history
 
-When assessing urgency, take the patient's history into account. For example, a patient wit>
+When assessing urgency, take the patient's history into account. For example, a patient with a
 previous high-acuity visit for chest pain should be treated with extra caution if presenting
 with similar symptoms again.
 
 Patient history from previous ED visits:
 {visit_history}
 
-
 Your job is to:
-1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines and the patient's history.
+1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines
+   and the patient's history.
 2. Assign a triage color on this exact scale:
    - 1 RØD    - Immediately life-threatening
    - 2 ORANGE - Urgent, potentially life-threatening
@@ -177,7 +178,7 @@ Relevant DEPT guidelines:
 # =========================
 
 def route(triage_result: dict, subject_id: str):
-    score = triage_result["score"]
+    score    = triage_result["score"]
     symptoms = triage_result["symptoms"]
     response = triage_result["response"]
 
@@ -201,7 +202,7 @@ def route(triage_result: dict, subject_id: str):
             "summary": symptoms,
             "urgency": response,
         }
-        run_agent3(triage_input=triage_input, patient_id="P001")
+        run_agent3(triage_input=triage_input, patient_id=subject_id)
 
 
 # =========================
@@ -210,7 +211,7 @@ def route(triage_result: dict, subject_id: str):
 
 def main():
     print("=== DEPT Triage Assistant ===")
-    
+
     # Ask for subject_id before anything else, keep prompting until we get a value
     subject_id = ""
     while not subject_id:
@@ -225,10 +226,8 @@ def main():
         print(f"[System] No previous visits found for subject {subject_id}. Treating as first visit.")
 
     visit_history = format_visits_for_prompt(past_visits)
-    
-    
-    
-    print("Describe the patient's symptoms below, or type 'quit' to exit.\n")
+
+    print("\nDescribe the patient's symptoms below, or type 'quit' to exit.\n")
 
     while True:
         user_input = input("You: ").strip()
