@@ -60,6 +60,24 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "call_llm",
         "importPath": "utils",
         "description": "utils",
@@ -115,15 +133,6 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -254,6 +263,33 @@
         "documentation": {}
     },
     {
+        "label": "load_past_visits",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def load_past_visits(subject_id: str) -> list[dict]:\n    \"\"\"Return all records from triage.json matching the given subject_id.\"\"\"\n    if not os.path.exists(TRIAGE_JSON):\n        return []\n    with open(TRIAGE_JSON, encoding=\"utf-8\") as f:\n        records = json.load(f)\n    return [r for r in records if str(r.get(\"subject_id\", \"\")) == str(subject_id)]\ndef format_visits_for_prompt(visits: list[dict]) -> str:\n    \"\"\"Convert past visit records into a readable summary for the LLM.\"\"\"\n    if not visits:",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "format_visits_for_prompt",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def format_visits_for_prompt(visits: list[dict]) -> str:\n    \"\"\"Convert past visit records into a readable summary for the LLM.\"\"\"\n    if not visits:\n        return \"No previous visits on record. This is the patient's first visit.\"\n    lines = []\n    for i, v in enumerate(visits, 1):\n        lines.append(\n            f\"  Visit {i}: chief complaint='{v.get('chiefcomplaint', 'N/A')}', \"\n            f\"acuity={v.get('acuity', 'N/A')}, \"\n            f\"HR={v.get('heartrate', 'N/A')}, \"",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "append_visit",
+        "kind": 2,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "def append_visit(subject_id: str, symptoms: str, score: int | None):\n    \"\"\"\n    Append a new triage record to triage.json after a session completes.\n    Only fills fields that are available — leaves others blank to match the\n    existing schema: subject_id, stay_id, temperature, heartrate, resprate,\n    o2sat, sbp, dbp, pain, acuity, chiefcomplaint\n    \"\"\"\n    record = {\n        \"subject_id\":    str(subject_id),\n        \"stay_id\":       str(random.randint(10_000_000, 99_999_999)),",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
         "label": "is_symptom_input",
         "kind": 2,
         "importPath": "agentic-healthcare.code.agent1",
@@ -267,7 +303,7 @@
         "kind": 2,
         "importPath": "agentic-healthcare.code.agent1",
         "description": "agentic-healthcare.code.agent1",
-        "peekOfCode": "def triage_agent(user_input: str) -> dict:\n    dept_context = retrieve_dept_context(user_input)\n    system_prompt = \"\"\"\nYou are a medical triage assistant trained on Danish DEPT (Danish Emergency Process Triage) guidelines.\nYou will receive:\n1. A patient's symptom description\n2. Relevant excerpts from the official DEPT triage guidelines\nYour job is to:\n1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines.\n2. Assign a triage color on this exact scale:",
+        "peekOfCode": "def triage_agent(user_input: str, visit_history: str) -> dict:\n    dept_context = retrieve_dept_context(user_input)\n    system_prompt = \"\"\"\nYou are a medical triage assistant trained on Danish DEPT (Danish Emergency Process Triage) guidelines.\nYou will receive:\n1. A patient's symptom description\n2. Relevant excerpts from the official DEPT triage guidelines\n3. The patient's past ED visit history\nWhen assessing urgency, take the patient's history into account. For example, a patient wit>\nprevious high-acuity visit for chest pain should be treated with extra caution if presenting",
         "detail": "agentic-healthcare.code.agent1",
         "documentation": {}
     },
@@ -276,7 +312,7 @@
         "kind": 2,
         "importPath": "agentic-healthcare.code.agent1",
         "description": "agentic-healthcare.code.agent1",
-        "peekOfCode": "def route(triage_result: dict):\n    score = triage_result[\"score\"]\n    symptoms = triage_result[\"symptoms\"]\n    response = triage_result[\"response\"]\n    print(f\"\\nAssistant: {response}\\n\")\n    if score is None:\n        print(\"Could not determine triage score. Please try again.\\n\")\n        return\n    if score <= TRIAGE_THRESHOLD:\n        print(f\"--- Triage score {score} is critical. Routing to Agent 2 (Emergency). ---\\n\")",
+        "peekOfCode": "def route(triage_result: dict, subject_id: str):\n    score = triage_result[\"score\"]\n    symptoms = triage_result[\"symptoms\"]\n    response = triage_result[\"response\"]\n    print(f\"\\nAssistant: {response}\\n\")\n    # Always append the visit to the EHR, regardless of routing outcome\n    append_visit(subject_id, symptoms, score)\n    if score is None:\n        print(\"Could not determine triage score. Please try again.\\n\")\n        return",
         "detail": "agentic-healthcare.code.agent1",
         "documentation": {}
     },
@@ -285,7 +321,7 @@
         "kind": 2,
         "importPath": "agentic-healthcare.code.agent1",
         "description": "agentic-healthcare.code.agent1",
-        "peekOfCode": "def main():\n    print(\"=== DEPT Triage Assistant ===\")\n    print(\"Describe the patient's symptoms below, or type 'quit' to exit.\\n\")\n    while True:\n        user_input = input(\"You: \").strip()\n        if not user_input:\n            print(\"Please enter a message.\\n\")\n            continue\n        if user_input.lower() in (\"quit\", \"exit\"):\n            print(\"Goodbye!\")",
+        "peekOfCode": "def main():\n    print(\"=== DEPT Triage Assistant ===\")\n    # Ask for subject_id before anything else, keep prompting until we get a value\n    subject_id = \"\"\n    while not subject_id:\n        subject_id = input(\"\\nPlease enter the patient's subject ID: \").strip()\n        if not subject_id:\n            print(\"Subject ID cannot be empty. Please try again.\")\n    past_visits = load_past_visits(subject_id)\n    if past_visits:",
         "detail": "agentic-healthcare.code.agent1",
         "documentation": {}
     },
@@ -294,7 +330,16 @@
         "kind": 5,
         "importPath": "agentic-healthcare.code.agent1",
         "description": "agentic-healthcare.code.agent1",
-        "peekOfCode": "TRIAGE_THRESHOLD = 2\n# =========================\n# Step 1: Symptom Classifier\n# =========================\ndef is_symptom_input(user_input: str) -> bool:\n    system_prompt = \"\"\"\nYou are a medical intake classifier.\nYour only job is to decide if the user's message contains medical symptoms,\nhealth complaints, or a description of how a patient is feeling physically or mentally.\nExamples of symptom input:",
+        "peekOfCode": "TRIAGE_THRESHOLD = 2\nTRIAGE_JSON = \"triage.json\"\n# =========================\n# EHR helpers\n# Load past visits from triage.json and format them for the LLM\n# =========================\ndef load_past_visits(subject_id: str) -> list[dict]:\n    \"\"\"Return all records from triage.json matching the given subject_id.\"\"\"\n    if not os.path.exists(TRIAGE_JSON):\n        return []",
+        "detail": "agentic-healthcare.code.agent1",
+        "documentation": {}
+    },
+    {
+        "label": "TRIAGE_JSON",
+        "kind": 5,
+        "importPath": "agentic-healthcare.code.agent1",
+        "description": "agentic-healthcare.code.agent1",
+        "peekOfCode": "TRIAGE_JSON = \"triage.json\"\n# =========================\n# EHR helpers\n# Load past visits from triage.json and format them for the LLM\n# =========================\ndef load_past_visits(subject_id: str) -> list[dict]:\n    \"\"\"Return all records from triage.json matching the given subject_id.\"\"\"\n    if not os.path.exists(TRIAGE_JSON):\n        return []\n    with open(TRIAGE_JSON, encoding=\"utf-8\") as f:",
         "detail": "agentic-healthcare.code.agent1",
         "documentation": {}
     },

@@ -1,3 +1,6 @@
+import json
+import os
+import random
 from utils import call_llm, retrieve_dept_context
 
 # =========================
@@ -8,6 +11,73 @@ from utils import call_llm, retrieve_dept_context
 # =========================
 
 TRIAGE_THRESHOLD = 2
+TRIAGE_JSON = "triage.json"
+
+# =========================
+# EHR helpers
+# Load past visits from triage.json and format them for the LLM
+# =========================
+
+def load_past_visits(subject_id: str) -> list[dict]:
+    """Return all records from triage.json matching the given subject_id."""
+    if not os.path.exists(TRIAGE_JSON):
+        return []
+    with open(TRIAGE_JSON, encoding="utf-8") as f:
+        records = json.load(f)
+    return [r for r in records if str(r.get("subject_id", "")) == str(subject_id)]
+
+
+def format_visits_for_prompt(visits: list[dict]) -> str:
+    """Convert past visit records into a readable summary for the LLM."""
+    if not visits:
+        return "No previous visits on record. This is the patient's first visit."
+    lines = []
+    for i, v in enumerate(visits, 1):
+        lines.append(
+            f"  Visit {i}: chief complaint='{v.get('chiefcomplaint', 'N/A')}', "
+            f"acuity={v.get('acuity', 'N/A')}, "
+            f"HR={v.get('heartrate', 'N/A')}, "
+            f"temp={v.get('temperature', 'N/A')}, "
+            f"O2sat={v.get('o2sat', 'N/A')}, "
+            f"SBP/DBP={v.get('sbp', 'N/A')}/{v.get('dbp', 'N/A')}, "
+            f"pain={v.get('pain', 'N/A')}"
+        )
+    return "\n".join(lines)
+
+def append_visit(subject_id: str, symptoms: str, score: int | None):
+    """
+    Append a new triage record to triage.json after a session completes.
+    Only fills fields that are available — leaves others blank to match the
+    existing schema: subject_id, stay_id, temperature, heartrate, resprate,
+    o2sat, sbp, dbp, pain, acuity, chiefcomplaint
+    """
+    record = {
+        "subject_id":    str(subject_id),
+        "stay_id":       str(random.randint(10_000_000, 99_999_999)),
+        "temperature":   "",
+        "heartrate":     "",
+        "resprate":      "",
+        "o2sat":         "",
+        "sbp":           "",
+        "dbp":           "",
+        "pain":          "",
+        "acuity":        str(score) if score is not None else "",
+        "chiefcomplaint": symptoms[:200]   # cap length for safety
+    }
+
+    records = []
+    if os.path.exists(TRIAGE_JSON):
+        with open(TRIAGE_JSON, encoding="utf-8") as f:
+            records = json.load(f)
+
+    records.append(record)
+
+    with open(TRIAGE_JSON, "w", encoding="utf-8") as f:
+        json.dump(records, f, indent=2)
+
+    print(f"\n[System] Visit appended to {TRIAGE_JSON} "
+          f"(subject_id={subject_id}, stay_id={record['stay_id']})\n")
+
 
 
 # =========================
@@ -43,7 +113,7 @@ Respond with ONLY one word: YES or NO.
 # Uses retrieved DEPT context to assign a triage color and score
 # =========================
 
-def triage_agent(user_input: str) -> dict:
+def triage_agent(user_input: str, visit_history: str) -> dict:
     dept_context = retrieve_dept_context(user_input)
 
     system_prompt = """
@@ -52,9 +122,18 @@ You are a medical triage assistant trained on Danish DEPT (Danish Emergency Proc
 You will receive:
 1. A patient's symptom description
 2. Relevant excerpts from the official DEPT triage guidelines
+3. The patient's past ED visit history
+
+When assessing urgency, take the patient's history into account. For example, a patient wit>
+previous high-acuity visit for chest pain should be treated with extra caution if presenting
+with similar symptoms again.
+
+Patient history from previous ED visits:
+{visit_history}
+
 
 Your job is to:
-1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines.
+1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines and the patient's history.
 2. Assign a triage color on this exact scale:
    - 1 RØD    - Immediately life-threatening
    - 2 ORANGE - Urgent, potentially life-threatening
@@ -97,12 +176,15 @@ Relevant DEPT guidelines:
 # Step 3: Routing
 # =========================
 
-def route(triage_result: dict):
+def route(triage_result: dict, subject_id: str):
     score = triage_result["score"]
     symptoms = triage_result["symptoms"]
     response = triage_result["response"]
 
     print(f"\nAssistant: {response}\n")
+
+    # Always append the visit to the EHR, regardless of routing outcome
+    append_visit(subject_id, symptoms, score)
 
     if score is None:
         print("Could not determine triage score. Please try again.\n")
@@ -128,6 +210,24 @@ def route(triage_result: dict):
 
 def main():
     print("=== DEPT Triage Assistant ===")
+    
+    # Ask for subject_id before anything else, keep prompting until we get a value
+    subject_id = ""
+    while not subject_id:
+        subject_id = input("\nPlease enter the patient's subject ID: ").strip()
+        if not subject_id:
+            print("Subject ID cannot be empty. Please try again.")
+
+    past_visits = load_past_visits(subject_id)
+    if past_visits:
+        print(f"[System] Found {len(past_visits)} past visit(s) for subject {subject_id}.")
+    else:
+        print(f"[System] No previous visits found for subject {subject_id}. Treating as first visit.")
+
+    visit_history = format_visits_for_prompt(past_visits)
+    
+    
+    
     print("Describe the patient's symptoms below, or type 'quit' to exit.\n")
 
     while True:
@@ -149,8 +249,8 @@ def main():
                   "where it hurts, and how long it has been going on.\n")
             continue
 
-        triage_result = triage_agent(user_input)
-        route(triage_result)
+        triage_result = triage_agent(user_input, visit_history)
+        route(triage_result, subject_id)
 
 
 if __name__ == "__main__":
