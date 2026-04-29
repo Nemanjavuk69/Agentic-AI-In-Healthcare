@@ -1,83 +1,83 @@
 [
-    {
-      "subject_id": "10016742",
-      "stay_id": "33211001",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "PICC EVAL"
-    },
-    {
-      "subject_id": "10032725",
-      "stay_id": "30701739",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "FACIAL DROOP"
-    },
-    { 
-      "subject_id": "10010867",
-      "stay_id": "30115213",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "MVC/INTUBATED TRAUMA"
-    },
-    { 
-      "subject_id": "10004235",
-      "stay_id": "38926302",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "S/P ARREST"
-    },
-    {
-      "subject_id": "10027602",
-      "stay_id": "36678718",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "HEAD BLEED"
-    },
-    {
-      "subject_id": "10012853",
-      "stay_id": "36185653",
-      "temperature": "",
-      "heartrate": "",
-      "resprate": "",
-      "o2sat": "",
-      "sbp": "",
-      "dbp": "",
-      "pain": "",
-      "acuity": "",
-      "chiefcomplaint": "SOB"
-    },
-    { 
+  {
+    "subject_id": "10016742",
+    "stay_id": "33211001",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "PICC EVAL"
+  },
+  {
+    "subject_id": "10032725",
+    "stay_id": "30701739",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "FACIAL DROOP"
+  },
+  {
+    "subject_id": "10010867",
+    "stay_id": "30115213",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "MVC/INTUBATED TRAUMA"
+  },
+  {
+    "subject_id": "10004235",
+    "stay_id": "38926302",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "S/P ARREST"
+  },
+  {
+    "subject_id": "10027602",
+    "stay_id": "36678718",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "HEAD BLEED"
+  },
+  {
+    "subject_id": "10012853",
+    "stay_id": "36185653",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "",
+    "chiefcomplaint": "SOB"
+  },
+  {
     "subject_id": "10016810",
     "stay_id": "31824062",
     "temperature": "",
@@ -90,7 +90,7 @@
     "acuity": "",
     "chiefcomplaint": "UNKNOWN-CC"
   },
-  { 
+  {
     "subject_id": "10025463",
     "stay_id": "35470228",
     "temperature": "",
@@ -103,7 +103,7 @@
     "acuity": "",
     "chiefcomplaint": "HEAD BLEED"
   },
-  { 
+  {
     "subject_id": "10017492",
     "stay_id": "38213541",
     "temperature": "",
@@ -129,7 +129,7 @@
     "acuity": "",
     "chiefcomplaint": "SEIZURE"
   },
-  { 
+  {
     "subject_id": "10002428",
     "stay_id": "33978784",
     "temperature": "",
@@ -168,7 +168,7 @@
     "acuity": "",
     "chiefcomplaint": "CAR VS POLE"
   },
-  { 
+  {
     "subject_id": "10021938",
     "stay_id": "38449411",
     "temperature": "",
@@ -181,7 +181,7 @@
     "acuity": "",
     "chiefcomplaint": "Confusion"
   },
-  { 
+  {
     "subject_id": "10014078",
     "stay_id": "38676365",
     "temperature": "",
@@ -207,7 +207,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abd pain, LEAKING ASCITES"
   },
-  { 
+  {
     "subject_id": "10014354",
     "stay_id": "34820898",
     "temperature": "",
@@ -246,7 +246,7 @@
     "acuity": "2",
     "chiefcomplaint": "DKA, Transfer"
   },
-  { 
+  {
     "subject_id": "10020740",
     "stay_id": "39169528",
     "temperature": "98.1",
@@ -272,7 +272,7 @@
     "acuity": "2",
     "chiefcomplaint": "Fever, Neutropenia"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "32891808",
     "temperature": "97",
@@ -285,7 +285,7 @@
     "acuity": "2",
     "chiefcomplaint": "S/P FALL"
   },
-  { 
+  {
     "subject_id": "10014354",
     "stay_id": "30094124",
     "temperature": "97.3",
@@ -324,7 +324,7 @@
     "acuity": "2",
     "chiefcomplaint": "Coffee ground emesis"
   },
-  { 
+  {
     "subject_id": "10003400",
     "stay_id": "33347721",
     "temperature": "97.3",
@@ -337,7 +337,7 @@
     "acuity": "2",
     "chiefcomplaint": "ELEVATED INR"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "30804580",
     "temperature": "97.4",
@@ -350,7 +350,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abd pain, N/V"
   },
-  { 
+  {
     "subject_id": "10018845",
     "stay_id": "37323830",
     "temperature": "98",
@@ -402,7 +402,7 @@
     "acuity": "2",
     "chiefcomplaint": "Cough, Dyspnea"
   },
-  { 
+  {
     "subject_id": "10023117",
     "stay_id": "39898790",
     "temperature": "97.7",
@@ -415,7 +415,7 @@
     "acuity": "2",
     "chiefcomplaint": "Weakness, Abnormal labs"
   },
-  { 
+  {
     "subject_id": "10010471",
     "stay_id": "35357090",
     "temperature": "97",
@@ -428,7 +428,7 @@
     "acuity": "2",
     "chiefcomplaint": "Weakness, Atrial fibrillation, Transfer"
   },
-  { 
+  {
     "subject_id": "10039997",
     "stay_id": "34387871",
     "temperature": "97.8",
@@ -441,7 +441,7 @@
     "acuity": "2",
     "chiefcomplaint": "Leg weakness, Abnormal CT"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "34478228",
     "temperature": "97.6",
@@ -532,7 +532,7 @@
     "acuity": "2",
     "chiefcomplaint": "Hematemesis"
   },
-  { 
+  {
     "subject_id": "10016742",
     "stay_id": "33335871",
     "temperature": "96",
@@ -571,7 +571,7 @@
     "acuity": "2",
     "chiefcomplaint": "? AORTIC DISECTION"
   },
-  { 
+  {
     "subject_id": "10018081",
     "stay_id": "33007927",
     "temperature": "99.1",
@@ -636,7 +636,7 @@
     "acuity": "2",
     "chiefcomplaint": "Chest pain"
   },
-  { 
+  {
     "subject_id": "10012853",
     "stay_id": "39968716",
     "temperature": "98.1",
@@ -649,7 +649,7 @@
     "acuity": "2",
     "chiefcomplaint": "Dizziness, Weakness"
   },
-  { 
+  {
     "subject_id": "10000032",
     "stay_id": "39399961",
     "temperature": "98.7",
@@ -662,7 +662,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abdominal distention, Abd pain, LETHAGIC"
   },
-  { 
+  {
     "subject_id": "10020740",
     "stay_id": "38233644",
     "temperature": "98.1",
@@ -675,7 +675,7 @@
     "acuity": "2",
     "chiefcomplaint": "Psychiatric hold, Altered mental status"
   },
-  { 
+  {
     "subject_id": "10002428",
     "stay_id": "37376268",
     "temperature": "97.2",
@@ -714,7 +714,7 @@
     "acuity": "2",
     "chiefcomplaint": "Chest pain, Transfer"
   },
-  { 
+  {
     "subject_id": "10019003",
     "stay_id": "38020791",
     "temperature": "98.1",
@@ -727,7 +727,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abnormal CT, LUQ abd pain"
   },
-  { 
+  {
     "subject_id": "10021938",
     "stay_id": "38890884",
     "temperature": "99.8",
@@ -753,7 +753,7 @@
     "acuity": "2",
     "chiefcomplaint": "Dyspnea, Productive cough"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "32259566",
     "temperature": "99.8",
@@ -792,7 +792,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abnormal labs"
   },
-  { 
+  {
     "subject_id": "10021938",
     "stay_id": "32204198",
     "temperature": "98.4",
@@ -805,7 +805,7 @@
     "acuity": "2",
     "chiefcomplaint": "Abd pain"
   },
-  { 
+  {
     "subject_id": "10020187",
     "stay_id": "35766268",
     "temperature": "98.4",
@@ -818,7 +818,7 @@
     "acuity": "2",
     "chiefcomplaint": "Facial numbness"
   },
-  { 
+  {
     "subject_id": "10014354",
     "stay_id": "37802225",
     "temperature": "98.4",
@@ -831,7 +831,7 @@
     "acuity": "2",
     "chiefcomplaint": "Chest pain, NSTEMI, Transfer"
   },
-  { 
+  {
     "subject_id": "10000032",
     "stay_id": "32952584",
     "temperature": "97.8",
@@ -870,7 +870,7 @@
     "acuity": "2",
     "chiefcomplaint": "SI"
   },
-  { 
+  {
     "subject_id": "10019385",
     "stay_id": "30324772",
     "temperature": "97.9",
@@ -896,7 +896,7 @@
     "acuity": "2",
     "chiefcomplaint": "DVT, Transfer"
   },
-  { 
+  {
     "subject_id": "10019003",
     "stay_id": "36686656",
     "temperature": "98.6",
@@ -909,7 +909,7 @@
     "acuity": "2",
     "chiefcomplaint": "Anemia, Neutropenia, Transfer"
   },
-  { 
+  {
     "subject_id": "10019003",
     "stay_id": "31254712",
     "temperature": "98.4",
@@ -974,7 +974,7 @@
     "acuity": "2",
     "chiefcomplaint": "Chest pain"
   },
-  { 
+  {
     "subject_id": "10018328",
     "stay_id": "34176810",
     "temperature": "97.7",
@@ -987,7 +987,7 @@
     "acuity": "2",
     "chiefcomplaint": "Syncope, Transfer"
   },
-  { 
+  {
     "subject_id": "10019003",
     "stay_id": "38260469",
     "temperature": "99.1",
@@ -1026,7 +1026,7 @@
     "acuity": "2",
     "chiefcomplaint": "Chest pain, Transfer"
   },
-  { 
+  {
     "subject_id": "10015272",
     "stay_id": "33473053",
     "temperature": "97.5",
@@ -1143,7 +1143,7 @@
     "acuity": "2",
     "chiefcomplaint": "Leg pain, Wound eval"
   },
-  { 
+  {
     "subject_id": "10002930",
     "stay_id": "38615683",
     "temperature": "97.5",
@@ -1195,7 +1195,7 @@
     "acuity": "2",
     "chiefcomplaint": "Transfer, Abnormal EKG"
   },
-  { 
+  {
     "subject_id": "10015931",
     "stay_id": "37196191",
     "temperature": "97.5",
@@ -1208,7 +1208,7 @@
     "acuity": "2",
     "chiefcomplaint": "Dyspnea, Transfer"
   },
-  { 
+  {
     "subject_id": "10002428",
     "stay_id": "32007337",
     "temperature": "98.5",
@@ -1260,7 +1260,7 @@
     "acuity": "2",
     "chiefcomplaint": "Dehydration, Fatigue"
   },
-  { 
+  {
     "subject_id": "10002930",
     "stay_id": "35114287",
     "temperature": "98.9",
@@ -1273,7 +1273,7 @@
     "acuity": "2",
     "chiefcomplaint": "SI"
   },
-  { 
+  {
     "subject_id": "10003400",
     "stay_id": "36976997",
     "temperature": "97.7",
@@ -1286,7 +1286,7 @@
     "acuity": "2",
     "chiefcomplaint": "Altered mental status"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "32537287",
     "temperature": "98",
@@ -1338,7 +1338,7 @@
     "acuity": "2",
     "chiefcomplaint": "Hypoglycemia"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "31121963",
     "temperature": "98.8",
@@ -1364,7 +1364,7 @@
     "acuity": "2",
     "chiefcomplaint": "T-SPINE FX DISPLACEMENT"
   },
-  { 
+  {
     "subject_id": "10002428",
     "stay_id": "32822973",
     "temperature": "100.2",
@@ -1442,7 +1442,7 @@
     "acuity": "2",
     "chiefcomplaint": "Transfer, s/p Fall"
   },
-  { 
+  {
     "subject_id": "10019003",
     "stay_id": "35568186",
     "temperature": "97.8",
@@ -1455,7 +1455,7 @@
     "acuity": "2",
     "chiefcomplaint": "Anemia"
   },
-  { 
+  {
     "subject_id": "10014729",
     "stay_id": "37887480",
     "temperature": "99.1",
@@ -1494,7 +1494,7 @@
     "acuity": "1",
     "chiefcomplaint": "Transfer"
   },
-  { 
+  {
     "subject_id": "10004720",
     "stay_id": "34391979",
     "temperature": "",
@@ -1507,7 +1507,7 @@
     "acuity": "1",
     "chiefcomplaint": "Cardiac arrest, Transfer"
   },
-  { 
+  {
     "subject_id": "10037861",
     "stay_id": "35224843",
     "temperature": "",
@@ -1520,7 +1520,7 @@
     "acuity": "1",
     "chiefcomplaint": "ICH"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "37036523",
     "temperature": "",
@@ -1572,7 +1572,7 @@
     "acuity": "1",
     "chiefcomplaint": "Transfer, PE"
   },
-  { 
+  {
     "subject_id": "10020640",
     "stay_id": "38797992",
     "temperature": "99.2",
@@ -1585,7 +1585,7 @@
     "acuity": "1",
     "chiefcomplaint": "SOB/ABNL LABS"
   },
-  { 
+  {
     "subject_id": "10035631",
     "stay_id": "39467106",
     "temperature": "98.2",
@@ -1598,7 +1598,7 @@
     "acuity": "1",
     "chiefcomplaint": "Dyspnea, Hypoxia"
   },
-  { 
+  {
     "subject_id": "10020944",
     "stay_id": "39738665",
     "temperature": "98",
@@ -1676,7 +1676,7 @@
     "acuity": "1",
     "chiefcomplaint": "Transfer, Dyspnea"
   },
-  { 
+  {
     "subject_id": "10023239",
     "stay_id": "30683757",
     "temperature": "97.9",
@@ -1689,7 +1689,7 @@
     "acuity": "1",
     "chiefcomplaint": "N/V, Hyperglycemia"
   },
-  { 
+  {
     "subject_id": "10012853",
     "stay_id": "38074673",
     "temperature": "97.8",
@@ -1702,7 +1702,7 @@
     "acuity": "4",
     "chiefcomplaint": "Clogged foley"
   },
-  { 
+  {
     "subject_id": "10020306",
     "stay_id": "37321464",
     "temperature": "96.9",
@@ -1728,7 +1728,7 @@
     "acuity": "3",
     "chiefcomplaint": "Back pain, Decreased PO intake, R Ear pain"
   },
-  { 
+  {
     "subject_id": "10038999",
     "stay_id": "34205403",
     "temperature": "97.6",
@@ -1767,7 +1767,7 @@
     "acuity": "3",
     "chiefcomplaint": "Presyncope, Weakness"
   },
-  { 
+  {
     "subject_id": "10015860",
     "stay_id": "38566596",
     "temperature": "100",
@@ -1793,7 +1793,7 @@
     "acuity": "3",
     "chiefcomplaint": "s/p Fall, R Wrist pain, R Wrist injury"
   },
-  { 
+  {
     "subject_id": "10022281",
     "stay_id": "39346340",
     "temperature": "97.8",
@@ -1819,7 +1819,7 @@
     "acuity": "3",
     "chiefcomplaint": "L Arm pain, L Arm swelling"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "35681380",
     "temperature": "98",
@@ -1845,7 +1845,7 @@
     "acuity": "3",
     "chiefcomplaint": "ETOH, SI"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "32281632",
     "temperature": "97.9",
@@ -2027,7 +2027,7 @@
     "acuity": "3",
     "chiefcomplaint": "R Leg pain, R Leg swelling"
   },
-  { 
+  {
     "subject_id": "10040025",
     "stay_id": "32095131",
     "temperature": "96.6",
@@ -2040,7 +2040,7 @@
     "acuity": "3",
     "chiefcomplaint": "L Foot pain"
   },
-  { 
+  {
     "subject_id": "10039708",
     "stay_id": "34918384",
     "temperature": "98.1",
@@ -2066,7 +2066,7 @@
     "acuity": "3",
     "chiefcomplaint": "R Leg pain, Weakness"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "37953392",
     "temperature": "98.3",
@@ -2092,7 +2092,7 @@
     "acuity": "3",
     "chiefcomplaint": "Urinary retention, Lower abdominal pain"
   },
-  { 
+  {
     "subject_id": "10021487",
     "stay_id": "31960365",
     "temperature": "99.8",
@@ -2183,7 +2183,7 @@
     "acuity": "3",
     "chiefcomplaint": "Abdominal distention"
   },
-  { 
+  {
     "subject_id": "10015860",
     "stay_id": "31153288",
     "temperature": "99.8",
@@ -2196,7 +2196,7 @@
     "acuity": "3",
     "chiefcomplaint": "Diarrhea, Hypotension"
   },
-  { 
+  {
     "subject_id": "10001217",
     "stay_id": "39866888",
     "temperature": "99",
@@ -2209,7 +2209,7 @@
     "acuity": "3",
     "chiefcomplaint": "LEFT HAND PAINS"
   },
-  { 
+  {
     "subject_id": "10040025",
     "stay_id": "37401157",
     "temperature": "98.1",
@@ -2248,7 +2248,7 @@
     "acuity": "3",
     "chiefcomplaint": "DISLODGED ABD TUBE"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "37483564",
     "temperature": "98.2",
@@ -2287,7 +2287,7 @@
     "acuity": "3",
     "chiefcomplaint": "R FOOT ULCER/CELLULITIS"
   },
-  { 
+  {
     "subject_id": "10014354",
     "stay_id": "35452640",
     "temperature": "97.2",
@@ -2300,7 +2300,7 @@
     "acuity": "3",
     "chiefcomplaint": "Chest pain, Transfer"
   },
-  { 
+  {
     "subject_id": "10021487",
     "stay_id": "37714209",
     "temperature": "96.7",
@@ -2339,7 +2339,7 @@
     "acuity": "3",
     "chiefcomplaint": "Chest pain"
   },
-  { 
+  {
     "subject_id": "10040025",
     "stay_id": "32579239",
     "temperature": "97.1",
@@ -2495,7 +2495,7 @@
     "acuity": "3",
     "chiefcomplaint": "ETOH, Hallucinations"
   },
-  { 
+  {
     "subject_id": "10039708",
     "stay_id": "39747335",
     "temperature": "98.5",
@@ -2521,7 +2521,7 @@
     "acuity": "3",
     "chiefcomplaint": "Foot laceration"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "31806264",
     "temperature": "98.2",
@@ -2573,7 +2573,7 @@
     "acuity": "3",
     "chiefcomplaint": "Hematuria, Dysuria"
   },
-  { 
+  {
     "subject_id": "10023239",
     "stay_id": "37578680",
     "temperature": "97.9",
@@ -2586,7 +2586,7 @@
     "acuity": "3",
     "chiefcomplaint": "Abnormal labs"
   },
-  { 
+  {
     "subject_id": "10040025",
     "stay_id": "31320010",
     "temperature": "98.3",
@@ -2599,7 +2599,7 @@
     "acuity": "3",
     "chiefcomplaint": "Dyspnea"
   },
-  { 
+  {
     "subject_id": "10005866",
     "stay_id": "30225689",
     "temperature": "97.6",
@@ -2612,7 +2612,7 @@
     "acuity": "3",
     "chiefcomplaint": "Right sided abdominal pain"
   },
-  { 
+  {
     "subject_id": "10039708",
     "stay_id": "36474912",
     "temperature": "97.9",
@@ -2638,7 +2638,7 @@
     "acuity": "3",
     "chiefcomplaint": "Dyspnea, ABNORMAL LAB VALUES"
   },
-  { 
+  {
     "subject_id": "10002428",
     "stay_id": "33227245",
     "temperature": "99.4",
@@ -2664,7 +2664,7 @@
     "acuity": "3",
     "chiefcomplaint": "Abd pain, N/V"
   },
-  { 
+  {
     "subject_id": "10039708",
     "stay_id": "34604678",
     "temperature": "98",
@@ -2690,7 +2690,7 @@
     "acuity": "3",
     "chiefcomplaint": "Hemodialysis"
   },
-  { 
+  {
     "subject_id": "10012853",
     "stay_id": "39028384",
     "temperature": "97.5",
@@ -2742,7 +2742,7 @@
     "acuity": "3",
     "chiefcomplaint": "Head injury, Neck pain, s/p Fall"
   },
-  { 
+  {
     "subject_id": "10023117",
     "stay_id": "35087345",
     "temperature": "97.4",
@@ -2768,7 +2768,7 @@
     "acuity": "3",
     "chiefcomplaint": "Depression, Anxiety"
   },
-  { 
+  {
     "subject_id": "10014354",
     "stay_id": "33222885",
     "temperature": "98.6",
@@ -2794,7 +2794,7 @@
     "acuity": "3",
     "chiefcomplaint": "Dizziness"
   },
-  { 
+  {
     "subject_id": "10040025",
     "stay_id": "37196722",
     "temperature": "97.3",
@@ -2807,7 +2807,7 @@
     "acuity": "3",
     "chiefcomplaint": "BRBPR"
   },
-  { 
+  {
     "subject_id": "10023117",
     "stay_id": "31283645",
     "temperature": "98",
@@ -2820,7 +2820,7 @@
     "acuity": "3",
     "chiefcomplaint": "SHORTNESS OF BREATH"
   },
-  { 
+  {
     "subject_id": "10023239",
     "stay_id": "36323598",
     "temperature": "97.7",
@@ -2846,7 +2846,7 @@
     "acuity": "3",
     "chiefcomplaint": "Abd pain, Transfer"
   },
-  { 
+  {
     "subject_id": "10012853",
     "stay_id": "35933027",
     "temperature": "96.8",
@@ -2898,7 +2898,7 @@
     "acuity": "",
     "chiefcomplaint": "My back hurts"
   },
-  { 
+  {
     "subject_id": "10037928",
     "stay_id": "79646847",
     "temperature": "",
@@ -2910,42 +2910,70 @@
     "pain": "",
     "acuity": "3",
     "chiefcomplaint": "Min ryg g\u00f8r virkelig ondt. Jeg tror jeg har en disk forkert"
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "59689216",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "4",
+    "chiefcomplaint": "I have cough"
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "61490445",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "4",
+    "chiefcomplaint": "I have cough"
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "25474473",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "3",
+    "chiefcomplaint": "i have cough"
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "12210067",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "3",
+    "chiefcomplaint": "I have dry cough"
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "27149407",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "4",
+    "chiefcomplaint": "i have cough"
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -194,7 +194,14 @@ def route(triage_result: dict, subject_id: str):
     if score <= TRIAGE_THRESHOLD:
         print(f"--- Triage score {score} is critical. Routing to Agent 2 (Emergency). ---\n")
         from agent2 import run_agent as run_agent2
-        run_agent2(symptoms=symptoms, triage_score=score)
+        #run_agent2(symptoms=symptoms, triage_score=score)
+        emergency_data = {
+        "patient_id": subject_id,
+        "symptoms": symptoms,
+        "score": score
+    }
+        run_agent2(emergency_data)
+        # In agent1.py, within the route function:
     else:
         print(f"--- Triage score {score}. Routing to Agent 3 (Follow-up). ---\n")
         from agent3 import run_agent as run_agent3
@@ -202,7 +209,7 @@ def route(triage_result: dict, subject_id: str):
             "summary": symptoms,
             "urgency": response,
         }
-        run_agent3(triage_input=triage_input, patient_id=subject_id)
+        run_agent3(triage_input=triage_input, patient_id="P001")
 
 
 # =========================
@@ -250,6 +257,8 @@ def main():
 
         triage_result = triage_agent(user_input, visit_history)
         route(triage_result, subject_id)
+        print("Case handled. Closing system...")
+        break
 
 
 if __name__ == "__main__":

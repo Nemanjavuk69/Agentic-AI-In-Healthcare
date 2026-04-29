@@ -508,7 +508,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
             # Patient declined — fall back to self-care advice
             log.info("Patient declined appointment — generating self-care advice instead")
             print("\nAgent: Understood. Let me give you some self-care advice instead.")
-            tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient)
+            tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient, follow_up_answers)
             print(f"\nAgent: {tool_result['advice']}")
             output = {
                 "action":     "self_care_after_declined_appointment",
@@ -521,7 +521,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
 
     else:
         # ── Self-care advice ──────────────────────────────────────────────────
-        tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient)
+        tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient, follow_up_answers)
         print(f"\nAgent: {tool_result['advice']}")
         output = {
             "action":     "self_care",

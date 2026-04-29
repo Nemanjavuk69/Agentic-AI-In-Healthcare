@@ -101,3 +101,113 @@
 2026-04-28 20:16:32,265 [INFO] === Agent 3 START | patient=P001 ===
 2026-04-28 20:16:32,265 [INFO] Triage input: {'summary': 'Patient is a 45-year-old male reporting recurring chest tightness and shortness of breath.', 'urgency': 'medium'}
 2026-04-28 20:16:32,265 [WARNING] Patient file not found: /home/jasli/Studium/Master/Semester2/Github/Agentic-AI-In-Healthcare/agentic-healthcare/code/patient_db/P001.json — using empty record
+2026-04-29 14:44:24,364 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 14:44:24,367 [INFO] Triage input: {'summary': 'I have cough', 'urgency': "Based on the patient's history and the DEPT guidelines for respiratory symptoms, a cough alone does not typically indicate an immediately life-threatening condition. However, if the cough is accompanied by other symptoms such as fever or dyspnea, it could be considered more urgent.\n\nTriage level: 4 GRØN"}
+2026-04-29 14:44:24,367 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 14:44:28,373 [INFO] Q1:Is your cough dry or do you produce phlegm?
+2026-04-29 14:44:32,658 [INFO] A1: dry
+2026-04-29 14:44:35,182 [INFO] Model decided to stop questioning
+2026-04-29 14:44:35,927 [INFO] Calling decision LLM...
+2026-04-29 14:44:41,667 [INFO] Decision raw response: {"decision": "self_care", "symptom_category": "cough", "reasoning": "Cough is mild and stable in an otherwise healthy patient."}
+2026-04-29 14:44:42,813 [INFO] Reflection approved the decision
+2026-04-29 14:44:42,814 [INFO] Final decision: self_care | category: cough | reasoning: Cough is mild and stable in an otherwise healthy patient.
+2026-04-29 14:58:35,493 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 14:58:35,494 [INFO] Triage input: {'summary': 'I have cough', 'urgency': "Based on the DEPT guidelines and given that the patient's history includes a previous visit for coughing, but without any life-threatening symptoms reported previously, this current complaint of cough alone does not indicate an immediate or urgent need for attention. However, it is important to monitor for any worsening symptoms.\n\nTriage level: 4 GRØN"}
+2026-04-29 14:58:35,494 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 14:58:38,746 [INFO] Q1:Is your cough dry or productive with phlegm?
+2026-04-29 14:58:44,178 [INFO] A1: dey
+2026-04-29 14:58:46,690 [INFO] Model decided to stop questioning
+2026-04-29 14:58:47,482 [INFO] Calling decision LLM...
+2026-04-29 14:58:53,298 [INFO] Decision raw response: {"decision": "self_care", "symptom_category": "cough", "reasoning": "Mild, stable cough symptom in an otherwise healthy patient."}
+2026-04-29 14:58:54,456 [INFO] Reflection approved the decision
+2026-04-29 14:58:54,456 [INFO] Final decision: self_care | category: cough | reasoning: Mild, stable cough symptom in an otherwise healthy patient.
+2026-04-29 15:17:14,721 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 15:17:14,722 [INFO] Triage input: {'summary': 'i have cough', 'urgency': 'Based on the DEPT guidelines for "Næsesymptomer" (which includes coughing), and considering that this is a recurrent symptom, we should maintain a cautious approach. The patient has visited the ED twice previously with similar complaints of cough, indicating it may be part of an ongoing or recurring issue.\n\nTriage level: 3 GUL'}
+2026-04-29 15:17:14,722 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 15:17:17,947 [INFO] Q1:Is your cough dry or productive (with phlegm)?
+2026-04-29 15:17:27,780 [INFO] A1: dry
+2026-04-29 15:17:30,615 [INFO] Model decided to stop questioning
+2026-04-29 15:17:31,165 [INFO] Calling decision LLM...
+2026-04-29 15:17:36,766 [INFO] Decision raw response: {"decision": "self_care", "symptom_category": "cough", "reasoning": "Mild, stable cough in otherwise healthy patient."}
+2026-04-29 15:17:37,908 [INFO] Reflection approved the decision
+2026-04-29 15:17:37,908 [INFO] Final decision: self_care | category: cough | reasoning: Mild, stable cough in otherwise healthy patient.
+2026-04-29 15:17:37,908 [INFO] TOOL CALL: self_care_advice | summary=i have cough
+2026-04-29 15:17:57,440 [INFO] Advice generated (first 120 chars): ### Self-Care Steps:
+
+1. **Hydration**: Drink plenty of fluids to help soothe your throat and thin mucus.
+2. **Rest**: G
+2026-04-29 15:17:57,441 [INFO] Agent output: {
+  "action": "self_care",
+  "advice": {
+    "advice": "### Self-Care Steps:\n\n1. **Hydration**: Drink plenty of fluids to help soothe your throat and thin mucus.\n2. **Rest**: Get adequate rest to support your body\u2019s healing process.\n3. **Steam Inhalation**: Use a humidifier or take hot showers to relieve congestion and coughing.\n4. **Over-the-Counter Medications**:\n   - **Expectorants**: Help loosen mucus in the airways.\n   - **Lozenges**: Can soothe a sore throat.\n5. **Monitor Symptoms**: Keep track of any changes or worsening symptoms.\n\n### Warning Signs:\n\n1. **Difficulty Breathing**: Stridor, hasty breathing, or inability to catch breath easily.\n2. **Severe Chest Pain**: Especially if it worsens with coughing.\n3. **Persistent Cough**: Worsening cough lasting more than 7 days.\n4. **Fever**: If you develop a fever of 102\u00b0F (39\u00b0C) or higher, or any lower-grade fever that lasts for several days.\n5. **Worsening Swelling in the Face or Neck**: This could indicate an allergic reaction.\n\n### Expected Improvement:\n\n- Symptoms should start to improve within 7 days with appropriate self-care measures.\n- If you are on lisinopril and notice any new symptoms such as swelling, dizziness, or fainting, contact your healthcare provider promptly.\n\nStay vigilant and seek medical attention if any warning signs occur.",
+    "generated_at": "2026-04-29T13:17:57.441586"
+  },
+  "patient_id": "P001",
+  "answers": [
+    {
+      "question": "Is your cough dry or productive (with phlegm)?",
+      "answer": "dry"
+    }
+  ],
+  "reasoning": "Mild, stable cough in otherwise healthy patient."
+}
+2026-04-29 15:30:04,352 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 15:30:04,353 [INFO] Triage input: {'summary': 'I have dry cough', 'urgency': 'Based on the DEPT guidelines for "Vejrtrækningssymptomer" and considering that this patient has had multiple previous visits with a chief complaint of coughing, their current dry cough may not be immediately life-threatening. However, it could still indicate an ongoing respiratory issue that requires monitoring.\n\nTriage level: 3 GUL'}
+2026-04-29 15:30:04,353 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 15:30:08,031 [INFO] Q1:Is your cough productive (bringing up phlegm) or non-productive?
+2026-04-29 15:30:14,690 [INFO] A1: non productive
+2026-04-29 15:30:17,700 [INFO] Model decided to stop questioning
+2026-04-29 15:30:18,295 [INFO] Calling decision LLM...
+2026-04-29 15:30:23,275 [INFO] Decision raw response: {"decision": "self_care", "symptom_category": "dry cough", "reasoning": "Symptoms are mild and stable."}
+2026-04-29 15:30:27,227 [INFO] Decision revised due to reflection: No red flags were mentioned, and the decision is too risky given that a dry cough can sometimes indicate more serious conditions such as respiratory infections. More caution is needed.
+2026-04-29 15:30:27,227 [INFO] Final decision: appointment | category: dry cough | reasoning: Revised: No red flags were mentioned, and the decision is too risky given that a dry cough can sometimes indicate more serious conditions such as respiratory infections. More caution is needed.
+2026-04-29 15:30:45,831 [INFO] Patient declined appointment — generating self-care advice instead
+2026-04-29 15:30:45,833 [INFO] TOOL CALL: self_care_advice | summary=I have dry cough
+2026-04-29 15:31:06,630 [INFO] Advice generated (first 120 chars): ### Self-Care Steps:
+1. **Stay Hydrated:** Drink plenty of fluids to help soothe your throat and loosen mucus.
+2. **Use 
+2026-04-29 15:31:06,632 [INFO] Agent output: {
+  "action": "self_care_after_declined_appointment",
+  "advice": {
+    "advice": "### Self-Care Steps:\n1. **Stay Hydrated:** Drink plenty of fluids to help soothe your throat and loosen mucus.\n2. **Use Humidifiers:** Run a humidifier in your room at night to keep the air moist, which can ease coughing.\n3. **Rest:** Get adequate rest to allow your body to fight off any potential infection.\n4. **Over-the-Counter Remedies:** Consider using a cough suppressant (e.g., dextromethorphan) if the cough is disruptive at night, but avoid decongestants as they may increase blood pressure.\n5. **Monitor Symptoms:** Keep track of your symptoms and note any changes.\n\n### Warning Signs:\n1. **Severe or Worsening Cough:** If your cough becomes more severe, frequent, or produces mucus.\n2. **Difficulty Breathing:** Any new onset or worsening dyspnea (shortness of breath).\n3. **Fever:** A fever above 100.4\u00b0F (38\u00b0C) that persists for more than a few days.\n4. **Wheezing or Stridor:** New or worsening wheezing, especially if accompanied by difficulty breathing.\n5. **Chest Pain:** Any chest pain or discomfort.\n\n### Expected Improvement:\nImprovement should be expected within 7-10 days with the above self-care measures. If your condition does not improve or worsens, contact a healthcare provider for further evaluation and care.\n\nRemember to take your lisinopril as prescribed and consult your doctor if you notice any changes in your blood pressure or other symptoms.",
+    "generated_at": "2026-04-29T13:31:06.632114"
+  },
+  "patient_id": "P001",
+  "answers": [
+    {
+      "question": "Is your cough productive (bringing up phlegm) or non-productive?",
+      "answer": "non productive"
+    }
+  ],
+  "reasoning": "Revised: No red flags were mentioned, and the decision is too risky given that a dry cough can sometimes indicate more serious conditions such as respiratory infections. More caution is needed."
+}
+2026-04-29 16:31:08,731 [INFO] === Agent 3 START | patient=P001 ===
+2026-04-29 16:31:08,732 [INFO] Triage input: {'summary': 'i have cough', 'urgency': "Based on the DEPT guidelines and the patient's history of multiple visits for cough, this symptom alone does not indicate an immediately or urgently life-threatening condition. However, given that the patient has had several previous encounters for similar symptoms, it is important to ensure there isn't a more serious underlying issue.\n\nTriage level: 4 GRØN"}
+2026-04-29 16:31:08,733 [INFO] Loaded patient: {'patient_id': 'P001', 'name': 'Lars Jensen', 'age': 45, 'gender': 'male', 'chronic_diseases': ['hypertension'], 'medications': ['lisinopril'], 'allergies': [], 'hospital': 'Aalborg University Hospital'}
+2026-04-29 16:31:12,189 [INFO] Q1:Is your cough dry or productive with phlegm?
+2026-04-29 16:31:15,522 [INFO] A1: dry
+2026-04-29 16:31:18,302 [INFO] Model decided to stop questioning
+2026-04-29 16:31:18,740 [INFO] Calling decision LLM...
+2026-04-29 16:31:24,420 [INFO] Decision raw response: {"decision": "self_care", "symptom_category": "cough", "reasoning": "Mild, stable cough in an otherwise healthy patient."}
+2026-04-29 16:31:25,567 [INFO] Reflection approved the decision
+2026-04-29 16:31:25,567 [INFO] Final decision: self_care | category: cough | reasoning: Mild, stable cough in an otherwise healthy patient.
+2026-04-29 16:31:25,568 [INFO] TOOL CALL: self_care_advice | summary=i have cough
+2026-04-29 16:31:47,469 [INFO] Advice generated (first 120 chars): ### Self-Care Steps:
+
+1. **Stay Hydrated:** Drink plenty of fluids to help thin mucus and soothe your throat.
+2. **Rest:
+2026-04-29 16:31:47,472 [INFO] Agent output: {
+  "action": "self_care",
+  "advice": {
+    "advice": "### Self-Care Steps:\n\n1. **Stay Hydrated:** Drink plenty of fluids to help thin mucus and soothe your throat.\n2. **Rest:** Get adequate rest to allow your body to fight off the infection.\n3. **Humidify the Air:** Use a cool-mist humidifier in your bedroom at night to keep airways moist, which can ease coughing.\n4. **Gargle with Salt Water:** Mix 1/2 teaspoon of salt with 8 ounces of warm water and gargle to soothe a sore throat.\n5. **Over-the-Counter Medications:**\n   - Cough suppressants or expectorants as directed by the packaging.\n   - Pain relievers like acetaminophen or ibuprofen for any discomfort.\n\n### Warning Signs:\n\n1. **Difficulty Breathing:** If you have new or worsening difficulty breathing, huffing and puffing, or wheezing.\n2. **Chest Pain:** Any sharp chest pain that is severe or worsens with coughing.\n3. **Fever:** A fever of 100.4\u00b0F (38\u00b0C) or higher that lasts for more than a few days.\n4. **Worsening Symptoms:** If your cough is accompanied by difficulty swallowing, hoarseness, or if you have trouble speaking.\n\n### Expected Improvement:\n\nImprovement should be expected within 7-10 days. However, if symptoms persist or worsen, it's important to follow up with a healthcare provider, especially considering your history of hypertension and the need for regular medication management.\n\nIf you experience any of the warning signs listed above, seek medical attention immediately.",
+    "generated_at": "2026-04-29T14:31:47.472050"
+  },
+  "patient_id": "P001",
+  "answers": [
+    {
+      "question": "Is your cough dry or productive with phlegm?",
+      "answer": "dry"
+    }
+  ],
+  "reasoning": "Mild, stable cough in an otherwise healthy patient."
+}
