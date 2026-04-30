@@ -30,7 +30,7 @@ print("Connected to DEPT vector database.\n")
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
     payload = json.dumps({
-        "model": "qwen2.5:3b",
+        "model": "qwen2.5:7b",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_prompt}
