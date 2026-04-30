@@ -1,0 +1,10 @@
+{
+  "patient_id": "P004",
+  "name": "Mat Berkler",
+  "age": 56,
+  "gender": "male",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -214,7 +214,6 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
     if score <= TRIAGE_THRESHOLD:
 
         print(f"Triage score {score} is critical. Routing to Agent 2 (Emergency Response Team).")
-        print("\n" + "─" * 85)
         from agent2 import run_agent as run_agent2
         #run_agent2(symptoms=symptoms, triage_score=score)
         emergency_data = {

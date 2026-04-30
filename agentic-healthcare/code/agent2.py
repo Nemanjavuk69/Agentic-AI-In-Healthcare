@@ -81,21 +81,21 @@ def hospital_lookup(department, location):
             "department": "Cardiology",
             #"distance_km": 5.2,
             "coords": (55.695, 12.566),
-            "address": "Blegdamsvej 9, Copenhagen"
+            "address": "Blegdamsvej 9, 2100 København Ø"
         },
         {
             "hospital": "Herlev Hospital",
             "department": "Emergency",
             #"distance_km": 8.5,
             "coords": (55.723, 12.443),
-            "address": "Herlev Ringvej 75, Herlev"
+            "address": "Herlev Ringvej 75, 2730 Herlev"
         },
         {
             "hospital": "Bispebjerg Hospital",
             "department": "Emergency",
             #"distance_km": 6.0,
             "coords": (55.706, 12.533),
-            "address": "Copenhagen"
+            "address": "Bispebjerg Bakke 23, 2400 København NV"
         }
     ]
 
@@ -162,11 +162,11 @@ When you finish, you MUST return:
   "thought": "...",
   "action": "final",
   "action_input": {
-    "message": "...",
-    "hospital": "...",
-    "department": "...",
-    "address": "...",
-    "transport": "ambulance or self-transport"
+    "message": "Clear, calm, and empathetic message to the patient or family",
+    "hospital": "Full hospital name",
+    "department": "Emergency or specific department",
+    "address": "Full address of the hospital",
+    "transport": "ambulance" or "self-transport"
   }
 }
 
@@ -240,14 +240,16 @@ def run_agent(input_data):
 
     result = run_routing_agent(input_data)
 
-    print("\n" + "═" * 85)
+    print("\n" + "─" * 85)
     print(" " * 28 + "EMERGENCY RESPONSE ACTIVATED")
-    print("═" * 85)
+    print("\n" + "─" * 85)
 
     if isinstance(result, dict):
         return f"""
 Message: {result.get("message", "")}
 
+HOSPITAL INFORMATION: 
+─────────────────────
 Hospital: {result.get("hospital", "")}
 Department: {result.get("department", "")}
 Address: {result.get("address", "")}
