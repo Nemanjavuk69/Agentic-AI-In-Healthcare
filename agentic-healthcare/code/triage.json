@@ -3066,5 +3066,31 @@
     "pain": "",
     "acuity": "1",
     "chiefcomplaint": "crushing chest pain that radiates down his left arm and into his jaw. He is sweating profusely, feels nauseous, and is struggling to breathe"
+  },
+  {
+    "subject_id": "P003",
+    "stay_id": "50789562",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "4",
+    "chiefcomplaint": "my head hurts a lil bit"
+  },
+  {
+    "subject_id": "P002",
+    "stay_id": "65251964",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "4",
+    "chiefcomplaint": "headache"
   }
 ]

@@ -18,6 +18,10 @@ from utils import call_llm, retrieve_dept_context
 
 # you need to run ollama and run python fake_api.py in separate terminals
 
+logging.getLogger().setLevel(logging.WARNING)
+
+os.environ["TQDM_DISABLE"] = "1"  # disable tqdm progress bars in any libraries
+
 # ─── Logging ─────────────────────────────────────────────────────────────────
 
 logging.basicConfig(
@@ -101,7 +105,7 @@ def load_patient(patient_id: str) -> dict:
     path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
     if not os.path.exists(path):
         log.warning("Patient file not found: %s — using empty record", path)
-        return {"patient_id": patient_id, "name": "Unknown", "chronic_diseases": [],
+        return {"patient_id": patient_id, "name": "Unknown", "age": None, "gender": "", "postal_code":"","chronic_diseases": [],
                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
     with open(path, "r") as f:
         data = json.load(f)
@@ -456,7 +460,12 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
     FUTURE: expose as FastAPI endpoint or subscribe to a queue topic.
     """
     # Step 1: ask follow up questions
+    print("\nAgent: Hello! I have reviewed your initial information. I may ask you a few follow-up questions to better understand your situation before making a recommendation.")
+
     context         = run_followup_loop(triage_input, patient_id)
+
+    print("\n" + "─" * 85)
+
     follow_up_answers = context["answers"]
     patient        = context["patient"]
     history     = context["history"]
@@ -496,7 +505,13 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
         if confirmed:
             tool_result = tool_book_appointment(category, patient_id)
             
-            print ("Your appointment has been booked: ", tool_result)
+            print ("Your appointment has been booked successfully: ")
+            print("="*50)
+            print(f"Hospital : {HOSPITAL_NAME}")
+            print(f"Specialty: {tool_result.get('specialty', category).title()}")
+            print(f"Time     : {tool_result.get('time', 'To be confirmed')}")
+            print(f"Status   : {tool_result.get('status', 'confirmed')}")
+
             output = {
                 "action":     "appointment",
                 "booking":    tool_result,
@@ -522,6 +537,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
     else:
         # ── Self-care advice ──────────────────────────────────────────────────
         tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient, follow_up_answers)
+        print("\nAgent: Based on your answers, I believe you can manage with self-care at home. Here's some advice:")
         print(f"\nAgent: {tool_result['advice']}")
         output = {
             "action":     "self_care",

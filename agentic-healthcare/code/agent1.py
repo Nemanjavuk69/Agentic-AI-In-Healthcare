@@ -13,11 +13,31 @@ from utils import call_llm, retrieve_dept_context
 TRIAGE_THRESHOLD = 2
 TRIAGE_JSON = "triage.json"
 
+PATIENT_DB_DIR = os.path.join(os.path.dirname(__file__), "patient_db")
+HOSPITAL_NAME  = "Aalborg University Hospital"
+
 
 # =========================
 # EHR helpers
 # Load past visits from triage.json and format them for the LLM
 # =========================
+
+def load_patient(patient_id: str) -> dict:
+    """Load patient record from its JSON file."""
+    path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
+    if not os.path.exists(path):
+        print("Patient file not found. Using default empty record.")
+        return {"patient_id": patient_id, "name": "", "age": None, "gender": "","chronic_diseases": [],
+                "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
+    with open(path, "r") as f:
+        data = json.load(f)
+    return data
+
+def save_patient_profile(patient: dict):
+    """Save updated patient profile."""
+    path = os.path.join(PATIENT_DB_DIR, f"{patient['patient_id']}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(patient, f, indent=2, ensure_ascii=False)
 
 def load_past_visits(subject_id: str) -> list[dict]:
     """Return all records from triage.json matching the given subject_id."""
@@ -182,7 +202,7 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
     symptoms = triage_result["symptoms"]
     response = triage_result["response"]
 
-    print(f"\nAssistant: {response}\n")
+    #print(f"\nAssistant: {response}\n")
 
     # Always append the visit to the EHR, regardless of routing outcome
     append_visit(subject_id, symptoms, score)
@@ -192,7 +212,9 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         return
 
     if score <= TRIAGE_THRESHOLD:
-        print(f"--- Triage score {score} is critical. Routing to Agent 2 (Emergency). ---\n")
+
+        print(f"Triage score {score} is critical. Routing to Agent 2 (Emergency Response Team).")
+        print("\n" + "─" * 85)
         from agent2 import run_agent as run_agent2
         #run_agent2(symptoms=symptoms, triage_score=score)
         emergency_data = {
@@ -201,16 +223,28 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         "score": score,
         "location": postal_code
     }
-        run_agent2(emergency_data)
-        # In agent1.py, within the route function:
+        result = run_agent2(emergency_data)
+
+        if isinstance(result, dict):
+            print(f"\nMessage: {result.get('message', 'N/A')}")
+            print(f"Hospital: {result.get('hospital', 'N/A')}")
+            print(f"Department: {result.get('department', 'N/A')}")
+            print(f"Address: {result.get('address', 'N/A')}")
+            if result.get('transport'):
+                print(f"Transport: {result.get('transport').upper()}")
+        else:
+            print(result)
+
+        
     else:
-        print(f"--- Triage score {score}. Routing to Agent 3 (Follow-up). ---\n")
+        print(f"Triage score {score}. Routing to Agent 3 (Medical Follow-up).\n")
+        print("\n" + "─" * 85)
         from agent3 import run_agent as run_agent3
         triage_input = {
             "summary": symptoms,
             "urgency": response
         }
-        run_agent3(triage_input=triage_input, patient_id="P001")
+        run_agent3(triage_input=triage_input, patient_id=subject_id)
 
 
 # =========================
@@ -218,7 +252,19 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
 # =========================
 
 def main():
-    print("=== DEPT Triage Assistant ===")
+    print("\n" + "=" * 85)
+    print(" " * 28 + "DEPT TRIAGE ASSISTANT")
+    print("\n" + "=" * 85)
+    print("""\nWelcome to the DEPT Triage Assistant. 
+        \nMy purpose is to quickly and accurately assess the urgency of medical complaints using the official Danish DEPT triage system.
+        \nBased on the symptoms you describe, I will:
+        \n- Determine the appropiate triage level
+        \n- Route critical cases directly to emergency services
+        \n- Provide follow-up advice for less urgent cases
+          """)
+    
+    print("\n" + "─" * 85)
+
 
     # Ask for subject_id before anything else, keep prompting until we get a value
     subject_id = ""
@@ -227,7 +273,35 @@ def main():
         if not subject_id:
             print("Subject ID cannot be empty. Please try again.")
 
+    patient = load_patient(subject_id)
 
+    # Ask for missing basic information
+    updated = False
+
+    if not patient.get("name"):
+        patient["name"] = input(f"Enter patient's full name: ").strip()
+        updated = True
+
+    if not patient.get("age"):
+        try:
+            age_str = input(f"Enter patient's age: ").strip()
+            patient["age"] = int(age_str) if age_str else None
+            updated = True
+        except:
+            patient["age"] = None
+
+    if not patient.get("gender"):
+        gender = input("Enter patient's gender (male/female/other): ").strip().lower()
+        patient["gender"] = gender if gender else ""
+        updated = True
+    
+    # safe profile if we got any new info
+    if updated:
+        save_patient_profile(patient)
+        print("Patient profile updated.\n")
+
+
+    # handle postal code
     postal_code = ""
     while not postal_code:
         postal_code = input("\nPlease enter the patient's postal code: ").strip()
@@ -238,13 +312,15 @@ def main():
 
     past_visits = load_past_visits(subject_id)
     if past_visits:
-        print(f"[System] Found {len(past_visits)} past visit(s) for subject {subject_id}.")
+        print(f"\n[System] Found {len(past_visits)} past visit(s) for subject {subject_id}.")
     else:
         print(f"[System] No previous visits found for subject {subject_id}. Treating as first visit.")
 
     visit_history = format_visits_for_prompt(past_visits)
 
-    print("\nDescribe the patient's symptoms below, or type 'quit' to exit.\n")
+    print("\n" + "─" * 85)
+
+    print("\nPlease describe the patient's symptoms below, or type 'quit' to exit.\n")
 
     while True:
         user_input = input("You: ").strip()
@@ -257,7 +333,8 @@ def main():
             print("Goodbye!")
             break
 
-        print("Analyzing...\n")
+        print("\n" + "─" * 85)
+        print("\nAnalyzing...\n")
 
         if not is_symptom_input(user_input):
             print("Assistant: I am a medical triage assistant and can only assess medical symptoms. "
@@ -266,6 +343,7 @@ def main():
             continue
 
         triage_result = triage_agent(user_input, visit_history)
+        print(f"Triage assessment complete. Triage score: {triage_result['score']}")
         route(triage_result, subject_id,postal_code)
         print("Case handled. Closing system...")
 

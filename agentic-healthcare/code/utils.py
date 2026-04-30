@@ -2,6 +2,12 @@ import urllib.request
 import json
 import chromadb
 from sentence_transformers import SentenceTransformer
+import logging
+import os
+
+
+os.environ["TQDM_DISABLE"] = "1"
+logging.getLogger().setLevel(logging.WARNING)
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
 
@@ -24,7 +30,7 @@ print("Connected to DEPT vector database.\n")
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
     payload = json.dumps({
-        "model": "qwen2.5:7b",
+        "model": "qwen2.5:3b",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_prompt}

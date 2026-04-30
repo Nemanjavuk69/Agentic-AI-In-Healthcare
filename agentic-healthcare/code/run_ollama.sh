@@ -49,7 +49,7 @@ singularity exec --nv \
 singularity exec \
     -B /tmp/mypasswd_$SLURM_JOB_ID:/etc/passwd \
     -B /tmp/mygroup_$SLURM_JOB_ID:/etc/group \
-    /ceph/container/python/python_3.13.sif python3 /ceph/project/agentic-healthcare/code/agent3.py
+    /ceph/container/python/python_3.13.sif python3 /ceph/project/agentic-healthcare/code/agent1.py
 
 # 5. Shut down the server
 echo "Shutting down Ollama..."

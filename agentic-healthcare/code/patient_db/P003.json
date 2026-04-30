@@ -1,0 +1,10 @@
+{
+  "patient_id": "P003",
+  "name": "Moira Thomson",
+  "age": 24,
+  "gender": "female",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

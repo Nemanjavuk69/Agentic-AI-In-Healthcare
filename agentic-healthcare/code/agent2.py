@@ -32,8 +32,13 @@
 import json
 import logging
 import re
+import os
 
 from utils import call_llm
+
+
+os.environ["TQDM_DISABLE"] = "1"
+logging.getLogger().setLevel(logging.WARNING)
 
 
 # ─── Logging ─────────────────────────────────────────────────────────────────
@@ -43,7 +48,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("agent2.log"),
-        logging.StreamHandler(),
+        #logging.StreamHandler(),
     ],
 )
 log = logging.getLogger("agent2")
@@ -172,7 +177,7 @@ Rules:
 - Be concise
 """
 
-def run_agent(input_data, max_steps=4):
+def run_routing_agent(input_data, max_steps=4):
     context = {
         "input_data": input_data,
         "history": []
@@ -231,12 +236,17 @@ def run_agent(input_data, max_steps=4):
 
 # ─── Wrapper for Final Output ───────────────────────────────────────────────
 
-def run_routing_agent(input_data):
-    result = run_agent(input_data)
+def run_agent(input_data):
+
+    result = run_routing_agent(input_data)
+
+    print("\n" + "═" * 85)
+    print(" " * 28 + "EMERGENCY RESPONSE ACTIVATED")
+    print("═" * 85)
 
     if isinstance(result, dict):
         return f"""
-{result.get("message", "")}
+Message: {result.get("message", "")}
 
 Hospital: {result.get("hospital", "")}
 Department: {result.get("department", "")}
@@ -258,6 +268,6 @@ if __name__ == "__main__":
         "location": "2800 Lyngby"
     }
 
-    final = run_routing_agent(sample_triage)
+    final = run_agent(sample_triage)
     print("\n=== Agent 2 Final Output ===")
     print(final)
