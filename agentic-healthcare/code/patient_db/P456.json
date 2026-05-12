@@ -1,0 +1,17 @@
+{
+  "patient_id": "P456",
+  "name": "Alma Mortensen",
+  "age": 34,
+  "gender": "female",
+  "postal_code": "1400",
+  "chronic_diseases": [
+    "Arthritis",
+    "None"
+  ],
+  "medications": [
+    "None",
+    "Lisinopril"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

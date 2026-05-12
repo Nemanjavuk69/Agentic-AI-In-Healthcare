@@ -1,0 +1,15 @@
+{
+  "patient_id": "P391",
+  "name": "Daniel Jacobsen",
+  "age": 20,
+  "gender": "male",
+  "postal_code": "1000",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

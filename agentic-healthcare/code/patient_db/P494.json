@@ -1,0 +1,17 @@
+{
+  "patient_id": "P494",
+  "name": "Frida Kristensen",
+  "age": 73,
+  "gender": "female",
+  "postal_code": "2100",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "None",
+    "Metformin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

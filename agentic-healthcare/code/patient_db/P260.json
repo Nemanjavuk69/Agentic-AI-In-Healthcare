@@ -1,0 +1,17 @@
+{
+  "patient_id": "P260",
+  "name": "Freja Larsen",
+  "age": 35,
+  "gender": "female",
+  "postal_code": "2400",
+  "chronic_diseases": [
+    "Arthritis",
+    "Asthma",
+    "Type 2 Diabetes"
+  ],
+  "medications": [],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

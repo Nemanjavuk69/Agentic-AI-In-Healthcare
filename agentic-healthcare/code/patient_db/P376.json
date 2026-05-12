@@ -1,0 +1,20 @@
+{
+  "patient_id": "P376",
+  "name": "Amelia Vestergaard",
+  "age": 83,
+  "gender": "female",
+  "postal_code": "1350",
+  "chronic_diseases": [
+    "Hypertension",
+    "Asthma",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Ventolin"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

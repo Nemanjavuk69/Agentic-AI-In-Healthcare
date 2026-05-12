@@ -1,0 +1,15 @@
+{
+  "patient_id": "P597",
+  "name": "Olivia Christensen",
+  "age": 69,
+  "gender": "female",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "Hypertension"
+  ],
+  "medications": [],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

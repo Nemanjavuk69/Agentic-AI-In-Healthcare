@@ -1,0 +1,18 @@
+{
+  "patient_id": "P118",
+  "name": "David Petersen",
+  "age": 74,
+  "gender": "male",
+  "postal_code": "1150",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Depression"
+  ],
+  "medications": [
+    "Lisinopril",
+    "Sertraline",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

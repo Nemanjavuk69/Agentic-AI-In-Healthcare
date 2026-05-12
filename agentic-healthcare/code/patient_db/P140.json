@@ -1,0 +1,14 @@
+{
+  "patient_id": "P140",
+  "name": "Sofia Nielsen",
+  "age": 25,
+  "gender": "female",
+  "postal_code": "2700",
+  "chronic_diseases": [
+    "Hypertension",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

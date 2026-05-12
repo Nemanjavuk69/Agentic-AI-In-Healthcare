@@ -1,0 +1,19 @@
+{
+  "patient_id": "P178",
+  "name": "Ella Andreasen",
+  "age": 74,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [
+    "Arthritis",
+    "Hypertension"
+  ],
+  "medications": [
+    "Sertraline",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,16 @@
+{
+  "patient_id": "P523",
+  "name": "Sofia Holm",
+  "age": 31,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "None",
+    "Arthritis"
+  ],
+  "medications": [
+    "Paracetamol"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

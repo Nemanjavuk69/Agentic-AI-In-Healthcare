@@ -1,0 +1,17 @@
+{
+  "patient_id": "P440",
+  "name": "Sofia Christensen",
+  "age": 71,
+  "gender": "female",
+  "postal_code": "2730",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

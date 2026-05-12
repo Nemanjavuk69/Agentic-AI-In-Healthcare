@@ -1,0 +1,13 @@
+{
+  "patient_id": "P509",
+  "name": "Alma Sørensen",
+  "age": 76,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

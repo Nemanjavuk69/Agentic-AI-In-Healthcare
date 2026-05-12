@@ -1,0 +1,15 @@
+{
+  "patient_id": "P055",
+  "name": "Mark Jacobsen",
+  "age": 31,
+  "gender": "male",
+  "postal_code": "1350",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

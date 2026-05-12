@@ -1,0 +1,20 @@
+{
+  "patient_id": "P507",
+  "name": "Sofia Rasmussen",
+  "age": 78,
+  "gender": "female",
+  "postal_code": "1550",
+  "chronic_diseases": [
+    "Depression",
+    "Hypertension",
+    "Arthritis"
+  ],
+  "medications": [
+    "Ventolin",
+    "Insulin"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

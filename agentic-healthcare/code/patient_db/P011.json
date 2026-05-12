@@ -1,0 +1,13 @@
+{
+  "patient_id": "P011",
+  "name": "William Mikkelsen",
+  "age": 83,
+  "gender": "male",
+  "postal_code": "1300",
+  "chronic_diseases": [],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

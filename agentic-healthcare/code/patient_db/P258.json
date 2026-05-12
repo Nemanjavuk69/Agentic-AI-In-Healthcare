@@ -1,0 +1,21 @@
+{
+  "patient_id": "P258",
+  "name": "John Vestergaard",
+  "age": 23,
+  "gender": "male",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "None",
+    "Type 2 Diabetes",
+    "Migraine"
+  ],
+  "medications": [
+    "Sertraline",
+    "None",
+    "Insulin"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

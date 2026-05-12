@@ -1,0 +1,15 @@
+{
+  "patient_id": "P510",
+  "name": "Kevin Vestergaard",
+  "age": 43,
+  "gender": "male",
+  "postal_code": "2620",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "Ventolin",
+    "Lisinopril"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

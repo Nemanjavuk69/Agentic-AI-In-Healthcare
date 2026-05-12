@@ -1,0 +1,18 @@
+{
+  "patient_id": "P139",
+  "name": "Mia Kristensen",
+  "age": 74,
+  "gender": "female",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "Hypertension",
+    "Cancer"
+  ],
+  "medications": [
+    "Sertraline",
+    "Lisinopril",
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

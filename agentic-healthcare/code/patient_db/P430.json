@@ -1,0 +1,17 @@
+{
+  "patient_id": "P430",
+  "name": "Laura Christensen",
+  "age": 82,
+  "gender": "female",
+  "postal_code": "2000",
+  "chronic_diseases": [
+    "Arthritis"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

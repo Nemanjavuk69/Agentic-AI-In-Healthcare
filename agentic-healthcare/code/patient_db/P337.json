@@ -1,0 +1,18 @@
+{
+  "patient_id": "P337",
+  "name": "Liva Jensen",
+  "age": 34,
+  "gender": "female",
+  "postal_code": "1000",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [
+    "Ventolin",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

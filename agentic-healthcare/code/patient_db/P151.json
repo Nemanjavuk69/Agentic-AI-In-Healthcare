@@ -1,0 +1,16 @@
+{
+  "patient_id": "P151",
+  "name": "John Sørensen",
+  "age": 39,
+  "gender": "male",
+  "postal_code": "1200",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

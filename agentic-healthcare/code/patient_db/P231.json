@@ -1,0 +1,18 @@
+{
+  "patient_id": "P231",
+  "name": "Charlotte Kristensen",
+  "age": 34,
+  "gender": "female",
+  "postal_code": "1300",
+  "chronic_diseases": [
+    "None",
+    "Cancer",
+    "Hypertension"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

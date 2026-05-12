@@ -1,0 +1,18 @@
+{
+  "patient_id": "P167",
+  "name": "Caroline Sørensen",
+  "age": 18,
+  "gender": "other",
+  "postal_code": "1600",
+  "chronic_diseases": [],
+  "medications": [
+    "Insulin",
+    "Metformin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

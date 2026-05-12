@@ -1,10 +1,13 @@
 {
   "patient_id": "P001",
-  "name": "Lars Jensen",
-  "age": 45,
-  "gender": "male",
-  "chronic_diseases": ["hypertension"],
-  "medications": ["lisinopril"],
-  "allergies": [],
+  "name": "Mia Christensen",
+  "age": 76,
+  "gender": "female",
+  "postal_code": "2620",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "Penicillin"
+  ],
   "hospital": "Aalborg University Hospital"
 }

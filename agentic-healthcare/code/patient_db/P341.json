@@ -1,0 +1,14 @@
+{
+  "patient_id": "P341",
+  "name": "Mark Jacobsen",
+  "age": 73,
+  "gender": "other",
+  "postal_code": "2850",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

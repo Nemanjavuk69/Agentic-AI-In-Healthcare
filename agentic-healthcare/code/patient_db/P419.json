@@ -1,0 +1,19 @@
+{
+  "patient_id": "P419",
+  "name": "Thomas Larsen",
+  "age": 21,
+  "gender": "male",
+  "postal_code": "2730",
+  "chronic_diseases": [
+    "None",
+    "Hypertension"
+  ],
+  "medications": [
+    "Insulin",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

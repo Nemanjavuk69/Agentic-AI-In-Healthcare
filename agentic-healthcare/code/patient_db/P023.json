@@ -1,0 +1,22 @@
+{
+  "patient_id": "P023",
+  "name": "Sara Høgh",
+  "age": 65,
+  "gender": "female",
+  "postal_code": "2900",
+  "chronic_diseases": [
+    "None",
+    "Asthma",
+    "Cancer"
+  ],
+  "medications": [
+    "Ventolin",
+    "Insulin",
+    "Metformin"
+  ],
+  "allergies": [
+    "Dust",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

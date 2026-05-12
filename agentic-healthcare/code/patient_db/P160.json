@@ -1,0 +1,16 @@
+{
+  "patient_id": "P160",
+  "name": "Emma Høgh",
+  "age": 84,
+  "gender": "female",
+  "postal_code": "1250",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "None"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

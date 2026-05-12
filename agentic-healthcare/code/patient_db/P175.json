@@ -1,0 +1,17 @@
+{
+  "patient_id": "P175",
+  "name": "Nora Mikkelsen",
+  "age": 19,
+  "gender": "female",
+  "postal_code": "1050",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [
+    "None"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

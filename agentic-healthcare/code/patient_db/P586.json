@@ -1,0 +1,22 @@
+{
+  "patient_id": "P586",
+  "name": "Sara Frandsen",
+  "age": 63,
+  "gender": "female",
+  "postal_code": "2740",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Arthritis",
+    "Asthma"
+  ],
+  "medications": [
+    "Ventolin",
+    "Sertraline",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P344",
+  "name": "Freja Sørensen",
+  "age": 37,
+  "gender": "female",
+  "postal_code": "1300",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Sertraline"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

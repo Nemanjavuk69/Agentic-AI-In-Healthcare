@@ -1,0 +1,15 @@
+{
+  "patient_id": "P429",
+  "name": "Joseph Kristensen",
+  "age": 36,
+  "gender": "male",
+  "postal_code": "1150",
+  "chronic_diseases": [],
+  "medications": [
+    "Metformin",
+    "Lisinopril",
+    "Paracetamol"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

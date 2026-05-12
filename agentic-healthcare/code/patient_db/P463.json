@@ -1,0 +1,19 @@
+{
+  "patient_id": "P463",
+  "name": "Charlotte Frandsen",
+  "age": 44,
+  "gender": "other",
+  "postal_code": "1300",
+  "chronic_diseases": [
+    "Hypertension",
+    "Cancer",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

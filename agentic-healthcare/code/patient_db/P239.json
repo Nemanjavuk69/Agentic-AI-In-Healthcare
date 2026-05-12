@@ -1,0 +1,18 @@
+{
+  "patient_id": "P239",
+  "name": "Nora Høgh",
+  "age": 41,
+  "gender": "female",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Sertraline",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -72,6 +72,7 @@ def calculate_distance(coord1, coord2):
 
 # Dummy hospital lookup tool (return fixed entry for demonstration)
 def hospital_lookup(department, location):
+    log.info(f"Looking up hospital for department '{department}' near location '{location}'")
     
     user_coords = get_location_coords(location)
 
@@ -111,8 +112,9 @@ def hospital_lookup(department, location):
     for h in matches:
         h["distance_km"] = round(calculate_distance(user_coords, h["coords"]), 2)
     
-
-    return sorted(matches, key=lambda x: x["distance_km"])[0]
+    best = sorted(matches, key=lambda x: x["distance_km"])[0]
+    log.info(f"Best hospital match: {best['hospital']} at {best['distance_km']} km")
+    return best
 
 def ambulance_dispatch(patient_id, location, distance_km):
     # assume avg speed of 40 km/h in city traffic
@@ -237,6 +239,7 @@ def run_routing_agent(input_data, max_steps=4):
 # ─── Wrapper for Final Output ───────────────────────────────────────────────
 
 def run_agent(input_data):
+    log.info(f" Starting Agent 2 with input: {input_data}")
 
     result = run_routing_agent(input_data)
 

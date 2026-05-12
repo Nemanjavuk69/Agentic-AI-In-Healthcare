@@ -1,0 +1,16 @@
+{
+  "patient_id": "P309",
+  "name": "Alma Jørgensen",
+  "age": 75,
+  "gender": "female",
+  "postal_code": "2100",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

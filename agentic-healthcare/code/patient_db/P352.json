@@ -1,0 +1,14 @@
+{
+  "patient_id": "P352",
+  "name": "Mia Jørgensen",
+  "age": 19,
+  "gender": "female",
+  "postal_code": "2740",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

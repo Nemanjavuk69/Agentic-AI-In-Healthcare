@@ -1,0 +1,20 @@
+{
+  "patient_id": "P596",
+  "name": "Kevin Mikkelsen",
+  "age": 76,
+  "gender": "male",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "Migraine",
+    "Depression",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Lisinopril",
+    "None"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

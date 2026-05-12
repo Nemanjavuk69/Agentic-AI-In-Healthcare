@@ -1,0 +1,20 @@
+{
+  "patient_id": "P085",
+  "name": "Sara Mortensen",
+  "age": 78,
+  "gender": "female",
+  "postal_code": "1500",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Sertraline",
+    "None",
+    "Metformin"
+  ],
+  "allergies": [
+    "Dust",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,21 @@
+{
+  "patient_id": "P448",
+  "name": "Olivia Mortensen",
+  "age": 84,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "Arthritis",
+    "Migraine"
+  ],
+  "medications": [
+    "Insulin",
+    "None",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

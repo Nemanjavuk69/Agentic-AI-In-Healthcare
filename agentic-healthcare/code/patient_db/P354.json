@@ -1,0 +1,21 @@
+{
+  "patient_id": "P354",
+  "name": "Ella Sørensen",
+  "age": 69,
+  "gender": "female",
+  "postal_code": "2300",
+  "chronic_diseases": [
+    "Cancer",
+    "None",
+    "Hypertension"
+  ],
+  "medications": [
+    "Sertraline",
+    "Insulin",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

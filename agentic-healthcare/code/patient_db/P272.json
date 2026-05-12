@@ -1,0 +1,14 @@
+{
+  "patient_id": "P272",
+  "name": "Sofia Høgh",
+  "age": 21,
+  "gender": "female",
+  "postal_code": "2730",
+  "chronic_diseases": [
+    "Migraine",
+    "None"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

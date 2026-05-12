@@ -1,0 +1,17 @@
+{
+  "patient_id": "P514",
+  "name": "Clara Vestergaard",
+  "age": 85,
+  "gender": "female",
+  "postal_code": "1550",
+  "chronic_diseases": [
+    "Asthma",
+    "Arthritis",
+    "Hypertension"
+  ],
+  "medications": [],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P548",
+  "name": "Charlotte Jacobsen",
+  "age": 25,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Hypertension",
+    "Migraine"
+  ],
+  "medications": [
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

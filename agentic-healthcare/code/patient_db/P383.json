@@ -1,0 +1,17 @@
+{
+  "patient_id": "P383",
+  "name": "Christopher Hansen",
+  "age": 79,
+  "gender": "male",
+  "postal_code": "2840",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "Insulin",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P482",
+  "name": "Brian Olsen",
+  "age": 85,
+  "gender": "male",
+  "postal_code": "1500",
+  "chronic_diseases": [
+    "None",
+    "Cancer",
+    "Depression"
+  ],
+  "medications": [],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

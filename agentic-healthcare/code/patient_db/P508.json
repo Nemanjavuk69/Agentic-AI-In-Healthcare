@@ -1,0 +1,19 @@
+{
+  "patient_id": "P508",
+  "name": "Olivia Petersen",
+  "age": 59,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Arthritis"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Metformin"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}
