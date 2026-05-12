@@ -1,0 +1,15 @@
+{
+  "patient_id": "P477",
+  "name": "Mark Jensen",
+  "age": 22,
+  "gender": "male",
+  "postal_code": "2730",
+  "chronic_diseases": [],
+  "medications": [
+    "Ventolin",
+    "Metformin",
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

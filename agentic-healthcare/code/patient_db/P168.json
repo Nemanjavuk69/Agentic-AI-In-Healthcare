@@ -1,0 +1,15 @@
+{
+  "patient_id": "P168",
+  "name": "Mark Madsen",
+  "age": 81,
+  "gender": "male",
+  "postal_code": "2700",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Asthma",
+    "Hypertension"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

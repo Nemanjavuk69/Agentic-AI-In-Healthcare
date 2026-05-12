@@ -1,0 +1,18 @@
+{
+  "patient_id": "P550",
+  "name": "Kevin Mikkelsen",
+  "age": 26,
+  "gender": "male",
+  "postal_code": "2740",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Antiretrovirals",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Dust",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

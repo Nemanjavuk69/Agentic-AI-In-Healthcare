@@ -1,0 +1,15 @@
+{
+  "patient_id": "P427",
+  "name": "Kevin Andersen",
+  "age": 42,
+  "gender": "male",
+  "postal_code": "1400",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol",
+    "Metformin",
+    "Sertraline"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,20 @@
+{
+  "patient_id": "P381",
+  "name": "Emma Olsen",
+  "age": 54,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "None"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Metformin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

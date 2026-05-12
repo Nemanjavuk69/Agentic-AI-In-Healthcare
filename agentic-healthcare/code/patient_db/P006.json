@@ -1,0 +1,11 @@
+{
+  "patient_id": "P006",
+  "name": "Amelia Kristensen",
+  "age": 77,
+  "gender": "female",
+  "postal_code": "2720",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

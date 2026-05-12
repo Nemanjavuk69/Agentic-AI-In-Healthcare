@@ -1,0 +1,19 @@
+{
+  "patient_id": "P535",
+  "name": "Isabella Andersen",
+  "age": 79,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "Migraine",
+    "Depression"
+  ],
+  "medications": [
+    "None"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

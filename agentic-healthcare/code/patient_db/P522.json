@@ -1,0 +1,17 @@
+{
+  "patient_id": "P522",
+  "name": "Mia Olsen",
+  "age": 52,
+  "gender": "female",
+  "postal_code": "2200",
+  "chronic_diseases": [
+    "Arthritis"
+  ],
+  "medications": [
+    "Ventolin",
+    "Antiretrovirals",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

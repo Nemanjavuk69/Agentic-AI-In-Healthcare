@@ -1,0 +1,18 @@
+{
+  "patient_id": "P516",
+  "name": "Charlotte Petersen",
+  "age": 49,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "Cancer",
+    "Arthritis"
+  ],
+  "medications": [
+    "Sertraline",
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

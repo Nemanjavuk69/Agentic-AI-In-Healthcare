@@ -1,0 +1,21 @@
+{
+  "patient_id": "P016",
+  "name": "Frida Vestergaard",
+  "age": 74,
+  "gender": "female",
+  "postal_code": "2610",
+  "chronic_diseases": [
+    "Depression",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Sertraline",
+    "Ventolin",
+    "Metformin"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

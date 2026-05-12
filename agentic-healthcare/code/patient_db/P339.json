@@ -1,0 +1,16 @@
+{
+  "patient_id": "P339",
+  "name": "Sara Holm",
+  "age": 63,
+  "gender": "female",
+  "postal_code": "2820",
+  "chronic_diseases": [
+    "None",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

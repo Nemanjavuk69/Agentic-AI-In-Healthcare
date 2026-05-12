@@ -1,0 +1,19 @@
+{
+  "patient_id": "P491",
+  "name": "Sofia Holm",
+  "age": 52,
+  "gender": "female",
+  "postal_code": "2740",
+  "chronic_diseases": [
+    "Cancer",
+    "Depression"
+  ],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

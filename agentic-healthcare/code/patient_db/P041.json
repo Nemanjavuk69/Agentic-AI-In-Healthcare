@@ -1,0 +1,17 @@
+{
+  "patient_id": "P041",
+  "name": "Caroline Knudsen",
+  "age": 51,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

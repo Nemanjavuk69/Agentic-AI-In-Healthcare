@@ -3118,5 +3118,18 @@
     "pain": "",
     "acuity": "1",
     "chiefcomplaint": "My head is bleeding heavily after I fell. I'm dizzy, confused and can't walk straight."
+  },
+  {
+    "subject_id": "P001",
+    "stay_id": "52066440",
+    "temperature": "",
+    "heartrate": "",
+    "resprate": "",
+    "o2sat": "",
+    "sbp": "",
+    "dbp": "",
+    "pain": "",
+    "acuity": "2",
+    "chiefcomplaint": "heavy chest pain"
   }
 ]

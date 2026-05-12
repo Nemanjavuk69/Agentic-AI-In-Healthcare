@@ -1,7 +1,9 @@
 import json
 import os
 import random
+import logging
 from utils import call_llm, retrieve_dept_context
+from reset_log import reset
 
 # =========================
 # Routing threshold
@@ -9,6 +11,23 @@ from utils import call_llm, retrieve_dept_context
 # Patients with triage score >  THRESHOLD go to Agent 3 (follow-up)
 # Change this number to adjust routing behaviour
 # =========================
+
+os.environ["TQDM_DISABLE"] = "1" # disable tqdm progress bars in any libraries
+logging.getLogger().setLevel(logging.WARNING)
+
+# ─── Logging ─────────────────────────────────────────────────────────────────
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("agent1.log"),
+        #logging.StreamHandler(),
+    ],
+)
+log = logging.getLogger("agent3")
+
+# ─── Config ───────────────────────────────────────────────────────────────────
 
 TRIAGE_THRESHOLD = 2
 TRIAGE_JSON = "triage.json"
@@ -125,7 +144,14 @@ Examples of NON-symptom input:
 Respond with ONLY one word: YES or NO.
 """
     user_prompt = f"Does this message contain medical symptoms?\n\n\"{user_input}\""
+    
+    log.info("=== SYMPTOM CLASSIFIER ===")
+    log.info("Input: %s", user_input)
+    log.info("Full prompt sent to LLM: %s", user_prompt)
+
     result = call_llm(system_prompt, user_prompt).strip().upper()
+    log.info("Classifier result: %s", result)
+
     return result.startswith("YES")
 
 
@@ -174,8 +200,13 @@ Example ending: Triage level: 2 ORANGE
 Relevant DEPT guidelines:
 {dept_context}
 """
+    log.info("=== TRIAGE AGENT CALLED ===")
+    log.info("Patient symptoms: %s", user_input)
+    log.info("Visit history length: %d", len(visit_history))
 
     response = call_llm(system_prompt, user_prompt)
+
+    log.info("Raw LLM Response:\n%s", response)
 
     # Extract triage score from the last line
     score = None
@@ -264,6 +295,8 @@ def main():
     
     print("\n" + "─" * 85)
 
+    reset()
+
 
     # Ask for subject_id before anything else, keep prompting until we get a value
     subject_id = ""
@@ -342,6 +375,9 @@ def main():
             continue
 
         triage_result = triage_agent(user_input, visit_history)
+        log.info("Final triage score: %s", triage_result.get('score'))
+        log.info("Triage response: %s", triage_result.get('response'))
+        
         print(f"Triage assessment complete. Triage score: {triage_result['score']}")
         route(triage_result, subject_id,postal_code)
         print("Case handled. Closing system...")

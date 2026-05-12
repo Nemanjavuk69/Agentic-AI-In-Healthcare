@@ -1,0 +1,18 @@
+{
+  "patient_id": "P318",
+  "name": "Ida Holm",
+  "age": 72,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [
+    "Asthma",
+    "Arthritis",
+    "Cancer"
+  ],
+  "medications": [
+    "Lisinopril",
+    "None"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

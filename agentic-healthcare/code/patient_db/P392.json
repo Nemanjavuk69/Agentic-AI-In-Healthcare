@@ -1,0 +1,17 @@
+{
+  "patient_id": "P392",
+  "name": "Clara Hansen",
+  "age": 50,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Asthma",
+    "Depression"
+  ],
+  "medications": [],
+  "allergies": [
+    "Dust",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,18 @@
+{
+  "patient_id": "P203",
+  "name": "Kevin Rasmussen",
+  "age": 29,
+  "gender": "male",
+  "postal_code": "2300",
+  "chronic_diseases": [
+    "Hypertension",
+    "Cancer"
+  ],
+  "medications": [
+    "Metformin",
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

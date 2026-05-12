@@ -1,0 +1,18 @@
+{
+    "rest": {
+      "RestGenerator": {
+        "name": "Medical Triage System",
+        "uri": "http://127.0.0.1:8001/agent1",
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "req_template_json_object":{
+            "prompt": "$INPUT"
+        },
+        "response_json": true,
+        "response_json_field": "response",
+        "request_timeout": 180
+      }
+    }
+  }

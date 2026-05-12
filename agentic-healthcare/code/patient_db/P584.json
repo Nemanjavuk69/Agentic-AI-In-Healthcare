@@ -1,0 +1,16 @@
+{
+  "patient_id": "P584",
+  "name": "Matthew Vestergaard",
+  "age": 77,
+  "gender": "other",
+  "postal_code": "1100",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

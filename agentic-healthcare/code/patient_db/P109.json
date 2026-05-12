@@ -1,0 +1,15 @@
+{
+  "patient_id": "P109",
+  "name": "Sofia Vestergaard",
+  "age": 71,
+  "gender": "female",
+  "postal_code": "2900",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

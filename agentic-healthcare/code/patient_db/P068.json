@@ -1,0 +1,15 @@
+{
+  "patient_id": "P068",
+  "name": "Charlotte Jacobsen",
+  "age": 66,
+  "gender": "female",
+  "postal_code": "2100",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Arthritis",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

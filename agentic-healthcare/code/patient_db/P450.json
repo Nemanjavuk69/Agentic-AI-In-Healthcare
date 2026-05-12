@@ -1,0 +1,13 @@
+{
+  "patient_id": "P450",
+  "name": "Freja Rasmussen",
+  "age": 55,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

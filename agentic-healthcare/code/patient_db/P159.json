@@ -1,0 +1,19 @@
+{
+  "patient_id": "P159",
+  "name": "Amelia Frandsen",
+  "age": 60,
+  "gender": "female",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "Cancer",
+    "Depression"
+  ],
+  "medications": [
+    "Sertraline",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

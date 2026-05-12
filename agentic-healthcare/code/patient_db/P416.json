@@ -1,0 +1,18 @@
+{
+  "patient_id": "P416",
+  "name": "Emma Knudsen",
+  "age": 28,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

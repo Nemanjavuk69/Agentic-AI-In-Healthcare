@@ -1,0 +1,21 @@
+{
+  "patient_id": "P308",
+  "name": "Sara Andersen",
+  "age": 69,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Depression",
+    "Cancer"
+  ],
+  "medications": [
+    "Insulin",
+    "Ventolin",
+    "Metformin"
+  ],
+  "allergies": [
+    "Penicillin",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P328",
+  "name": "William Jacobsen",
+  "age": 85,
+  "gender": "male",
+  "postal_code": "1200",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Nuts",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,18 @@
+{
+  "patient_id": "P380",
+  "name": "Amelia Carlsen",
+  "age": 24,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Arthritis",
+    "Asthma"
+  ],
+  "medications": [
+    "Lisinopril",
+    "None",
+    "Sertraline"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

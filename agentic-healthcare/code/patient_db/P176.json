@@ -1,0 +1,18 @@
+{
+  "patient_id": "P176",
+  "name": "George Mortensen",
+  "age": 24,
+  "gender": "other",
+  "postal_code": "2900",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Metformin",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "None",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

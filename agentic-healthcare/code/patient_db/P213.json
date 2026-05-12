@@ -1,0 +1,15 @@
+{
+  "patient_id": "P213",
+  "name": "Sara Kristensen",
+  "age": 78,
+  "gender": "other",
+  "postal_code": "1100",
+  "chronic_diseases": [
+    "Asthma",
+    "None",
+    "Cancer"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

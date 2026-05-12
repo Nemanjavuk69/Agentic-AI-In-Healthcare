@@ -1,0 +1,17 @@
+{
+  "patient_id": "P598",
+  "name": "Ida Vestergaard",
+  "age": 47,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Arthritis",
+    "None"
+  ],
+  "medications": [
+    "Insulin",
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

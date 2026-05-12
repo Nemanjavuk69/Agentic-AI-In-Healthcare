@@ -1,0 +1,16 @@
+{
+  "patient_id": "P489",
+  "name": "Charlotte Olsen",
+  "age": 32,
+  "gender": "female",
+  "postal_code": "2730",
+  "chronic_diseases": [],
+  "medications": [
+    "Metformin",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

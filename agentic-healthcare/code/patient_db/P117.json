@@ -1,0 +1,20 @@
+{
+  "patient_id": "P117",
+  "name": "Mia Andreasen",
+  "age": 49,
+  "gender": "other",
+  "postal_code": "2720",
+  "chronic_diseases": [
+    "Cancer",
+    "None"
+  ],
+  "medications": [
+    "Paracetamol",
+    "None"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

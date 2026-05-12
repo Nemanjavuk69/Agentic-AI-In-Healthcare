@@ -1,0 +1,20 @@
+{
+  "patient_id": "P095",
+  "name": "Mathilde Jensen",
+  "age": 45,
+  "gender": "female",
+  "postal_code": "1400",
+  "chronic_diseases": [
+    "Depression",
+    "None"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Insulin",
+    "Metformin"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

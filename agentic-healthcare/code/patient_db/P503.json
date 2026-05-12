@@ -1,0 +1,19 @@
+{
+  "patient_id": "P503",
+  "name": "Ida Nielsen",
+  "age": 53,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Ventolin",
+    "Insulin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

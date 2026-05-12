@@ -1,0 +1,17 @@
+{
+  "patient_id": "P306",
+  "name": "David Rasmussen",
+  "age": 43,
+  "gender": "male",
+  "postal_code": "2620",
+  "chronic_diseases": [
+    "Migraine",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

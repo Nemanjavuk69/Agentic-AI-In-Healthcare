@@ -1,0 +1,18 @@
+{
+  "patient_id": "P439",
+  "name": "Mark Kristensen",
+  "age": 56,
+  "gender": "male",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Depression",
+    "None"
+  ],
+  "medications": [
+    "Paracetamol",
+    "Metformin",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

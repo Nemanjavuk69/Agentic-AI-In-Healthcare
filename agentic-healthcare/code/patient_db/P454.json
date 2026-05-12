@@ -1,0 +1,18 @@
+{
+  "patient_id": "P454",
+  "name": "George Andreasen",
+  "age": 50,
+  "gender": "male",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "Hypertension",
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,16 @@
+{
+  "patient_id": "P466",
+  "name": "Freja Jacobsen",
+  "age": 39,
+  "gender": "female",
+  "postal_code": "2000",
+  "chronic_diseases": [
+    "Arthritis"
+  ],
+  "medications": [
+    "Insulin",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

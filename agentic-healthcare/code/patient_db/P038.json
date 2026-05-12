@@ -1,0 +1,15 @@
+{
+  "patient_id": "P038",
+  "name": "Sara Andreasen",
+  "age": 60,
+  "gender": "female",
+  "postal_code": "2400",
+  "chronic_diseases": [],
+  "medications": [
+    "Insulin",
+    "None",
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P567",
+  "name": "Ella Frandsen",
+  "age": 25,
+  "gender": "female",
+  "postal_code": "2720",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Metformin",
+    "None"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

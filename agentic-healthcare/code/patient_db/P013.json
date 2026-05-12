@@ -1,0 +1,13 @@
+{
+  "patient_id": "P013",
+  "name": "Charlotte Nielsen",
+  "age": 38,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

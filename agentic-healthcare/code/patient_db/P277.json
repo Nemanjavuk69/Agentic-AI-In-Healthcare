@@ -1,0 +1,16 @@
+{
+  "patient_id": "P277",
+  "name": "Brian Vestergaard",
+  "age": 32,
+  "gender": "male",
+  "postal_code": "2740",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [
+    "Penicillin",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

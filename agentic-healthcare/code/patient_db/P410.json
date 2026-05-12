@@ -1,0 +1,19 @@
+{
+  "patient_id": "P410",
+  "name": "Charlotte Holm",
+  "age": 43,
+  "gender": "female",
+  "postal_code": "1000",
+  "chronic_diseases": [
+    "Depression",
+    "Asthma",
+    "Hypertension"
+  ],
+  "medications": [
+    "None",
+    "Lisinopril",
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

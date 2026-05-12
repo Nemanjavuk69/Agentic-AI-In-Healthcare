@@ -1,0 +1,13 @@
+{
+  "patient_id": "P587",
+  "name": "Ida Mortensen",
+  "age": 47,
+  "gender": "female",
+  "postal_code": "1300",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

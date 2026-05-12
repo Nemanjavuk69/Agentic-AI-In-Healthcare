@@ -326,6 +326,8 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
             role = "Assistant" if msg["role"] == "assistant" else "Patient"
             history_text += f"{role}: {msg['content']}\n"
 
+        log.info(f"Full history sent to LLM: {history_text}")
+
         prompt = (
             f"Patient triage summary: {triage_summary}\n\n"
             f"Conversation so far:\n{history_text}\n"

@@ -1,0 +1,21 @@
+{
+  "patient_id": "P401",
+  "name": "Sofia Knudsen",
+  "age": 28,
+  "gender": "female",
+  "postal_code": "1700",
+  "chronic_diseases": [
+    "Hypertension",
+    "Migraine"
+  ],
+  "medications": [
+    "None",
+    "Antiretrovirals",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

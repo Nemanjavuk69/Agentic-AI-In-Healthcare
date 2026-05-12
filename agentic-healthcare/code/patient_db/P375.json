@@ -1,0 +1,14 @@
+{
+  "patient_id": "P375",
+  "name": "Liva Andersen",
+  "age": 25,
+  "gender": "female",
+  "postal_code": "1400",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

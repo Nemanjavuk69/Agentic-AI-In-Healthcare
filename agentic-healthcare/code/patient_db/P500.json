@@ -1,0 +1,18 @@
+{
+  "patient_id": "P500",
+  "name": "Mathilde Sørensen",
+  "age": 64,
+  "gender": "female",
+  "postal_code": "1150",
+  "chronic_diseases": [
+    "Asthma",
+    "Hypertension"
+  ],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

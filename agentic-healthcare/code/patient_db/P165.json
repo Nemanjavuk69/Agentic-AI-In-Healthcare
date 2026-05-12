@@ -1,0 +1,15 @@
+{
+  "patient_id": "P165",
+  "name": "Sara Høgh",
+  "age": 69,
+  "gender": "female",
+  "postal_code": "2100",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

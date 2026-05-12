@@ -1,0 +1,13 @@
+{
+  "patient_id": "P078",
+  "name": "Kevin Jørgensen",
+  "age": 36,
+  "gender": "male",
+  "postal_code": "2700",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

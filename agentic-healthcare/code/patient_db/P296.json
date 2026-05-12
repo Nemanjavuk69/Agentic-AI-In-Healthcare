@@ -1,0 +1,15 @@
+{
+  "patient_id": "P296",
+  "name": "Andrew Larsen",
+  "age": 50,
+  "gender": "male",
+  "postal_code": "1600",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "None",
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}
