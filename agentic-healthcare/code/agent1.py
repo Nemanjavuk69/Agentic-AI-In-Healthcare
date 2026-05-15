@@ -15,7 +15,7 @@ from reset_log import reset
 os.environ["TQDM_DISABLE"] = "1" # disable tqdm progress bars in any libraries
 logging.getLogger().setLevel(logging.WARNING)
 
-# ─── Logging ─────────────────────────────────────────────────────────────────
+# ─── Logging ──────────────────────────────────────────────────────────[...]
 
 logging.basicConfig(
     level=logging.INFO,
@@ -27,10 +27,9 @@ logging.basicConfig(
 )
 log = logging.getLogger("agent3")
 
-# ─── Config ───────────────────────────────────────────────────────────────────
+# ─── Config ───────────────────────────────────────────────────────────[...]
 
 TRIAGE_THRESHOLD = 2
-TRIAGE_JSON = "triage.json"
 
 PATIENT_DB_DIR = os.path.join(os.path.dirname(__file__), "patient_db")
 HOSPITAL_NAME  = "Aalborg University Hospital"
@@ -38,7 +37,7 @@ HOSPITAL_NAME  = "Aalborg University Hospital"
 
 # =========================
 # EHR helpers
-# Load past visits from triage.json and format them for the LLM
+# Load patient records and format them for the LLM
 # =========================
 
 def load_patient(patient_id: str) -> dict:
@@ -57,67 +56,6 @@ def save_patient_profile(patient: dict):
     path = os.path.join(PATIENT_DB_DIR, f"{patient['patient_id']}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(patient, f, indent=2, ensure_ascii=False)
-
-def load_past_visits(subject_id: str) -> list[dict]:
-    """Return all records from triage.json matching the given subject_id."""
-    if not os.path.exists(TRIAGE_JSON):
-        return []
-    with open(TRIAGE_JSON, encoding="utf-8") as f:
-        records = json.load(f)
-    return [r for r in records if str(r.get("subject_id", "")) == str(subject_id)]
-
-
-def format_visits_for_prompt(visits: list[dict]) -> str:
-    """Convert past visit records into a readable summary for the LLM."""
-    if not visits:
-        return "No previous visits on record. This is the patient's first visit."
-    lines = []
-    for i, v in enumerate(visits, 1):
-        lines.append(
-            f"  Visit {i}: chief complaint='{v.get('chiefcomplaint', 'N/A')}', "
-            f"acuity={v.get('acuity', 'N/A')}, "
-            f"HR={v.get('heartrate', 'N/A')}, "
-            f"temp={v.get('temperature', 'N/A')}, "
-            f"O2sat={v.get('o2sat', 'N/A')}, "
-            f"SBP/DBP={v.get('sbp', 'N/A')}/{v.get('dbp', 'N/A')}, "
-            f"pain={v.get('pain', 'N/A')}"
-        )
-    return "\n".join(lines)
-
-
-def append_visit(subject_id: str, symptoms: str, score: int | None):
-    """
-    Append a new triage record to triage.json after a session completes.
-    Only fills fields that are available — leaves others blank to match the
-    existing schema: subject_id, stay_id, temperature, heartrate, resprate,
-    o2sat, sbp, dbp, pain, acuity, chiefcomplaint
-    """
-    record = {
-        "subject_id":    str(subject_id),
-        "stay_id":       str(random.randint(10_000_000, 99_999_999)),
-        "temperature":   "",
-        "heartrate":     "",
-        "resprate":      "",
-        "o2sat":         "",
-        "sbp":           "",
-        "dbp":           "",
-        "pain":          "",
-        "acuity":        str(score) if score is not None else "",
-        "chiefcomplaint": symptoms[:200]   # cap length for safety
-    }
-
-    records = []
-    if os.path.exists(TRIAGE_JSON):
-        with open(TRIAGE_JSON, encoding="utf-8") as f:
-            records = json.load(f)
-
-    records.append(record)
-
-    with open(TRIAGE_JSON, "w", encoding="utf-8") as f:
-        json.dump(records, f, indent=2)
-
-    print(f"\n[System] Visit appended to {TRIAGE_JSON} "
-          f"(subject_id={subject_id}, stay_id={record['stay_id']})\n")
 
 
 # =========================
@@ -157,10 +95,10 @@ Respond with ONLY one word: YES or NO.
 
 # =========================
 # Step 2: Triage Agent
-# Uses retrieved DEPT context and past visit history to assign a triage score
+# Uses retrieved DEPT context to assign a triage score
 # =========================
 
-def triage_agent(user_input: str, visit_history: str) -> dict:
+def triage_agent(user_input: str) -> dict:
     dept_context = retrieve_dept_context(user_input)
 
     system_prompt = f"""
@@ -169,24 +107,15 @@ You are a medical triage assistant trained on Danish DEPT (Danish Emergency Proc
 You will receive:
 1. A patient's symptom description
 2. Relevant excerpts from the official DEPT triage guidelines
-3. The patient's past ED visit history
-
-When assessing urgency, take the patient's history into account. For example, a patient with a
-previous high-acuity visit for chest pain should be treated with extra caution if presenting
-with similar symptoms again.
-
-Patient history from previous ED visits:
-{visit_history}
 
 Your job is to:
-1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines
-   and the patient's history.
+1. Write 2-3 sentences explaining your assessment of the symptoms based on the DEPT guidelines.
 2. Assign a triage color on this exact scale:
-   - 1 RØD    - Immediately life-threatening
-   - 2 ORANGE - Urgent, potentially life-threatening
-   - 3 GUL    - Urgent but stable
-   - 4 GRØN   - Less urgent
-   - 5 BLÅ    - Non-urgent
+    - 1 RØD    - Immediately life-threatening
+    - 2 ORANGE - Urgent, potentially life-threatening
+    - 3 GUL    - Urgent but stable
+    - 4 GRØN   - Less urgent
+    - 5 BLÅ    - Non-urgent
 
 Always end your response with this exact line and nothing after it:
 Triage level: [NUMBER] [COLOR]
@@ -202,7 +131,6 @@ Relevant DEPT guidelines:
 """
     log.info("=== TRIAGE AGENT CALLED ===")
     log.info("Patient symptoms: %s", user_input)
-    log.info("Visit history length: %d", len(visit_history))
 
     response = call_llm(system_prompt, user_prompt)
 
@@ -234,9 +162,6 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
     response = triage_result["response"]
 
     #print(f"\nAssistant: {response}\n")
-
-    # Always append the visit to the EHR, regardless of routing outcome
-    append_visit(subject_id, symptoms, score)
 
     if score is None:
         print("Could not determine triage score. Please try again.\n")
@@ -340,16 +265,6 @@ def main():
         if not postal_code:
             print("Postal code cannot be empty. Please try again.")
 
-
-
-    past_visits = load_past_visits(subject_id)
-    if past_visits:
-        print(f"\n[System] Found {len(past_visits)} past visit(s) for subject {subject_id}.")
-    else:
-        print(f"[System] No previous visits found for subject {subject_id}. Treating as first visit.")
-
-    visit_history = format_visits_for_prompt(past_visits)
-
     print("\n" + "─" * 85)
 
     print("\nPlease describe the patient's symptoms below, or type 'quit' to exit.\n")
@@ -374,12 +289,12 @@ def main():
                   "where it hurts, and how long it has been going on.\n")
             continue
 
-        triage_result = triage_agent(user_input, visit_history)
+        triage_result = triage_agent(user_input)
         log.info("Final triage score: %s", triage_result.get('score'))
         log.info("Triage response: %s", triage_result.get('response'))
         
         print(f"Triage assessment complete. Triage score: {triage_result['score']}")
-        route(triage_result, subject_id,postal_code)
+        route(triage_result, subject_id, postal_code)
         print("Case handled. Closing system...")
 
         #Break after one case for demo purposes
