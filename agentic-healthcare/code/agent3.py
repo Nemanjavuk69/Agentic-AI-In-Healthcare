@@ -14,7 +14,9 @@ from datetime import datetime
 import requests
 import re
 
-from utils import call_llm, retrieve_dept_context
+from utils import call_llm, retrieve_dept_context, sanitize_text,setup_analyzer_and_anonymizer
+
+analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
 # you need to run ollama and run python fake_api.py in separate terminals
 
@@ -32,6 +34,12 @@ logging.basicConfig(
         #logging.StreamHandler(),
     ],
 )
+
+# Add these lines to silence Presidio's INFO and WARNING logs:
+logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
+logging.getLogger("presidio-anonymizer").setLevel(logging.ERROR)
+
+
 log = logging.getLogger("agent3")
 
 # ─── Config ───────────────────────────────────────────────────────────────────
@@ -109,7 +117,7 @@ def load_patient(patient_id: str) -> dict:
                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
     with open(path, "r") as f:
         data = json.load(f)
-    log.info("Loaded patient: %s", data)
+    log.info("Loaded patient record for ID: %s", data.get("patient_id"))
     return data
 
 # ─── Fake calendar ────────────────────────────────────────────────────────────
@@ -353,6 +361,9 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
         print(f"\nAgent: {question}")
         answer = input("Patient: ").strip()
 
+        
+        answer = sanitize_text(answer, analyzer=analyzer, anonymizer=anonymizer)
+
         log.info(f"A{turn + 1}: {answer}")
         answers.append(answer)
         history.append({"role": "user", "content": answer})
@@ -439,6 +450,8 @@ def get_confirmation():
     for attempt in range(MAX_RETRIES):
 
         confirmation = input("Patient: ").strip().lower()
+        confirmation = sanitize_text(confirmation, analyzer=analyzer, anonymizer=anonymizer).lower()
+        
         if confirmation in ("yes", "y", "yeah", "yep", "sure", "ok", "okay", "ja", "j"):
             return True
 

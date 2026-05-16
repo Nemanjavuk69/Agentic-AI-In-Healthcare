@@ -134,7 +134,6 @@ TOOLS = {
 }
 
 # ─── Main Execution ─────────────────────────────────────────────────────────
-
 SYSTEM_PROMPT = """
 You are an autonomous healthcare routing agent.
 You receive triage output and must make operational decisions.
@@ -142,8 +141,8 @@ You receive triage output and must make operational decisions.
 You must decide step-by-step what to do using tools.
 
 Available tools:
-1. hospital_lookup(department, location)
-2. ambulance_dispatch(patient_id, location, distance_km)
+1. hospital_lookup(department)
+2. ambulance_dispatch(distance_km)
 
 Rules:
 - Think step-by-step
@@ -179,6 +178,7 @@ Rules:
 - Be concise
 """
 
+
 def run_routing_agent(input_data, max_steps=4):
     context = {
         "input_data": input_data,
@@ -190,7 +190,18 @@ def run_routing_agent(input_data, max_steps=4):
     for step in range(max_steps):
         log.info("Step %d: Agent thinking...", step + 1)
 
-        user_promt = json.dumps(context)
+        safe_input_data = {
+                    "symptoms": input_data.get("symptoms"),
+                    "score": input_data.get("score")
+                }
+        safe_context = {
+            "input_data": safe_input_data,
+            "history": context["history"],
+            "used_tools": list(used_tools)
+        }
+
+        # Sensitive fields are no longer fully LLM-controlled
+        user_promt = json.dumps(safe_context)
         response = call_llm(SYSTEM_PROMPT, user_promt)
 
         try:
@@ -211,8 +222,14 @@ def run_routing_agent(input_data, max_steps=4):
             return action_input
         
         used_tools.add(action)
-        context["used_tools"] = list(used_tools)
+
         
+        #Process sensitive data outside of LLM - Inject PII safely
+        if action == "hospital_lookup":
+            action_input["location"] = input_data.get("location")
+        elif action == "ambulance_dispatch":
+            action_input["patient_id"] = input_data.get("patient_id")
+            action_input["location"] = input_data.get("location")
 
         # 🔹 Tool execution
         tool_fn = TOOLS.get(action)
@@ -235,6 +252,7 @@ def run_routing_agent(input_data, max_steps=4):
         })
 
     return "Agent stopped (max steps reached)"
+
 
 # ─── Wrapper for Final Output ───────────────────────────────────────────────
 

@@ -1,0 +1,10 @@
+{
+  "patient_id": "P7000",
+  "name": "Pro",
+  "age": 25,
+  "gender": "male",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

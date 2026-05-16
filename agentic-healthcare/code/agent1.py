@@ -2,7 +2,7 @@ import json
 import os
 import random
 import logging
-from utils import call_llm, retrieve_dept_context
+from utils import call_llm, retrieve_dept_context, setup_analyzer_and_anonymizer, tokenize_patient, sanitize_text
 from reset_log import reset
 
 # =========================
@@ -25,6 +25,12 @@ logging.basicConfig(
         #logging.StreamHandler(),
     ],
 )
+
+# Add these lines to silence Presidio's INFO and WARNING logs:
+logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
+logging.getLogger("presidio-anonymizer").setLevel(logging.ERROR)
+
+
 log = logging.getLogger("agent3")
 
 # ─── Config ───────────────────────────────────────────────────────────[...]
@@ -40,22 +46,16 @@ HOSPITAL_NAME  = "Aalborg University Hospital"
 # Load patient records and format them for the LLM
 # =========================
 
-def load_patient(patient_id: str) -> dict:
-    """Load patient record from its JSON file."""
-    path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
-    if not os.path.exists(path):
-        print("Patient file not found. Using default empty record.")
-        return {"patient_id": patient_id, "name": "", "age": None, "gender": "","chronic_diseases": [],
-                "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
-    with open(path, "r") as f:
-        data = json.load(f)
-    return data
+
 
 def save_patient_profile(patient: dict):
     """Save updated patient profile."""
     path = os.path.join(PATIENT_DB_DIR, f"{patient['patient_id']}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(patient, f, indent=2, ensure_ascii=False)
+
+
+
 
 
 # =========================
@@ -73,6 +73,9 @@ Examples of symptom input:
 - "My chest is burning"
 - "I have had a headache for 3 days"
 - "The patient is vomiting and has a fever"
+- "I broke my leg"
+- "I broke my finger"
+- "I fell and hit my head"
 
 Examples of NON-symptom input:
 - "Hello"
@@ -202,11 +205,29 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         run_agent3(triage_input=triage_input, patient_id=subject_id)
 
 
+def load_patient(patient_id: str) -> dict:
+    """Load patient record from its JSON file."""
+    path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
+    if not os.path.exists(path):
+        print("Patient file not found. Using default empty record.")
+        return {"patient_id": patient_id, "name": "", "age": None, "gender": "","chronic_diseases": [],
+                "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
+    with open(path, "r") as f:
+        data = json.load(f)
+    return data
+
+
+
+
+
 # =========================
 # Main interactive loop
 # =========================
 
 def main():
+
+    
+
     print("\n" + "=" * 85)
     print(" " * 28 + "DEPT TRIAGE ASSISTANT")
     print("\n" + "=" * 85)
@@ -220,24 +241,32 @@ def main():
     
     print("\n" + "─" * 85)
 
+    from reset_log import reset
     reset()
 
+    analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
-    # Ask for subject_id before anything else, keep prompting until we get a value
-    subject_id = ""
-    while not subject_id:
-        subject_id = input("\nPlease enter the patient's subject ID: ").strip()
-        if not subject_id:
-            print("Subject ID cannot be empty. Please try again.")
+    # Collect Real PII upfront (CPR and Name)
+    cpr = ""
+    while not cpr:
+        cpr = input("\nPlease enter the patient's CPR: ").strip()
+        if not cpr:
+            print("CPR cannot be empty. Please try again.")
 
+    name = input("Enter patient's full name: ").strip()
+
+    # Tokenize immediately. 
+    # 'subject_id' is now a synthetic token 
+    subject_id = tokenize_patient(cpr, name)
+    print(f"\n[System] Patient mapped to secure internal ID: {subject_id}")
+
+
+
+    # Load the medical profile using the TOKEN
     patient = load_patient(subject_id)
 
-    # Ask for missing basic information
+    # Ask for missing basic clinical information 
     updated = False
-
-    if not patient.get("name"):
-        patient["name"] = input(f"Enter patient's full name: ").strip()
-        updated = True
 
     if not patient.get("age"):
         try:
@@ -252,11 +281,10 @@ def main():
         patient["gender"] = gender if gender else ""
         updated = True
     
-    # safe profile if we got any new info
+    # save profile if we got any new info
     if updated:
         save_patient_profile(patient)
         print("Patient profile updated.\n")
-
 
     # handle postal code
     postal_code = ""
@@ -280,6 +308,9 @@ def main():
             print("Goodbye!")
             break
 
+        
+        user_input = sanitize_text(user_input, analyzer=analyzer, anonymizer=anonymizer)
+
         print("\n" + "─" * 85)
         print("\nAnalyzing...\n")
 
@@ -299,7 +330,6 @@ def main():
 
         #Break after one case for demo purposes
         break
-
 
 if __name__ == "__main__":
     main()
