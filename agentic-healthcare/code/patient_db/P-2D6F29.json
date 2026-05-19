@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-2D6F29",
+  "name": "",
+  "age": 32,
+  "gender": "male",
+  "postal_code": "2830",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-CA9452",
+  "name": "",
+  "age": 84,
+  "gender": "other",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "None",
+    "Hypertension"
+  ],
+  "medications": [
+    "Lisinopril",
+    "Sertraline",
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-1A4669",
+  "name": "",
+  "age": 24,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Arthritis",
+    "Type 2 Diabetes",
+    "None"
+  ],
+  "medications": [
+    "Ventolin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

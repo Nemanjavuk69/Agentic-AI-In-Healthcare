@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-9396CF",
+  "name": "",
+  "age": 42,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Depression",
+    "Migraine",
+    "Asthma"
+  ],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

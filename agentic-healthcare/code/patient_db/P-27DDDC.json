@@ -1,0 +1,22 @@
+{
+  "patient_id": "P-27DDDC",
+  "name": "",
+  "age": 68,
+  "gender": "female",
+  "postal_code": "2610",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Asthma",
+    "Hypertension"
+  ],
+  "medications": [
+    "Insulin",
+    "Antiretrovirals",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

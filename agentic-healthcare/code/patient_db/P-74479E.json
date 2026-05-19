@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-74479E",
+  "name": "",
+  "age": 24,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [
+    "None",
+    "Arthritis",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Insulin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

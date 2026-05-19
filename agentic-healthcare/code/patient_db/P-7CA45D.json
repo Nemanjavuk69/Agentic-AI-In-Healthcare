@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-7CA45D",
+  "name": "",
+  "age": 67,
+  "gender": "male",
+  "postal_code": "2850",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

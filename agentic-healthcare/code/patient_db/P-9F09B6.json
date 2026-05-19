@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-9F09B6",
+  "name": "",
+  "age": 82,
+  "gender": "male",
+  "postal_code": "1200",
+  "chronic_diseases": [],
+  "medications": [
+    "Metformin",
+    "Ventolin",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

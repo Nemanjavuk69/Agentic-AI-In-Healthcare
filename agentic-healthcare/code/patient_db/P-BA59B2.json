@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-BA59B2",
+  "name": "",
+  "age": 19,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Metformin"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

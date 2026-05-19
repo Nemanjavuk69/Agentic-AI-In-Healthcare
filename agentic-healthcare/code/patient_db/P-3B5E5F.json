@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-3B5E5F",
+  "name": "",
+  "age": 22,
+  "gender": "male",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "Migraine",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Ventolin",
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

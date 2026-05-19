@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-BA903E",
+  "name": "",
+  "age": 49,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [
+    "Cancer",
+    "Arthritis"
+  ],
+  "medications": [
+    "Sertraline",
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

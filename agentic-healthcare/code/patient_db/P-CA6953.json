@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-CA6953",
+  "name": "",
+  "age": 73,
+  "gender": "other",
+  "postal_code": "2850",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

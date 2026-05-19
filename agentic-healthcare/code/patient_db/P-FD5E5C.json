@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-FD5E5C",
+  "name": "",
+  "age": 82,
+  "gender": "male",
+  "postal_code": "2700",
+  "chronic_diseases": [
+    "Hypertension",
+    "Cancer"
+  ],
+  "medications": [],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

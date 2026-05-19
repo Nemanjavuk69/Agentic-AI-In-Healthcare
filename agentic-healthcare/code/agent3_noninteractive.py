@@ -1,7 +1,17 @@
 import json
 import os
+import logging
 from datetime import datetime
 from typing import List, Dict, Optional
+
+os.environ["TQDM_DISABLE"] = "1"
+
+# Silence all loggers before importing agent3 — otherwise agent3.py's
+# basicConfig fires and creates agent3.log. Findings go to red_team logs only.
+logging.getLogger().setLevel(logging.CRITICAL)
+logging.getLogger("presidio-analyzer").setLevel(logging.CRITICAL)
+logging.getLogger("presidio-anonymizer").setLevel(logging.CRITICAL)
+logging.getLogger("agent3").setLevel(logging.CRITICAL)
 
 from utils import call_llm, retrieve_dept_context
 from agent3 import (

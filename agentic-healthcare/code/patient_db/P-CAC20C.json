@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-CAC20C",
+  "name": "",
+  "age": 79,
+  "gender": "other",
+  "postal_code": "1250",
+  "chronic_diseases": [
+    "None"
+  ],
+  "medications": [],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

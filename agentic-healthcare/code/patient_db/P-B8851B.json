@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-B8851B",
+  "name": "",
+  "age": 50,
+  "gender": "female",
+  "postal_code": "1550",
+  "chronic_diseases": [
+    "Depression",
+    "Hypertension"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,22 @@
+{
+  "patient_id": "P-CB5871",
+  "name": "",
+  "age": 83,
+  "gender": "other",
+  "postal_code": "2610",
+  "chronic_diseases": [
+    "Depression",
+    "None",
+    "Arthritis"
+  ],
+  "medications": [
+    "Insulin",
+    "Lisinopril",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Dust",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

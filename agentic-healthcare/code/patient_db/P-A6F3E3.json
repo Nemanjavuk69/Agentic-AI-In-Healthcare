@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-A6F3E3",
+  "name": "",
+  "age": 29,
+  "gender": "female",
+  "postal_code": "1200",
+  "chronic_diseases": [
+    "None",
+    "Arthritis"
+  ],
+  "medications": [
+    "Metformin",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-AF5C7D",
+  "name": "",
+  "age": 71,
+  "gender": "male",
+  "postal_code": "2860",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "None",
+    "Arthritis"
+  ],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "None",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

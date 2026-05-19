@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-8AD0CA",
+  "name": "",
+  "age": 51,
+  "gender": "male",
+  "postal_code": "2400",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol",
+    "None",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

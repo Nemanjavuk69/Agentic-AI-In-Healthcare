@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-C47DFD",
+  "name": "",
+  "age": 38,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [
+    "Migraine",
+    "Depression",
+    "Hypertension"
+  ],
+  "medications": [
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

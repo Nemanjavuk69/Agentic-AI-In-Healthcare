@@ -1,0 +1,21 @@
+{
+  "patient_id": "P-B355D2",
+  "name": "",
+  "age": 57,
+  "gender": "female",
+  "postal_code": "2900",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Depression",
+    "Asthma"
+  ],
+  "medications": [
+    "Metformin",
+    "Ventolin",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

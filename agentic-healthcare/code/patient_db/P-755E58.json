@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-755E58",
+  "name": "",
+  "age": 20,
+  "gender": "other",
+  "postal_code": "2200",
+  "chronic_diseases": [
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Sertraline"
+  ],
+  "allergies": [
+    "Dust",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

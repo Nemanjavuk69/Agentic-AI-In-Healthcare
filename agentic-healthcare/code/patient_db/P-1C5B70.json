@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-1C5B70",
+  "name": "",
+  "age": 18,
+  "gender": "female",
+  "postal_code": "2700",
+  "chronic_diseases": [],
+  "medications": [
+    "None",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

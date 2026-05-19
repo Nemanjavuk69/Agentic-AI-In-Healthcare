@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-69617D",
+  "name": "",
+  "age": 84,
+  "gender": "male",
+  "postal_code": "2400",
+  "chronic_diseases": [
+    "Migraine",
+    "None",
+    "Cancer"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [
+    "Nuts",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

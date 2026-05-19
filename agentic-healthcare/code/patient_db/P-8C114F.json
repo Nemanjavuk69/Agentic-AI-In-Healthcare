@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-8C114F",
+  "name": "",
+  "age": 81,
+  "gender": "male",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "None"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Metformin"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

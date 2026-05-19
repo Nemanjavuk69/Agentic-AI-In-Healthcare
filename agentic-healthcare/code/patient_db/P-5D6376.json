@@ -1,0 +1,22 @@
+{
+  "patient_id": "P-5D6376",
+  "name": "",
+  "age": 74,
+  "gender": "female",
+  "postal_code": "1400",
+  "chronic_diseases": [
+    "Asthma",
+    "Hypertension",
+    "Depression"
+  ],
+  "medications": [
+    "Paracetamol",
+    "None",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Dust",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

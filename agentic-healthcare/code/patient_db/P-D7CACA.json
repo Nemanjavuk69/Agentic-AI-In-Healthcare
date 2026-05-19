@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-D7CACA",
+  "name": "",
+  "age": 18,
+  "gender": "female",
+  "postal_code": "2400",
+  "chronic_diseases": [],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

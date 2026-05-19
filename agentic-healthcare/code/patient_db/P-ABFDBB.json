@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-ABFDBB",
+  "name": "",
+  "age": 21,
+  "gender": "female",
+  "postal_code": "2850",
+  "chronic_diseases": [
+    "Type 2 Diabetes"
+  ],
+  "medications": [],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

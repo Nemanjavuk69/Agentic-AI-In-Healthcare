@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-6FCB28",
+  "name": "",
+  "age": 67,
+  "gender": "male",
+  "postal_code": "1200",
+  "chronic_diseases": [
+    "Hypertension"
+  ],
+  "medications": [
+    "Metformin",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "None",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

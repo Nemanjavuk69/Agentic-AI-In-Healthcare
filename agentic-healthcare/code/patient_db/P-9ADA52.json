@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-9ADA52",
+  "name": "",
+  "age": 20,
+  "gender": "other",
+  "postal_code": "2000",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Hypertension",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [
+    "None",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

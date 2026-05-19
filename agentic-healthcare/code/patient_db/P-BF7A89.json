@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-BF7A89",
+  "name": "",
+  "age": 26,
+  "gender": "female",
+  "postal_code": "1150",
+  "chronic_diseases": [
+    "Cancer",
+    "Migraine",
+    "None"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

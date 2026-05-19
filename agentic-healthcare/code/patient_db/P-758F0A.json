@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-758F0A",
+  "name": "",
+  "age": 66,
+  "gender": "male",
+  "postal_code": "1400",
+  "chronic_diseases": [
+    "Arthritis",
+    "Hypertension"
+  ],
+  "medications": [
+    "Paracetamol",
+    "None"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

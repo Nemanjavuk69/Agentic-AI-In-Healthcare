@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-4E1E4B",
+  "name": "",
+  "age": 77,
+  "gender": "male",
+  "postal_code": "2200",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-15CE4B",
+  "name": "",
+  "age": 76,
+  "gender": "female",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [
+    "Paracetamol"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

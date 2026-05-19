@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-5A7CD3",
+  "name": "",
+  "age": 22,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Hypertension"
+  ],
+  "medications": [
+    "Paracetamol",
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

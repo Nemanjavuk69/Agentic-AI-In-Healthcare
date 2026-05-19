@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-C8F9CA",
+  "name": "",
+  "age": 52,
+  "gender": "female",
+  "postal_code": "1550",
+  "chronic_diseases": [],
+  "medications": [
+    "None",
+    "Insulin",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

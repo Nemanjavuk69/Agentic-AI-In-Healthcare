@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-E06AD6",
+  "name": "",
+  "age": 44,
+  "gender": "male",
+  "postal_code": "1150",
+  "chronic_diseases": [
+    "Arthritis",
+    "Depression",
+    "None"
+  ],
+  "medications": [
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

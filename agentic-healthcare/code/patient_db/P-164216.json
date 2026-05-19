@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-164216",
+  "name": "",
+  "age": 32,
+  "gender": "female",
+  "postal_code": "2800",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals",
+    "None",
+    "Metformin"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

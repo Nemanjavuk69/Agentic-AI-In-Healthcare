@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-81AE27",
+  "name": "",
+  "age": 37,
+  "gender": "male",
+  "postal_code": "2100",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals",
+    "None",
+    "Insulin"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

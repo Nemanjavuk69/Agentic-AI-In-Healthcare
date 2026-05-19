@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-658FB1",
+  "name": "",
+  "age": 20,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [],
+  "medications": [
+    "Lisinopril",
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

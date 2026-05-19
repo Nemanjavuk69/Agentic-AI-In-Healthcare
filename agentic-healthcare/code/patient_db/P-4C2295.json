@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-4C2295",
+  "name": "",
+  "age": 39,
+  "gender": "female",
+  "postal_code": "1250",
+  "chronic_diseases": [
+    "Migraine"
+  ],
+  "medications": [
+    "Sertraline",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

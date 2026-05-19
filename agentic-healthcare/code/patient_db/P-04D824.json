@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-04D824",
+  "name": "",
+  "age": 75,
+  "gender": "male",
+  "postal_code": "2900",
+  "chronic_diseases": [
+    "None"
+  ],
+  "medications": [
+    "Sertraline",
+    "None"
+  ],
+  "allergies": [
+    "Dust",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

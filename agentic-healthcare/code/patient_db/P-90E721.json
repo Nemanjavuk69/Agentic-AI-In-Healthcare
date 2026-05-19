@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-90E721",
+  "name": "",
+  "age": 31,
+  "gender": "male",
+  "postal_code": "2800",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [
+    "Metformin",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

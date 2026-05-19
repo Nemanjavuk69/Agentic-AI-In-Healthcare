@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-A2EE44",
+  "name": "",
+  "age": 53,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Depression",
+    "Cancer"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

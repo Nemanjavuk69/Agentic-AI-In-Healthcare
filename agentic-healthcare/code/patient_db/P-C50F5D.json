@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-C50F5D",
+  "name": "",
+  "age": 76,
+  "gender": "female",
+  "postal_code": "2620",
+  "chronic_diseases": [],
+  "medications": [],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}
