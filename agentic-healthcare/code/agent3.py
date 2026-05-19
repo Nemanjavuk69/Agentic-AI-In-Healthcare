@@ -47,6 +47,10 @@ log = logging.getLogger("agent3")
 PATIENT_DB_DIR = os.path.join(os.path.dirname(__file__), "patient_db")
 HOSPITAL_NAME  = "Aalborg University Hospital"
 
+# ── Mitigation: read booking endpoint and key from environment ───────────────
+BOOKING_API_URL = os.environ.get("BOOKING_API_URL", "http://localhost:8000/book")
+BOOKING_API_KEY = os.environ.get("BOOKING_API_KEY", "")
+
 # Expanded specialty map
 SPECIALTY_MAP = {
     "chest": "cardiology",
@@ -174,7 +178,7 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
     """
     Books an appointment for the patient.
     Steps: load history → determine specialty → book at fixed hospital
-           → fake API call → check calendar
+    → fake API call → check calendar
     """
     log.info("TOOL CALL: book_appointment | patient=%s symptom=%s", patient_id, symptom_category)
 
@@ -184,28 +188,47 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
     # Step 2 – determine specialty from symptom category
     specialty = map_symptom_to_specialty(symptom_category)
     log.info("Determined specialty: %s", specialty)
-    
+
     # Step 3 – check calendar for next available slot
     time_slot = check_calendar(specialty)
-    
-    # Step 4 - book appointment: access to external API
-    
+
+    # Step 4 – book appointment via API
     payload = {
         "hospital": HOSPITAL_NAME,
         "specialty": specialty,
         "time": time_slot,
         "patient_id": patient_id
     }
-    
+
+    headers = {"Content-Type": "application/json"}
+    if BOOKING_API_KEY:
+        headers["Authorization"] = f"Bearer {BOOKING_API_KEY}"
+
     log.info("Data sent to API: %s", payload)
 
-    try: 
-        response = requests.post("http://localhost:8000/book", json = payload)
-        log.info("Appointment booked: %s", response.json())
-        return response.json()
+    try:
+        response = requests.post(
+            BOOKING_API_URL,
+            json=payload,
+            headers=headers,
+            timeout=5
+        )
+        response.raise_for_status()
+        data = response.json()
+
+        required_fields = {"status", "booking_ref", "hospital", "specialty", "time"}
+        if not required_fields.issubset(data.keys()):
+            return {"status": "failed", "reason": "Malformed booking API response"}
+
+        if data["hospital"] != HOSPITAL_NAME:
+            return {"status": "failed", "reason": "Hospital mismatch in API response"}
+
+        log.info("Appointment booked: %s", data)
+        return data
+
     except Exception as e:
-        return {"status": "failed", "reason": str(e)}    
-    
+        log.error("Booking API call failed: %s", str(e))
+        return {"status": "failed", "reason": str(e)}
 
 # ─── Tool 2: Self-care advice (RAG stub) ─────────────────────────────────────
 
@@ -219,7 +242,7 @@ def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: 
     log.info("TOOL CALL: self_care_advice | summary=%s", triage_summary[:80])
 
     # integrate follow-up answers into RAG context retrieval
-    rag_query = f"{triage_summary} {' '.join(follow_up_answer)}"    
+    rag_query = f"{triage_summary} {' '.join(follow_up_answer[:2])}"
     rag_context = retrieve_dept_context(rag_query)
 
     chronic = ", ".join(patient.get("chronic_diseases", [])) or "none"
@@ -243,7 +266,8 @@ def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: 
         "Please provide self-care advice."
     )
 
-    advice_text = call_llm(system, user)
+    # Mitigated — pass the already-initialised Presidio engines
+    advice_text = call_llm(system, user, analyzer=analyzer, anonymizer=anonymizer)
     log.info("Advice generated (first 120 chars): %s", advice_text[:120])
 
     return {
@@ -386,7 +410,8 @@ def make_decision(context: dict) -> dict:
     answers_text = "\n".join(answers)
     
     # RAG uses summary from first agent and patient context
-    rag_query = f"{triage_summary} {answers_text}"
+    limited_answers = " ".join(answers[:2])
+    rag_query = f"{triage_summary} {limited_answers}"
     rag_context = retrieve_dept_context(rag_query)
 
     # include triage summary, patient answers, and DEPT guidlines in promt (query for llm)

@@ -5,7 +5,8 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 import logging
 import os
-
+import math
+import random
 
 from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer
 from presidio_anonymizer import AnonymizerEngine
@@ -13,7 +14,10 @@ from presidio_anonymizer import AnonymizerEngine
 os.environ["TQDM_DISABLE"] = "1"
 logging.getLogger().setLevel(logging.WARNING)
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+# ── Mitigation: read URL and API key from environment variables ──────────────
+OLLAMA_URL   = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
+OLLAMA_TOKEN = os.environ.get("OLLAMA_API_KEY", "")          # empty = no token
+
 VAULT_FILE = "pii_vault.json"
 
 # =========================
@@ -36,7 +40,9 @@ print("Connected to DEPT vector database.\n")
 # Core LLM call
 # =========================
 
-def call_llm(system_prompt: str, user_prompt: str) -> str:
+def call_llm(system_prompt: str, user_prompt: str,
+             analyzer=None, anonymizer=None) -> str:
+
     payload = json.dumps({
         "model": "qwen2.5:3b",
         "messages": [
@@ -46,14 +52,25 @@ def call_llm(system_prompt: str, user_prompt: str) -> str:
         "stream": False
     }).encode("utf-8")
 
+    # ── Mitigation 1: include Bearer token if one is configured ─────────────
+    headers = {"Content-Type": "application/json"}
+    if OLLAMA_TOKEN:
+        headers["Authorization"] = f"Bearer {OLLAMA_TOKEN}"
+
     req = urllib.request.Request(
         OLLAMA_URL,
         data=payload,
-        headers={"Content-Type": "application/json"}
+        headers=headers
     )
 
     with urllib.request.urlopen(req) as response:
-        return json.loads(response.read())["message"]["content"]
+        raw = json.loads(response.read())["message"]["content"]
+
+    # ── Mitigation 2: sanitize LLM output before returning it ───────────────
+    if analyzer and anonymizer:
+        raw = sanitize_text(raw, analyzer=analyzer, anonymizer=anonymizer)
+
+    return raw
 
 
 # =========================
@@ -61,8 +78,38 @@ def call_llm(system_prompt: str, user_prompt: str) -> str:
 # Looks up the most relevant DEPT guideline chunks for the symptoms
 # =========================
 
-def retrieve_dept_context(user_input: str, n_results: int = 3) -> str:
+def add_gaussian_noise(vector, sigma: float = 0.01) -> list:
+    """
+    Adds small Gaussian noise independently to each embedding dimension.
+    This reduces direct embedding invertibility while preserving most retrieval utility.
+    """
+    return [x + random.gauss(0, sigma) for x in vector]
+
+
+def l2_normalize(vector: list) -> list:
+    """
+    Re-normalizes the perturbed embedding so cosine-similarity retrieval remains stable.
+    """
+    norm = math.sqrt(sum(x * x for x in vector))
+    if norm == 0:
+        return vector
+    return [x / norm for x in vector]
+
+
+def retrieve_dept_context(user_input: str, n_results: int = 3, sigma: float = 0.005) -> str:
+    """
+    Looks up the most relevant DEPT guideline chunks for the symptoms.
+
+    Mitigation:
+    - embeds the query text
+    - adds bounded Gaussian noise to reduce embedding invertibility
+    - re-normalizes the vector before Chroma retrieval
+    """
     query_vector = embedding_model.encode([user_input]).tolist()[0]
+
+    # Mitigation: perturb the query embedding before sending to ChromaDB
+    query_vector = add_gaussian_noise(query_vector, sigma=sigma)
+    query_vector = l2_normalize(query_vector)
 
     results = collection.query(
         query_embeddings=[query_vector],

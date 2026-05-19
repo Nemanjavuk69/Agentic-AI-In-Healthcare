@@ -178,6 +178,53 @@ Rules:
 - Be concise
 """
 
+def build_safe_history(history):
+    safe_history = []
+    for item in history:
+        entry = {
+            "action": item.get("action"),
+            "status": "ok" if "error" not in item.get("result", {}) else "error"
+        }
+
+        if item.get("action") == "hospital_lookup":
+            result = item.get("result", {})
+            entry["result_summary"] = {
+                "hospital": result.get("hospital"),
+                "department": result.get("department"),
+                "distance_km": result.get("distance_km")
+            }
+
+        elif item.get("action") == "ambulance_dispatch":
+            result = item.get("result", {})
+            entry["result_summary"] = {
+                "status": result.get("status"),
+                "eta_minutes": result.get("eta_minutes")
+            }
+
+        safe_history.append(entry)
+
+    return safe_history
+
+def build_final_response(llm_message, trusted_state):
+    hospital = trusted_state.get("hospital_lookup")
+    ambulance = trusted_state.get("ambulance_dispatch")
+
+    if not hospital:
+        return {"error": "Cannot finalize without hospital lookup result"}
+
+    transport = "ambulance" if ambulance else "self-transport"
+
+    final_message = llm_message or "Please go to the selected hospital for urgent evaluation."
+    if ambulance and ambulance.get("eta_minutes") is not None:
+        final_message += f" Ambulance ETA is approximately {ambulance['eta_minutes']} minutes."
+
+    return {
+        "message": final_message,
+        "hospital": hospital.get("hospital", ""),
+        "department": hospital.get("department", ""),
+        "address": hospital.get("address", ""),
+        "transport": transport
+    }
 
 def run_routing_agent(input_data, max_steps=4):
     context = {
@@ -186,23 +233,29 @@ def run_routing_agent(input_data, max_steps=4):
     }
 
     used_tools = set()
+    trusted_state = {
+        "hospital_lookup": None,
+        "ambulance_dispatch": None
+    }
 
     for step in range(max_steps):
         log.info("Step %d: Agent thinking...", step + 1)
 
         safe_input_data = {
-                    "symptoms": input_data.get("symptoms"),
-                    "score": input_data.get("score")
-                }
+            "symptoms": input_data.get("symptoms"),
+            "score": input_data.get("score"),
+            "category": input_data.get("category"),
+            "severity": input_data.get("severity")
+        }
+
         safe_context = {
             "input_data": safe_input_data,
-            "history": context["history"],
+            "history": build_safe_history(context["history"]),
             "used_tools": list(used_tools)
         }
 
-        # Sensitive fields are no longer fully LLM-controlled
-        user_promt = json.dumps(safe_context)
-        response = call_llm(SYSTEM_PROMPT, user_promt)
+        user_prompt = json.dumps(safe_context)
+        response = call_llm(SYSTEM_PROMPT, user_prompt)
 
         try:
             decision = json.loads(response)
@@ -210,43 +263,58 @@ def run_routing_agent(input_data, max_steps=4):
             log.error("JSON parsing failed: %s", e)
             return "Agent failed (invalid response)"
 
-        action= decision.get("action")
+        action = decision.get("action")
         action_input = decision.get("action_input", {})
+        thought = decision.get("thought", "")
 
+        log.info("Action: %s", action)
+        log.info("Input: %s", action_input)
 
-        log.info(f"Action: {action}")
-        log.info(f"Input: {action_input}")
-
-        # 🔹 Final answer
         if action == "final":
-            return action_input
-        
-        used_tools.add(action)
+            if trusted_state["hospital_lookup"] is None:
+                return "Agent failed (attempted final without hospital lookup)"
 
-        
-        #Process sensitive data outside of LLM - Inject PII safely
-        if action == "hospital_lookup":
-            action_input["location"] = input_data.get("location")
-        elif action == "ambulance_dispatch":
-            action_input["patient_id"] = input_data.get("patient_id")
-            action_input["location"] = input_data.get("location")
+            llm_message = action_input.get("message", "")
+            return build_final_response(llm_message, trusted_state)
 
-        # 🔹 Tool execution
+        if action in used_tools:
+            return f"Agent failed (repeated tool call not allowed): {action}"
+
         tool_fn = TOOLS.get(action)
-
         if not tool_fn:
             return f"Unknown tool: {action}"
+
+        used_tools.add(action)
+
+        if action == "hospital_lookup":
+            action_input = {
+                "department": action_input.get("department", "Emergency"),
+                "location": input_data.get("location")
+            }
+
+        elif action == "ambulance_dispatch":
+            hospital_result = trusted_state["hospital_lookup"]
+            if hospital_result is None:
+                return "Agent failed (ambulance_dispatch before hospital_lookup)"
+
+            action_input = {
+                "patient_id": input_data.get("patient_id"),
+                "location": input_data.get("location"),
+                "distance_km": hospital_result.get("distance_km")
+            }
 
         try:
             result = tool_fn(**action_input)
         except Exception as e:
             result = {"error": str(e)}
 
-        log.info(f"Observation: {result}")
+        log.info("Observation: %s", result)
 
-        # 🔹 Append to history (short memory)
+        if "error" not in result:
+            trusted_state[action] = result
+
         context["history"].append({
-            "thought": decision["thought"],
+            "thought": thought,
             "action": action,
             "result": result
         })
