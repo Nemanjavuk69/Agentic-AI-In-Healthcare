@@ -2,7 +2,7 @@ import json
 import os
 import random
 import logging
-from utils import call_llm, retrieve_dept_context, setup_analyzer_and_anonymizer, tokenize_patient, sanitize_text
+from utils import call_llm, retrieve_dept_context, setup_analyzer_and_anonymizer, tokenize_patient, anonymize_text, sanitize_age, sanitize_cpr, sanitize_name, sanitize_free_text, sanitize_postal_code
 from reset_log import reset
 
 # =========================
@@ -247,13 +247,25 @@ def main():
     analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
     # Collect Real PII upfront (CPR and Name)
+
     cpr = ""
     while not cpr:
-        cpr = input("\nPlease enter the patient's CPR: ").strip()
-        if not cpr:
-            print("CPR cannot be empty. Please try again.")
+        try:
+            raw_cpr = input("\nPlease enter the patient's CPR: ")
+            cpr = sanitize_cpr(raw_cpr)
+        except ValueError as e:
+            print(f"Error: {e}")
 
-    name = input("Enter patient's full name: ").strip()
+
+    name = ""
+    while not name:
+        try:
+            raw_name = input("Enter patient's full name: ").strip()
+            name = sanitize_name(raw_name)
+        except ValueError as e:
+            print(f"Error: {e}")
+
+
 
     # Tokenize immediately. 
     # 'subject_id' is now a synthetic token 
@@ -269,17 +281,24 @@ def main():
     updated = False
 
     if not patient.get("age"):
-        try:
-            age_str = input(f"Enter patient's age: ").strip()
-            patient["age"] = int(age_str) if age_str else None
-            updated = True
-        except:
-            patient["age"] = None
+        while True:
+            try:
+                age_str = input(f"Enter patient's age: ").strip()
+                patient["age"] = sanitize_age(age_str)
+                updated = True
+            except ValueError as e:
+                print(f"Error: {e}")
+                patient["age"] = None
 
     if not patient.get("gender"):
-        gender = input("Enter patient's gender (male/female/other): ").strip().lower()
-        patient["gender"] = gender if gender else ""
-        updated = True
+        while True:
+            gender = input("Enter patient's gender (male/female/other): ").strip().lower()
+            if gender in ["male", "female", "other"]:
+                patient["gender"] = gender
+                updated = True
+                break
+            print("Invalid gender. Please enter 'male', 'female', or 'other'.")
+
     
     # save profile if we got any new info
     if updated:
@@ -289,27 +308,31 @@ def main():
     # handle postal code
     postal_code = ""
     while not postal_code:
-        postal_code = input("\nPlease enter the patient's postal code: ").strip()
-        if not postal_code:
-            print("Postal code cannot be empty. Please try again.")
+        try:
+            raw_postal_code = input("Enter patient's postal code: ").strip()
+            postal_code = sanitize_postal_code(raw_postal_code)
+        except ValueError as e:
+            print(f"Error: {e}")
+
 
     print("\n" + "─" * 85)
 
     print("\nPlease describe the patient's symptoms below, or type 'quit' to exit.\n")
 
     while True:
-        user_input = input("You: ").strip()
+        raw_user_input = input("You: ").strip()
 
-        if not user_input:
+        if not raw_user_input:
             print("Please enter a message.\n")
             continue
-
-        if user_input.lower() in ("quit", "exit"):
+        if raw_user_input.lower() in ("quit", "exit"):
             print("Goodbye!")
             break
 
+        sanitized_input = sanitize_free_text(raw_user_input)
+
         
-        user_input = sanitize_text(user_input, analyzer=analyzer, anonymizer=anonymizer)
+        user_input = anonymize_text(sanitized_input, analyzer=analyzer, anonymizer=anonymizer)
 
         print("\n" + "─" * 85)
         print("\nAnalyzing...\n")

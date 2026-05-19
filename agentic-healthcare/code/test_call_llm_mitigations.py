@@ -13,7 +13,7 @@ from unittest.mock import patch, MagicMock
 from io import BytesIO
 
 # ── Point to your actual utils.py ───────────────────────────────────────────
-from utils import call_llm, setup_analyzer_and_anonymizer, sanitize_text
+from utils import call_llm, setup_analyzer_and_anonymizer, anonymize_text
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────

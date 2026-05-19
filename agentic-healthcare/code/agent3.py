@@ -14,7 +14,7 @@ from datetime import datetime
 import requests
 import re
 
-from utils import call_llm, retrieve_dept_context, sanitize_text,setup_analyzer_and_anonymizer
+from utils import call_llm, retrieve_dept_context, anonymize_text,setup_analyzer_and_anonymizer, sanitize_free_text
 
 analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
@@ -383,10 +383,11 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
         log.info(f"Q{turn + 1}:{question}")
 
         print(f"\nAgent: {question}")
-        answer = input("Patient: ").strip()
+        raw_answer = input("Patient: ").strip()
+        answer = sanitize_free_text(raw_answer)
 
         
-        answer = sanitize_text(answer, analyzer=analyzer, anonymizer=anonymizer)
+        answer = anonymize_text(answer, analyzer=analyzer, anonymizer=anonymizer)
 
         log.info(f"A{turn + 1}: {answer}")
         answers.append(answer)
@@ -474,8 +475,10 @@ def get_confirmation():
 
     for attempt in range(MAX_RETRIES):
 
-        confirmation = input("Patient: ").strip().lower()
-        confirmation = sanitize_text(confirmation, analyzer=analyzer, anonymizer=anonymizer).lower()
+        raw_confirmation = input("Patient: ").strip().lower()
+        confirmation = sanitize_free_text(raw_confirmation)
+
+        confirmation = anonymize_text(confirmation, analyzer=analyzer, anonymizer=anonymizer).lower()
         
         if confirmation in ("yes", "y", "yeah", "yep", "sure", "ok", "okay", "ja", "j"):
             return True

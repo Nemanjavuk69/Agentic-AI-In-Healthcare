@@ -7,6 +7,8 @@ import logging
 import os
 import math
 import random
+import re
+import html
 
 from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer
 from presidio_anonymizer import AnonymizerEngine
@@ -68,7 +70,7 @@ def call_llm(system_prompt: str, user_prompt: str,
 
     # ── Mitigation 2: sanitize LLM output before returning it ───────────────
     if analyzer and anonymizer:
-        raw = sanitize_text(raw, analyzer=analyzer, anonymizer=anonymizer)
+        raw = anonymize_text(raw, analyzer=analyzer, anonymizer=anonymizer)
 
     return raw
 
@@ -146,7 +148,7 @@ def create_cpr_recognizer():
     return recognizer
 
 
-def sanitize_text(text: str, language: str = "en", analyzer=None, anonymizer=None) -> str:
+def anonymize_text(text: str, language: str = "en", analyzer=None, anonymizer=None) -> str:
     """
     Detects and anonymizes CPR numbers + other entities.
     """
@@ -214,3 +216,58 @@ def setup_analyzer_and_anonymizer():
     return analyzer, anonymizer
 
 
+
+
+
+
+
+
+# =========================
+# Input Sanitization
+# =========================
+
+def sanitize_cpr(cpr: str) -> str:
+    """Ensure CPR is exactly 10 digits with an optional hyphen."""
+    cpr = cpr.strip()
+    if not re.fullmatch(r"\d{6}-?\d{4}", cpr):
+        raise ValueError("Invalid CPR format. Must be DDMMYY-XXXX.")
+    return cpr
+
+def sanitize_name(name: str) -> str:
+    """Allow-list for names to prevent injection via structural fields."""
+    name = name.strip()
+    # Allow letters (incl. Danish), spaces, hyphens, and apostrophes. Max 100 chars.
+    if not re.fullmatch(r"[A-Za-zæøåÆØÅ \-']{2,100}", name):
+        raise ValueError("Invalid name format or length.")
+    return html.escape(name)
+
+def sanitize_age(age_str: str) -> int:
+    """Strict integer boundary check."""
+    try:
+        age = int(age_str.strip())
+        if age < 0 or age > 120:
+            raise ValueError("Age out of reasonable bounds (0-120).")
+        return age
+    except ValueError:
+        raise ValueError("Age must be a valid integer.")
+
+def sanitize_postal_code(postal: str) -> str:
+    """Danish postal codes must be exactly 4 digits."""
+    postal = postal.strip()
+    if not re.fullmatch(r"\d{4}", postal):
+        raise ValueError("Invalid postal code format. Must be 4 digits.")
+    return postal
+
+def sanitize_free_text(text: str, max_length: int = 1000) -> str:
+    """
+    Sanitizes unstructured input (symptoms, chat).
+    Mitigates buffer overflow / excessive token usage and strips control characters.
+    """
+    # Enforce strict length limit to protect context window
+    text = text.strip()[:max_length]
+    
+    # Strip unprintable control characters (except newline \n and tab \t) 
+    # to prevent terminal manipulation or LLM parser breakage.
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', text)
+    
+    return text
