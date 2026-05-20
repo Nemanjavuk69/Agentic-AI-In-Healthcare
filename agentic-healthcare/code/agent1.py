@@ -314,6 +314,33 @@ def main():
         except ValueError as e:
             print(f"Error: {e}")
 
+    # Ask for chronic diseases
+    if not patient.get("chronic_diseases"):
+        raw_chronic = input("Enter patient's chronic diseases (comma-separated, or press Enter if none): ").strip()
+        if raw_chronic:
+            patient["chronic_diseases"] = [item.strip() for item in raw_chronic.split(",")]
+            updated = True
+        else:
+            patient["chronic_diseases"] = []
+
+    # Ask for medications
+    if not patient.get("medications"):
+        raw_meds = input("Enter patient's medications (comma-separated, or press Enter if none): ").strip()
+        if raw_meds:
+            patient["medications"] = [item.strip() for item in raw_meds.split(",")]
+            updated = True
+        else:
+            patient["medications"] = []
+
+    # Ask for allergies
+    if not patient.get("allergies"):
+        raw_allergies = input("Enter patient's allergies (comma-separated, or press Enter if none): ").strip()
+        if raw_allergies:
+            patient["allergies"] = [item.strip() for item in raw_allergies.split(",")]
+            updated = True
+        else:
+            patient["allergies"] = []
+
 
     print("\n" + "─" * 85)
 
