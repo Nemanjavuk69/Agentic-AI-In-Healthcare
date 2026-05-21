@@ -245,11 +245,13 @@ def sanitize_age(age_str: str) -> int:
     """Strict integer boundary check."""
     try:
         age = int(age_str.strip())
-        if age < 0 or age > 120:
-            raise ValueError("Age out of reasonable bounds (0-120).")
-        return age
     except ValueError:
         raise ValueError("Age must be a valid integer.")
+    
+    if age < 0 or age > 120:
+        raise ValueError("Age out of reasonable bounds (0-120).")
+    
+    return age
 
 def sanitize_postal_code(postal: str) -> str:
     """Danish postal codes must be exactly 4 digits."""

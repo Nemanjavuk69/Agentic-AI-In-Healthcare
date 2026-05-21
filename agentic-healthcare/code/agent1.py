@@ -286,6 +286,7 @@ def main():
                 age_str = input(f"Enter patient's age: ").strip()
                 patient["age"] = sanitize_age(age_str)
                 updated = True
+                break
             except ValueError as e:
                 print(f"Error: {e}")
                 patient["age"] = None
