@@ -13,6 +13,8 @@ import html
 from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer
 from presidio_anonymizer import AnonymizerEngine
 
+from vault_encryption import load_vault, save_vault
+
 os.environ["TQDM_DISABLE"] = "1"
 logging.getLogger().setLevel(logging.WARNING)
 
@@ -20,7 +22,8 @@ logging.getLogger().setLevel(logging.WARNING)
 OLLAMA_URL   = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
 OLLAMA_TOKEN = os.environ.get("OLLAMA_API_KEY", "")          # empty = no token
 
-VAULT_FILE = "pii_vault.json"
+VAULT_FILE = "pii_vault.enc"
+VAULT_KEY_FILE = ".vault.key"
 
 # =========================
 # Shared model and DB — loaded once, used by all agents
@@ -33,9 +36,6 @@ print("Model loaded.")
 chroma_client = chromadb.PersistentClient(path="./dept_db")
 collection = chroma_client.get_collection("dept_guidelines")
 print("Connected to DEPT vector database.\n")
-
-
-
 
 
 # =========================
@@ -180,31 +180,16 @@ def anonymize_text(text: str, language: str = "en", analyzer=None, anonymizer=No
 
 
 def tokenize_patient(cpr: str, name: str) -> str:
-    """
-    Creates a pseudonymized token for the patient and stores PII in an isolated vault.
-    If the CPR already exists, it returns the existing token.
-    """
-    if os.path.exists(VAULT_FILE):
-        with open(VAULT_FILE, "r", encoding="utf-8") as f:
-            vault = json.load(f)
-    else:
-        vault = {}
+    vault = load_vault(VAULT_FILE, VAULT_KEY_FILE)
 
-    # Checking if we already have a token for this CPR
     for token, pii_data in vault.items():
         if pii_data["cpr"] == cpr:
             return token
 
-    # Generate a new secure, synthetic ID
     new_token = f"P-{secrets.token_hex(3).upper()}"
-    
-    # Store the real PII mapped to the token
     vault[new_token] = {"cpr": cpr, "name": name}
-    
-    #Save the vault
-    with open(VAULT_FILE, "w", encoding="utf-8") as f:
-        json.dump(vault, f, indent=2, ensure_ascii=False)
-        
+    save_vault(vault, VAULT_FILE, VAULT_KEY_FILE)
+
     return new_token
 
 def setup_analyzer_and_anonymizer():
@@ -214,12 +199,6 @@ def setup_analyzer_and_anonymizer():
     analyzer.registry.add_recognizer(create_cpr_recognizer())
     print("Presidio loaded.")
     return analyzer, anonymizer
-
-
-
-
-
-
 
 
 # =========================
