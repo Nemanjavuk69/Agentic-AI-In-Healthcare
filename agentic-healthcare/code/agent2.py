@@ -35,6 +35,7 @@ import re
 import os
 
 from utils import call_llm
+from secure_comm import receive_secure_message
 
 
 os.environ["TQDM_DISABLE"] = "1"
@@ -325,9 +326,17 @@ def run_routing_agent(input_data, max_steps=4):
 # ─── Wrapper for Final Output ───────────────────────────────────────────────
 
 def run_agent(input_data):
-    log.info(f" Starting Agent 2 with input: {input_data}")
 
-    result = run_routing_agent(input_data)
+    #decrypt data and verify signature
+    data = receive_secure_message(
+        expected_receiver="agent2",
+        encrypted_message=input_data
+    )
+
+
+    log.info(f" Starting Agent 2 with input: {data}")
+
+    result = run_routing_agent(data)
 
     print("\n" + "─" * 85)
     print(" " * 28 + "EMERGENCY RESPONSE ACTIVATED")

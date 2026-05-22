@@ -4,6 +4,7 @@ import random
 import logging
 from utils import call_llm, retrieve_dept_context, setup_analyzer_and_anonymizer, tokenize_patient, anonymize_text, sanitize_age, sanitize_cpr, sanitize_name, sanitize_free_text, sanitize_postal_code
 from reset_log import reset
+from secure_comm import create_secure_message
 
 # =========================
 # Routing threshold
@@ -31,7 +32,7 @@ logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
 logging.getLogger("presidio-anonymizer").setLevel(logging.ERROR)
 
 
-log = logging.getLogger("agent3")
+log = logging.getLogger("agent1")
 
 # ─── Config ───────────────────────────────────────────────────────────[...]
 
@@ -181,7 +182,16 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         "score": score,
         "location": postal_code
     }
-        result = run_agent2(emergency_data)
+
+        # encrypt and sign the message for Agent 2
+        encrypted_message_2 = create_secure_message(
+            sender="agent1",
+            receiver="agent2",
+            action="emergency_routing",
+            payload=emergency_data
+        )
+
+        result = run_agent2(encrypted_message_2)
 
         if isinstance(result, dict):
             print(f"\nMessage: {result.get('message', 'N/A')}")
@@ -199,10 +209,21 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         print("\n" + "─" * 85)
         from agent3 import run_agent as run_agent3
         triage_input = {
+            "patient_id": subject_id,
             "summary": symptoms,
             "urgency": response
         }
-        run_agent3(triage_input=triage_input, patient_id=subject_id)
+
+        # encrypt and sign the message for Agent 3
+        encrypted_message_3 = create_secure_message(
+            sender="agent1",
+            receiver="agent3",
+            action="follow_up",
+            payload=triage_input
+        )
+
+
+        run_agent3(triage_input=encrypted_message_3)
 
 
 def load_patient(patient_id: str) -> dict:

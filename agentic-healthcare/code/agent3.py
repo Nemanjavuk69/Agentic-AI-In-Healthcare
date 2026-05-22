@@ -15,6 +15,7 @@ import requests
 import re
 
 from utils import call_llm, retrieve_dept_context, anonymize_text,setup_analyzer_and_anonymizer, sanitize_free_text
+from secure_comm import receive_secure_message
 
 analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
@@ -493,7 +494,7 @@ def get_confirmation():
     print("\nAgent: I will assume you do NOT want to book an appointment.")
     return False
 
-def run_agent(triage_input: dict, patient_id: str) -> dict:
+def run_agent(triage_input: dict) -> dict:
     """
     Full agent pipeline:
       1. dynamic Follow-up questioning loop
@@ -502,10 +503,25 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
       4. If self_care   → generate advice directly
     FUTURE: expose as FastAPI endpoint or subscribe to a queue topic.
     """
+
+    # decrypt and verify incoming message
+    data = receive_secure_message(
+        expected_receiver="agent3",
+        encrypted_message=triage_input
+    )
+
+
+    patient_id = data["patient_id"]
+    input_data = {
+        "summary": data["summary"],
+        "urgency": data["urgency"]
+    }
+
     # Step 1: ask follow up questions
     print("\nAgent: Hello! I have reviewed your initial information. I may ask you a few follow-up questions to better understand your situation before making a recommendation.")
 
-    context         = run_followup_loop(triage_input, patient_id)
+
+    context         = run_followup_loop(input_data, patient_id)
 
     print("\n" + "─" * 85)
 
@@ -566,7 +582,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
             # Patient declined — fall back to self-care advice
             log.info("Patient declined appointment — generating self-care advice instead")
             print("\nAgent: Understood. Let me give you some self-care advice instead.")
-            tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient, follow_up_answers)
+            tool_result = tool_self_care_advice(input_data.get("summary", ""), patient, follow_up_answers)
             print(f"\nAgent: {tool_result['advice']}")
             output = {
                 "action":     "self_care_after_declined_appointment",
@@ -579,7 +595,7 @@ def run_agent(triage_input: dict, patient_id: str) -> dict:
 
     else:
         # ── Self-care advice ──────────────────────────────────────────────────
-        tool_result = tool_self_care_advice(triage_input.get("summary", ""), patient, follow_up_answers)
+        tool_result = tool_self_care_advice(input_data.get("summary", ""), patient, follow_up_answers)
         print("\nAgent: Based on your answers, I believe you can manage with self-care at home. Here's some advice:")
         print(f"\nAgent: {tool_result['advice']}")
         output = {
