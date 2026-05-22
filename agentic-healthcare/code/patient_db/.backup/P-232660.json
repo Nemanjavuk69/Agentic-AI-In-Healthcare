@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-232660",
+  "name": "",
+  "age": 49,
+  "gender": "other",
+  "postal_code": "2720",
+  "chronic_diseases": [
+    "Cancer",
+    "None"
+  ],
+  "medications": [
+    "Paracetamol",
+    "None"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

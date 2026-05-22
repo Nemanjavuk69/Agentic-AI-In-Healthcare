@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-94946D",
+  "name": "",
+  "age": 83,
+  "gender": "other",
+  "postal_code": "2830",
+  "chronic_diseases": [],
+  "medications": [
+    "Insulin",
+    "Metformin",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

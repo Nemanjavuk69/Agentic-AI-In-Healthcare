@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-596FA3",
+  "name": "",
+  "age": 26,
+  "gender": "male",
+  "postal_code": "1700",
+  "chronic_diseases": [
+    "Hypertension",
+    "Type 2 Diabetes"
+  ],
+  "medications": [],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

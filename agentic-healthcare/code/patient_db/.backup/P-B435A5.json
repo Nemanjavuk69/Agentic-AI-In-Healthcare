@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-B435A5",
+  "name": "",
+  "age": 39,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

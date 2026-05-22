@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-CD48B9",
+  "name": "",
+  "age": 44,
+  "gender": "female",
+  "postal_code": "1200",
+  "chronic_diseases": [
+    "Asthma",
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

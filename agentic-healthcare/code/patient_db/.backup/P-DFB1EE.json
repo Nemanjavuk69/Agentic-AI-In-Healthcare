@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-DFB1EE",
+  "name": "",
+  "age": 53,
+  "gender": "female",
+  "postal_code": "1350",
+  "chronic_diseases": [
+    "Cancer",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

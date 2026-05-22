@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-379440",
+  "name": "",
+  "age": 36,
+  "gender": "female",
+  "postal_code": "2860",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

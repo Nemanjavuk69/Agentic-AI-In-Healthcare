@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-7701CA",
+  "name": "",
+  "age": 27,
+  "gender": "female",
+  "postal_code": "1200",
+  "chronic_diseases": [
+    "Cancer",
+    "Hypertension",
+    "Arthritis"
+  ],
+  "medications": [
+    "Metformin",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

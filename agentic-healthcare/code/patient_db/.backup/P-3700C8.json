@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-3700C8",
+  "name": "",
+  "age": 29,
+  "gender": "male",
+  "postal_code": "2300",
+  "chronic_diseases": [
+    "Depression",
+    "Hypertension"
+  ],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

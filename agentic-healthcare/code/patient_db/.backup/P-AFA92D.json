@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-AFA92D",
+  "name": "",
+  "age": 43,
+  "gender": "male",
+  "postal_code": "2620",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "Ventolin",
+    "Lisinopril"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

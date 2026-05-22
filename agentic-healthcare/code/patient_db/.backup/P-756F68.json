@@ -1,0 +1,21 @@
+{
+  "patient_id": "P-756F68",
+  "name": "",
+  "age": 72,
+  "gender": "female",
+  "postal_code": "2000",
+  "chronic_diseases": [
+    "Arthritis",
+    "Type 2 Diabetes",
+    "Asthma"
+  ],
+  "medications": [
+    "Sertraline",
+    "None",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

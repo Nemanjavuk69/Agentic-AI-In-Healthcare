@@ -1,0 +1,21 @@
+{
+  "patient_id": "P-74F51E",
+  "name": "",
+  "age": 85,
+  "gender": "female",
+  "postal_code": "2700",
+  "chronic_diseases": [
+    "Hypertension",
+    "Arthritis",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Metformin",
+    "Ventolin"
+  ],
+  "allergies": [
+    "Dust",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

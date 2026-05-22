@@ -1,0 +1,21 @@
+{
+  "patient_id": "P-55AABC",
+  "name": "",
+  "age": 22,
+  "gender": "other",
+  "postal_code": "2000",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Asthma",
+    "Cancer"
+  ],
+  "medications": [
+    "Insulin",
+    "Sertraline",
+    "None"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

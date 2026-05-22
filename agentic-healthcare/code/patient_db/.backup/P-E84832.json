@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-E84832",
+  "name": "",
+  "age": 32,
+  "gender": "female",
+  "postal_code": "2740",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Paracetamol",
+    "Metformin",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

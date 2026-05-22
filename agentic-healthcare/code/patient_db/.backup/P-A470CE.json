@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-A470CE",
+  "name": "",
+  "age": 18,
+  "gender": "female",
+  "postal_code": "1400",
+  "chronic_diseases": [
+    "Arthritis",
+    "Depression"
+  ],
+  "medications": [
+    "None",
+    "Ventolin",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

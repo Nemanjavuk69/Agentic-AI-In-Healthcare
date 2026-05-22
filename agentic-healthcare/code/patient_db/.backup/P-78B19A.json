@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-78B19A",
+  "name": "",
+  "age": 25,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Hypertension",
+    "Depression"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

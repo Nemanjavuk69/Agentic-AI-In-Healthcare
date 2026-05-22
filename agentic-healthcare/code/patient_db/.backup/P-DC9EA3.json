@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-DC9EA3",
+  "name": "",
+  "age": 58,
+  "gender": "other",
+  "postal_code": "2610",
+  "chronic_diseases": [
+    "Depression"
+  ],
+  "medications": [
+    "Ventolin"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

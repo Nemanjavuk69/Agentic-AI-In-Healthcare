@@ -1,0 +1,14 @@
+{
+  "patient_id": "P-E2D56E",
+  "name": "",
+  "age": 23,
+  "gender": "male",
+  "postal_code": "2740",
+  "chronic_diseases": [
+    "Asthma",
+    "Migraine"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

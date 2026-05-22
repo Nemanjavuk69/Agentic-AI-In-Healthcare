@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-E0EB13",
+  "name": "",
+  "age": 24,
+  "gender": "male",
+  "postal_code": "2800",
+  "chronic_diseases": [
+    "Hypertension",
+    "Arthritis"
+  ],
+  "medications": [
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

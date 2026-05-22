@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-8F54B6",
+  "name": "",
+  "age": 70,
+  "gender": "female",
+  "postal_code": "1050",
+  "chronic_diseases": [
+    "Depression",
+    "Arthritis"
+  ],
+  "medications": [
+    "Sertraline",
+    "Ventolin"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

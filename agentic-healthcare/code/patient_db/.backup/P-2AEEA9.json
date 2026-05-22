@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-2AEEA9",
+  "name": "",
+  "age": 46,
+  "gender": "female",
+  "postal_code": "1050",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Metformin",
+    "None"
+  ],
+  "allergies": [
+    "Penicillin",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

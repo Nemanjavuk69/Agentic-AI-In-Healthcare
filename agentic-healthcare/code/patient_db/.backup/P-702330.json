@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-702330",
+  "name": "",
+  "age": 50,
+  "gender": "male",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "None"
+  ],
+  "medications": [],
+  "allergies": [
+    "Nuts",
+    "Dust"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

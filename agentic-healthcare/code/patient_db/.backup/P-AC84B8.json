@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-AC84B8",
+  "name": "",
+  "age": 76,
+  "gender": "female",
+  "postal_code": "1500",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Ventolin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

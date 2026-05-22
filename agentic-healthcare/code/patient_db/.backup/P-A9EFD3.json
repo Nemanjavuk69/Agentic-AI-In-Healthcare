@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-A9EFD3",
+  "name": "",
+  "age": 42,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [],
+  "medications": [
+    "Sertraline",
+    "Ventolin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

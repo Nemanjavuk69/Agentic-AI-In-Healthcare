@@ -1,0 +1,21 @@
+{
+  "patient_id": "P-75E1A5",
+  "name": "",
+  "age": 73,
+  "gender": "female",
+  "postal_code": "1600",
+  "chronic_diseases": [
+    "Asthma",
+    "Migraine",
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals",
+    "Sertraline",
+    "Paracetamol"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

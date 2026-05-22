@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-A5A285",
+  "name": "",
+  "age": 64,
+  "gender": "female",
+  "postal_code": "2900",
+  "chronic_diseases": [],
+  "medications": [
+    "None"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

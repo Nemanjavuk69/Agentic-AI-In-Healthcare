@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-50ECE8",
+  "name": "",
+  "age": 71,
+  "gender": "female",
+  "postal_code": "1250",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals",
+    "None",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-59E824",
+  "name": "",
+  "age": 43,
+  "gender": "other",
+  "postal_code": "2630",
+  "chronic_diseases": [
+    "Migraine"
+  ],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

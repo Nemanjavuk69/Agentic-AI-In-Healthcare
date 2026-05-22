@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-E3636E",
+  "name": "",
+  "age": 50,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Asthma",
+    "Depression"
+  ],
+  "medications": [],
+  "allergies": [
+    "Dust",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

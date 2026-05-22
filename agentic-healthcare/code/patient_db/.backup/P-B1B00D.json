@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-B1B00D",
+  "name": "",
+  "age": 51,
+  "gender": "female",
+  "postal_code": "2840",
+  "chronic_diseases": [],
+  "medications": [
+    "Paracetamol",
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

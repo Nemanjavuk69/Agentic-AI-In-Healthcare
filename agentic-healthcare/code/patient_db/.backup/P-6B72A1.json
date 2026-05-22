@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-6B72A1",
+  "name": "",
+  "age": 36,
+  "gender": "other",
+  "postal_code": "2700",
+  "chronic_diseases": [],
+  "medications": [
+    "Antiretrovirals",
+    "Ventolin"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

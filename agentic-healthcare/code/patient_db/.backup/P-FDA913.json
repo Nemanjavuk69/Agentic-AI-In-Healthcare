@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-FDA913",
+  "name": "",
+  "age": 77,
+  "gender": "female",
+  "postal_code": "1100",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [
+    "Ventolin",
+    "None",
+    "Insulin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

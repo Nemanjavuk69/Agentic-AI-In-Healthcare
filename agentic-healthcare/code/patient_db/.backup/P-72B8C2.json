@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-72B8C2",
+  "name": "",
+  "age": 56,
+  "gender": "female",
+  "postal_code": "2620",
+  "chronic_diseases": [
+    "Hypertension",
+    "Type 2 Diabetes",
+    "Arthritis"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [
+    "None",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

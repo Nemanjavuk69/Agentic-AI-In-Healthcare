@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-AFFEB2",
+  "name": "",
+  "age": 28,
+  "gender": "female",
+  "postal_code": "2830",
+  "chronic_diseases": [
+    "Arthritis",
+    "Migraine"
+  ],
+  "medications": [
+    "Insulin"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

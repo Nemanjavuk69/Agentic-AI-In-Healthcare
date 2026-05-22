@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-E2C9D4",
+  "name": "",
+  "age": 36,
+  "gender": "other",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Arthritis"
+  ],
+  "medications": [
+    "Paracetamol",
+    "Metformin",
+    "Sertraline"
+  ],
+  "allergies": [
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

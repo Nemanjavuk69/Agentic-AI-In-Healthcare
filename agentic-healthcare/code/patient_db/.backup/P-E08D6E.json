@@ -1,0 +1,15 @@
+{
+  "patient_id": "P-E08D6E",
+  "name": "",
+  "age": 66,
+  "gender": "female",
+  "postal_code": "2100",
+  "chronic_diseases": [
+    "Type 2 Diabetes",
+    "Arthritis",
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

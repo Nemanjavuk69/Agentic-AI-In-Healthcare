@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-9A7AE0",
+  "name": "",
+  "age": 74,
+  "gender": "male",
+  "postal_code": "2820",
+  "chronic_diseases": [
+    "Arthritis",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Metformin",
+    "Sertraline"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

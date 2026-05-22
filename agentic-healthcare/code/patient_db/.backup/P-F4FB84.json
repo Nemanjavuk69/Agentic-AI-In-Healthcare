@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-F4FB84",
+  "name": "",
+  "age": 27,
+  "gender": "female",
+  "postal_code": "2850",
+  "chronic_diseases": [
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Insulin",
+    "Metformin",
+    "None"
+  ],
+  "allergies": [
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

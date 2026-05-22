@@ -1,0 +1,19 @@
+{
+  "patient_id": "P-40400F",
+  "name": "",
+  "age": 52,
+  "gender": "female",
+  "postal_code": "1450",
+  "chronic_diseases": [
+    "Hypertension",
+    "Depression"
+  ],
+  "medications": [
+    "Metformin",
+    "Lisinopril"
+  ],
+  "allergies": [
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

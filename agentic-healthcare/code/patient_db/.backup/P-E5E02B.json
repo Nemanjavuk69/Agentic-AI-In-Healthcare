@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-E5E02B",
+  "name": "",
+  "age": 51,
+  "gender": "other",
+  "postal_code": "1100",
+  "chronic_diseases": [
+    "Depression",
+    "Migraine",
+    "Type 2 Diabetes"
+  ],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

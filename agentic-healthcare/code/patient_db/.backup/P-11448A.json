@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-11448A",
+  "name": "",
+  "age": 60,
+  "gender": "other",
+  "postal_code": "2730",
+  "chronic_diseases": [
+    "Migraine",
+    "Hypertension"
+  ],
+  "medications": [
+    "Paracetamol",
+    "Lisinopril",
+    "Ventolin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

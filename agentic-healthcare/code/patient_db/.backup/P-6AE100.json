@@ -1,0 +1,13 @@
+{
+  "patient_id": "P-6AE100",
+  "name": "",
+  "age": 57,
+  "gender": "female",
+  "postal_code": "2600",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

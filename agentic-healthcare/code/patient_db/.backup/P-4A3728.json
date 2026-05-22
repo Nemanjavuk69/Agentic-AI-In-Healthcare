@@ -1,0 +1,16 @@
+{
+  "patient_id": "P-4A3728",
+  "name": "",
+  "age": 51,
+  "gender": "female",
+  "postal_code": "1000",
+  "chronic_diseases": [
+    "Depression",
+    "Migraine"
+  ],
+  "medications": [
+    "Metformin"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

@@ -1,0 +1,18 @@
+{
+  "patient_id": "P-5AA379",
+  "name": "",
+  "age": 49,
+  "gender": "male",
+  "postal_code": "2610",
+  "chronic_diseases": [
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Nuts",
+    "Penicillin"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

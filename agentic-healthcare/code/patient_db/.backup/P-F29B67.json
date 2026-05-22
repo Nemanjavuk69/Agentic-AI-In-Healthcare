@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-F29B67",
+  "name": "",
+  "age": 31,
+  "gender": "female",
+  "postal_code": "1150",
+  "chronic_diseases": [
+    "Asthma"
+  ],
+  "medications": [
+    "Metformin",
+    "Sertraline",
+    "None"
+  ],
+  "allergies": [
+    "Dust",
+    "Nuts"
+  ],
+  "hospital": "Aalborg University Hospital"
+}

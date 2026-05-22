@@ -1,0 +1,17 @@
+{
+  "patient_id": "P-AF93EF",
+  "name": "",
+  "age": 36,
+  "gender": "female",
+  "postal_code": "1300",
+  "chronic_diseases": [
+    "None",
+    "Asthma"
+  ],
+  "medications": [
+    "None",
+    "Sertraline"
+  ],
+  "allergies": [],
+  "hospital": "Aalborg University Hospital"
+}

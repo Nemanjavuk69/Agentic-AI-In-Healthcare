@@ -1,0 +1,20 @@
+{
+  "patient_id": "P-2EBB36",
+  "name": "",
+  "age": 63,
+  "gender": "female",
+  "postal_code": "2500",
+  "chronic_diseases": [
+    "None",
+    "Depression",
+    "Cancer"
+  ],
+  "medications": [
+    "Antiretrovirals"
+  ],
+  "allergies": [
+    "Dust",
+    "None"
+  ],
+  "hospital": "Aalborg University Hospital"
+}
