@@ -73,7 +73,8 @@ def calculate_distance(coord1, coord2):
 
 # Dummy hospital lookup tool (return fixed entry for demonstration)
 def hospital_lookup(department, location):
-    log.info(f"Looking up hospital for department '{department}' near location '{location}'")
+    # log.info(f"Looking up hospital for department '{department}' near location '{location}'")
+    log.info("Hospital lookup in progress")
     
     user_coords = get_location_coords(location)
 
@@ -114,7 +115,8 @@ def hospital_lookup(department, location):
         h["distance_km"] = round(calculate_distance(user_coords, h["coords"]), 2)
     
     best = sorted(matches, key=lambda x: x["distance_km"])[0]
-    log.info(f"Best hospital match: {best['hospital']} at {best['distance_km']} km")
+    # log.info(f"Best hospital match: {best['hospital']} at {best['distance_km']} km")
+    log.info("Hospital match found")
     return best
 
 def ambulance_dispatch(patient_id, location, distance_km):
@@ -123,7 +125,9 @@ def ambulance_dispatch(patient_id, location, distance_km):
 
     eta_minutes = int((distance_km / speed_kmh) * 60)
     
-    log.info(f"Dispatching ambulance for patient {patient_id} to location {location}")
+    # log.info(f"Dispatching ambulance for patient {patient_id} to location {location}")
+    log.info("Ambulance dispatch initiated")
+
     # Simulate dispatch logic here
     return {"status": "dispatched", "eta_minutes": eta_minutes, "message": "Ambulance is on the way. Please wait at your location."}
 
@@ -269,7 +273,8 @@ def run_routing_agent(input_data, max_steps=4):
         thought = decision.get("thought", "")
 
         log.info("Action: %s", action)
-        log.info("Input: %s", action_input)
+        # log.info("Input: %s", action_input)
+        log.info("Action input received")
 
         if action == "final":
             if trusted_state["hospital_lookup"] is None:
@@ -309,7 +314,8 @@ def run_routing_agent(input_data, max_steps=4):
         except Exception as e:
             result = {"error": str(e)}
 
-        log.info("Observation: %s", result)
+        # log.info("Observation: %s", result)
+        log.info("Agent 2 completed")
 
         if "error" not in result:
             trusted_state[action] = result
@@ -334,7 +340,8 @@ def run_agent(input_data):
     )
 
 
-    log.info(f" Starting Agent 2 with input: {data}")
+    # log.info(f" Starting Agent 2 with input: {data}")
+    log.info("Starting Agent 2 with secure message received")
 
     result = run_routing_agent(data)
 

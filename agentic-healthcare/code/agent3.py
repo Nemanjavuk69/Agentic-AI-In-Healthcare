@@ -122,7 +122,8 @@ def load_patient(patient_id: str) -> dict:
                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
     with open(path, "r") as f:
         data = json.load(f)
-    log.info("Loaded patient record for ID: %s", data.get("patient_id"))
+    # log.info("Loaded patient record for ID: %s", data.get("patient_id"))
+    log.info("Loaded patient record")
     return data
 
 # ─── Fake calendar ────────────────────────────────────────────────────────────
@@ -136,10 +137,12 @@ FAKE_CALENDAR = [
 
 def check_calendar(specialty: str) -> str:
     """Step 5 – fake calendar lookup. Returns next available slot."""
-    log.info("CALENDAR CHECK: looking for slot | specialty=%s", specialty)
+    # log.info("CALENDAR CHECK: looking for slot | specialty=%s", specialty)
+    log.info("CALENDAR: looking for slot")
     # change this
     slot = FAKE_CALENDAR[0]
-    log.info("CALENDAR: next available slot = %s", slot)
+    # log.info("CALENDAR: next available slot = %s", slot)
+    log.info("CALENDAR: next available slot found")
     return slot
 
 # ─── Tool 1: Appointment booking ─────────────────────────────────────────────
@@ -181,14 +184,16 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
     Steps: load history → determine specialty → book at fixed hospital
     → fake API call → check calendar
     """
-    log.info("TOOL CALL: book_appointment | patient=%s symptom=%s", patient_id, symptom_category)
+    # log.info("TOOL CALL: book_appointment | patient=%s symptom=%s", patient_id, symptom_category)
+    log.info("TOOL CALL: book_appointment")
 
     # Step 1 – load patient history
     patient = load_patient(patient_id)
 
     # Step 2 – determine specialty from symptom category
     specialty = map_symptom_to_specialty(symptom_category)
-    log.info("Determined specialty: %s", specialty)
+    # log.info("Determined specialty: %s", specialty)
+    log.info("Specialty for the described symptoms Determined")
 
     # Step 3 – check calendar for next available slot
     time_slot = check_calendar(specialty)
@@ -205,7 +210,8 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
     if BOOKING_API_KEY:
         headers["Authorization"] = f"Bearer {BOOKING_API_KEY}"
 
-    log.info("Data sent to API: %s", payload)
+    # log.info("Data sent to API: %s", payload)
+    log.info("Appointment booking API call initiated")
 
     try:
         response = requests.post(
@@ -224,7 +230,8 @@ def tool_book_appointment(symptom_category: str, patient_id: str) -> dict:
         if data["hospital"] != HOSPITAL_NAME:
             return {"status": "failed", "reason": "Hospital mismatch in API response"}
 
-        log.info("Appointment booked: %s", data)
+        # log.info("Appointment booked: %s", data)
+        log.info("Appointment booked")
         return data
 
     except Exception as e:
@@ -240,7 +247,8 @@ def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: 
     FUTURE: replace with MedRAG toolkit — retrieve relevant medical guidelines
             from vector DB, then pass retrieved context + summary to LLM.
     """
-    log.info("TOOL CALL: self_care_advice | summary=%s", triage_summary[:80])
+    # log.info("TOOL CALL: self_care_advice | summary=%s", triage_summary[:80])
+    log.info("TOOL CALL: self_care_advice")
 
     # integrate follow-up answers into RAG context retrieval
     rag_query = f"{triage_summary} {' '.join(follow_up_answer[:2])}"
@@ -269,7 +277,8 @@ def tool_self_care_advice(triage_summary: str, patient: dict, follow_up_answer: 
 
     # Mitigated — pass the already-initialised Presidio engines
     advice_text = call_llm(system, user, analyzer=analyzer, anonymizer=anonymizer)
-    log.info("Advice generated (first 120 chars): %s", advice_text[:120])
+    # log.info("Advice generated (first 120 chars): %s", advice_text[:120])
+    log.info("Advice generated")
 
     return {
         "advice":        advice_text,
@@ -341,8 +350,10 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
     Runs a dynamic follow-up loop inspired by the MediQ approach. After every response,
     the agent evaluates whether more questions are needed or not.
     """
-    log.info("=== Agent 3 START | patient=%s ===", patient_id)
-    log.info("Triage input: %s", triage_input)
+    # log.info("=== Agent 3 START | patient=%s ===", patient_id)
+    log.info("=== Agent 3 START ===")
+    # log.info("Triage input: %s", triage_input)
+    log.info("Follow-up loop started for patient")
 
     patient        = load_patient(patient_id)
     triage_summary = triage_input.get("summary", "")
@@ -359,7 +370,8 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
             role = "Assistant" if msg["role"] == "assistant" else "Patient"
             history_text += f"{role}: {msg['content']}\n"
 
-        log.info(f"Full history sent to LLM: {history_text}")
+        # log.info(f"Full history sent to LLM: {history_text}")
+        log.info("Full history sent to LLM")
 
         prompt = (
             f"Patient triage summary: {triage_summary}\n\n"
@@ -381,7 +393,8 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
         
         question = data["question"]
         history.append({"role": "assistant", "content": question})
-        log.info(f"Q{turn + 1}:{question}")
+        # log.info(f"Q{turn + 1}:{question}")
+        log.info("Question %d posed to patient", turn + 1)
 
         print(f"\nAgent: {question}")
         raw_answer = input("Patient: ").strip()
@@ -390,7 +403,8 @@ def run_followup_loop(triage_input: dict, patient_id: str) -> dict:
         
         answer = anonymize_text(answer, analyzer=analyzer, anonymizer=anonymizer)
 
-        log.info(f"A{turn + 1}: {answer}")
+        # log.info(f"A{turn + 1}: {answer}")
+        log.info("Patient response %d received", turn + 1)
         answers.append(answer)
         history.append({"role": "user", "content": answer})
 
@@ -426,7 +440,8 @@ def make_decision(context: dict) -> dict:
 
     log.info("Calling decision LLM...")
     decision_raw = call_llm(DECISION_SYSTEM, decision_prompt)
-    log.info("Decision raw response: %s", decision_raw)
+    # log.info("Decision raw response: %s", decision_raw)
+    log.info("Decision response received")
 
     try:
         decision = json.loads(decision_raw)
@@ -457,6 +472,7 @@ Answers: {answers_text}
     
     elif reflection["status"] == "revise":
         log.info("Decision revised due to reflection: %s", reflection["reason"])
+        log.info("Decision revised due to reflection")
 
         return {
             "decision": reflection["suggested_decision"],
@@ -465,7 +481,8 @@ Answers: {answers_text}
         }
 
 
-    log.info("Decision: %s", decision)
+    # log.info("Decision: %s", decision)
+    log.info("Decision has been made")
     return decision
 
 
@@ -547,7 +564,7 @@ def run_agent(triage_input: dict) -> dict:
     reasoning = decision_ojb.get("reasoning", "No reasoning provided.")
 
 
-    log.info("Final decision: %s | category: %s | reasoning: %s", decision, category, reasoning)
+    # log.info("Final decision: %s | category: %s | reasoning: %s", decision, category, reasoning)
     
     
     # Step 3: call functions based on decision
@@ -606,7 +623,8 @@ def run_agent(triage_input: dict) -> dict:
             "reasoning":  reasoning,
         }
 
-    log.info("Agent output: %s", json.dumps(output, indent=2))
+    # log.info("Agent output: %s", json.dumps(output, indent=2))
+    log.info("Agent pipeline completed")
 
     # FUTURE: publish output to next agent / orchestrator via message queue
     return output

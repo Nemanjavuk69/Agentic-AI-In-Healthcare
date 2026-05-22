@@ -87,12 +87,15 @@ Respond with ONLY one word: YES or NO.
 """
     user_prompt = f"Does this message contain medical symptoms?\n\n\"{user_input}\""
     
-    log.info("=== SYMPTOM CLASSIFIER ===")
-    log.info("Input: %s", user_input)
-    log.info("Full prompt sent to LLM: %s", user_prompt)
+    # log.info("=== SYMPTOM CLASSIFIER ===")
+    # log.info("Input: %s", user_input)
+    # log.info("Full prompt sent to LLM: %s", user_prompt)
+
+    # Removed so we don't log the actual user input
+    log.info("Symptom classifier invoked")
 
     result = call_llm(system_prompt, user_prompt).strip().upper()
-    log.info("Classifier result: %s", result)
+    # log.info("Classifier result: %s", result)
 
     return result.startswith("YES")
 
@@ -133,12 +136,14 @@ Example ending: Triage level: 2 ORANGE
 Relevant DEPT guidelines:
 {dept_context}
 """
-    log.info("=== TRIAGE AGENT CALLED ===")
-    log.info("Patient symptoms: %s", user_input)
+    # log.info("=== TRIAGE AGENT CALLED ===")
+    # log.info("Patient symptoms: %s", user_input)
+    log.info("Triage assessment in progress")
 
     response = call_llm(system_prompt, user_prompt)
 
-    log.info("Raw LLM Response:\n%s", response)
+    log.info("Triage response received")
+    # log.info("Raw LLM Response:\n%s", response)
 
     # Extract triage score from the last line
     score = None
@@ -393,8 +398,9 @@ def main():
             continue
 
         triage_result = triage_agent(user_input)
-        log.info("Final triage score: %s", triage_result.get('score'))
-        log.info("Triage response: %s", triage_result.get('response'))
+        # log.info("Final triage score: %s", triage_result.get('score'))
+        # log.info("Triage response: %s", triage_result.get('response'))
+        log.info("Triage score assigned: %s", triage_result.get('score'))
         
         print(f"Triage assessment complete. Triage score: {triage_result['score']}")
         route(triage_result, subject_id, postal_code)
