@@ -6,6 +6,8 @@ from utils import call_llm, retrieve_dept_context, setup_analyzer_and_anonymizer
 from reset_log import reset
 from secure_comm import create_secure_message
 
+from patient_db_encryption import get_patient_db_cache, update_patient_in_cache
+
 # =========================
 # Routing threshold
 # Patients with triage score <= THRESHOLD go to Agent 2 (emergency)
@@ -49,13 +51,16 @@ HOSPITAL_NAME  = "Aalborg University Hospital"
 
 
 
+# def save_patient_profile(patient: dict):
+#     """Save updated patient profile."""
+#     path = os.path.join(PATIENT_DB_DIR, f"{patient['patient_id']}.json")
+#     with open(path, "w", encoding="utf-8") as f:
+#         json.dump(patient, f, indent=2, ensure_ascii=False)
+
+# Replace save_patient_profile()
 def save_patient_profile(patient: dict):
-    """Save updated patient profile."""
-    path = os.path.join(PATIENT_DB_DIR, f"{patient['patient_id']}.json")
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(patient, f, indent=2, ensure_ascii=False)
-
-
+    """Save patient to encrypted database."""
+    update_patient_in_cache(patient['patient_id'], patient)
 
 
 
@@ -231,18 +236,25 @@ def route(triage_result: dict, subject_id: str, postal_code: str):
         run_agent3(triage_input=encrypted_message_3)
 
 
+# def load_patient(patient_id: str) -> dict:
+#     """Load patient from encrypted database."""
+#     path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
+#     if not os.path.exists(path):
+#         print("Patient file not found. Using default empty record.")
+#         return {"patient_id": patient_id, "name": "", "age": None, "gender": "","chronic_diseases": [],
+#                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
+#     with open(path, "r") as f:
+#         data = json.load(f)
+#     return data
+
 def load_patient(patient_id: str) -> dict:
-    """Load patient record from its JSON file."""
-    path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
-    if not os.path.exists(path):
-        print("Patient file not found. Using default empty record.")
+    """Load patient from encrypted database."""
+    db = get_patient_db_cache()
+    if patient_id not in db:
+        log.warning("Patient not found: %s", patient_id)
         return {"patient_id": patient_id, "name": "", "age": None, "gender": "","chronic_diseases": [],
                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
-    with open(path, "r") as f:
-        data = json.load(f)
-    return data
-
-
+    return db[patient_id]
 
 
 

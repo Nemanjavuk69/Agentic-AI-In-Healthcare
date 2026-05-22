@@ -17,6 +17,8 @@ import re
 from utils import call_llm, retrieve_dept_context, anonymize_text,setup_analyzer_and_anonymizer, sanitize_free_text
 from secure_comm import receive_secure_message
 
+from patient_db_encryption import get_patient_db_cache
+
 analyzer, anonymizer = setup_analyzer_and_anonymizer()
 
 # you need to run ollama and run python fake_api.py in separate terminals
@@ -113,18 +115,26 @@ SYMPTOM_PATTERNS = {
 
 # ─── Patient DB (JSON files) ──────────────────────────────────────────────────
 
+# def load_patient(patient_id: str) -> dict:
+#     """Load patient record from its JSON file."""
+#     path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
+#     if not os.path.exists(path):
+#         log.warning("Patient file not found: %s — using empty record", path)
+#         return {"patient_id": patient_id, "name": "Unknown", "age": None, "gender": "", "postal_code":"","chronic_diseases": [],
+#                 "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
+#     with open(path, "r") as f:
+#         data = json.load(f)
+#     # log.info("Loaded patient record for ID: %s", data.get("patient_id"))
+#     log.info("Loaded patient record")
+#     return data
+
+# ─── Patient DB (ENC files) ──────────────────────────────────────────────────
+
 def load_patient(patient_id: str) -> dict:
-    """Load patient record from its JSON file."""
-    path = os.path.join(PATIENT_DB_DIR, f"{patient_id}.json")
-    if not os.path.exists(path):
-        log.warning("Patient file not found: %s — using empty record", path)
-        return {"patient_id": patient_id, "name": "Unknown", "age": None, "gender": "", "postal_code":"","chronic_diseases": [],
-                "medications": [], "allergies": [], "hospital": HOSPITAL_NAME}
-    with open(path, "r") as f:
-        data = json.load(f)
-    # log.info("Loaded patient record for ID: %s", data.get("patient_id"))
-    log.info("Loaded patient record")
-    return data
+    db = get_patient_db_cache()
+    if patient_id not in db:
+        return {...}
+    return db[patient_id]
 
 # ─── Fake calendar ────────────────────────────────────────────────────────────
 
