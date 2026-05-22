@@ -1,7 +1,3 @@
-dept_db/
-patient_db/
-pii_vault.enc
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
