@@ -58,17 +58,30 @@ BOOKING_API_KEY = os.environ.get("BOOKING_API_KEY", "")
 SPECIALTY_MAP = {
     "chest": "cardiology",
     "heart": "cardiology",
+    "palpitations": "cardiology",
     "breath": "pulmonology",
     "cough": "pulmonology",
+    "wheezing": "pulmonology",
     "head": "neurology",
     "migraine": "neurology",
+    "dizziness": "neurology",
     "fracture": "orthopedics",
     "bone": "orthopedics",
-    "skin": "dermatology",
+    "joint": "orthopedics",
     "rash": "dermatology",
-    "diabetes": "endocrinology",
-    "throat": "general",
+    "skin": "dermatology",
+    "itching": "dermatology",
+    "stomach": "gastroenterology",
+    "abdominal": "gastroenterology",
+    "vomiting": "gastroenterology",
+    "urinating": "urology",
+    "urine": "urology",
+    "eye": "ophthalmology",
+    "vision": "ophthalmology",
+    "ear": "ent",
+    "throat": "ent",
     "fever": "general",
+    "fatigue": "general"
 }
 
 SYMPTOM_PATTERNS = {
@@ -77,39 +90,69 @@ SYMPTOM_PATTERNS = {
         r"chest tightness",
         r"pressure in chest",
         r"heart pain",
-        r"chest"
+        r"palpitations?",
+        r"irregular heartbeat"
     ],
     "pulmonology": [
         r"shortness of breath",
         r"breathing difficulty",
         r"cannot breathe",
-        r"cough",
-        r"breath"
+        r"wheezing",
+        r"persistent cough"
     ],
     "neurology": [
-        r"headache",
+        r"severe headache",
         r"migraine",
         r"dizziness",
-        r"head pain",
-        r"head"
+        r"lightheaded",
+        r"numbness",
+        r"blurred speech"
     ],
     "orthopedics": [
         r"fracture",
         r"broken bone",
         r"joint pain",
-        r"bone"
+        r"swollen ankle",
+        r"back pain",
+        r"sprain"
     ],
     "dermatology": [
         r"rash",
         r"skin problem",
         r"itching",
-        r"skin"
+        r"hives",
+        r"red bumps"
+    ],
+    "gastroenterology": [
+        r"abdominal pain",
+        r"stomach pain",
+        r"vomiting",
+        r"diarrhea",
+        r"nausea"
+    ],
+    "urology": [
+        r"burning when urinating",
+        r"pain when urinating",
+        r"blood in urine",
+        r"frequent urination"
+    ],
+    "ophthalmology": [
+        r"red eye",
+        r"eye pain",
+        r"blurred vision",
+        r"swollen eye"
+    ],
+    "ent": [
+        r"sore throat",
+        r"ear pain",
+        r"sinus pain",
+        r"hoarse voice"
     ],
     "general": [
         r"fever",
-        r"sore throat",
         r"fatigue",
-        r"weakness"
+        r"weakness",
+        r"feeling unwell"
     ]
 }
 
@@ -133,25 +176,66 @@ SYMPTOM_PATTERNS = {
 def load_patient(patient_id: str) -> dict:
     db = get_patient_db_cache()
     if patient_id not in db:
-        return {...}
+        log.warning("Patient not found: %s", patient_id)
+        return {
+            "patient_id": patient_id,
+            "name": "Unknown",
+            "age": None,
+            "gender": "",
+            "postal_code": "",
+            "chronic_diseases": [],
+            "medications": [],
+            "allergies": [],
+            "hospital": HOSPITAL_NAME
+        }
     return db[patient_id]
 
 # ─── Fake calendar ────────────────────────────────────────────────────────────
 
-FAKE_CALENDAR = [
-    "2025-06-10 09:30",
-    "2025-06-10 11:00",
-    "2025-06-11 14:00",
-    "2025-06-12 08:30",
-]
+FAKE_CALENDAR = {
+    "cardiology": [
+        "2025-06-10 09:30",
+        "2025-06-11 13:00",
+        "2025-06-13 10:15"
+    ],
+    "pulmonology": [
+        "2025-06-10 11:00",
+        "2025-06-12 09:00"
+    ],
+    "neurology": [
+        "2025-06-11 14:00",
+        "2025-06-14 10:30"
+    ],
+    "orthopedics": [
+        "2025-06-12 08:30",
+        "2025-06-13 15:00"
+    ],
+    "dermatology": [
+        "2025-06-15 09:15",
+        "2025-06-16 11:30"
+    ],
+    "gastroenterology": [
+        "2025-06-17 10:00"
+    ],
+    "urology": [
+        "2025-06-18 09:45"
+    ],
+    "ophthalmology": [
+        "2025-06-19 08:30"
+    ],
+    "ent": [
+        "2025-06-20 13:15"
+    ],
+    "general": [
+        "2025-06-10 16:00",
+        "2025-06-11 16:00"
+    ]
+}
 
 def check_calendar(specialty: str) -> str:
-    """Step 5 – fake calendar lookup. Returns next available slot."""
-    # log.info("CALENDAR CHECK: looking for slot | specialty=%s", specialty)
     log.info("CALENDAR: looking for slot")
-    # change this
-    slot = FAKE_CALENDAR[0]
-    # log.info("CALENDAR: next available slot = %s", slot)
+    slots = FAKE_CALENDAR.get(specialty) or FAKE_CALENDAR["general"]
+    slot = slots[0]
     log.info("CALENDAR: next available slot found")
     return slot
 
@@ -650,6 +734,6 @@ if __name__ == "__main__":
     }
     print("=== Starting Agent 3: Medical Follow-Up & Decision Agent ===")
 
-    final = run_agent(triage_input=sample_triage, patient_id="P001")
+    final = run_agent(triage_input=sample_triage)
     print("\n=== Agent 3 Final Output ===")
     print(json.dumps(final, indent=2))
