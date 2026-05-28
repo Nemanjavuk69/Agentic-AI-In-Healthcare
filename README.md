@@ -1,4 +1,4 @@
-# Agentic AI In Healthcare
+# Privacy Risk Analysis in Agentic AI Healthcare System
 
 A semester project focused on analyzing privacy risks and security implications in agentic AI systems applied to healthcare. This project leverages large language models and autonomous agents to identify, evaluate, and mitigate privacy vulnerabilities in healthcare applications.
 
